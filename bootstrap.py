@@ -4,7 +4,8 @@ import os
 import pandas as pd
 
 # run this initally to popylate the data. Whenever you add new files 
-# remove old data and add new and run this one to insert the records.
+# move old data to inserted subfolder and add new data. Then
+# run this code to insert the records.
 
 rpath = "./data/reservoir"
 

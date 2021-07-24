@@ -29,6 +29,10 @@ class DB:
         except Error as e:
             print(e)
 
+    # Note in cretion we can postpone commit to after all
+    # data is inserted, else it takes longer
+    # hence there is a separate commit method
+    # if you want to commit immediately pass True here.
     def create_water_record(self, data, commit = False):
         """
         Create a new data into the water table
