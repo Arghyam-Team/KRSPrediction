@@ -7,10 +7,10 @@ import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 
 # load krs dam file 
-krs = pd.read_csv("C:\\personal\\projects\\wave2web\\KRS.csv")
+krs = pd.read_csv("KRS.csv")
 
 # load mysore weather data 
-wtr = pd.read_csv("C:\\personal\\projects\\wave2web\\krishnarajanagara.csv")
+wtr = pd.read_csv("krishnarajanagara.csv")
 st.title("Correlation between KRS dam and weather data")
 
 # create datetime objects for both the files
