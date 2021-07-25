@@ -1,7 +1,7 @@
 import sqlite3
 from sqlite3 import Error
-from datetime import date
-
+from datetime import date, timedelta
+from config.files import get_full_path
 class DB:
 
     # def update_date_format(self):
@@ -146,6 +146,19 @@ class DB:
             return self.create_weather_record(data, commit)
         
 
+    def get_data_for_prediction(self, window):
+        start = date.today() + timedelta(-window)
+        start = start.toordinal() + 1721424.5
+        sql = f''' SELECT water.date, water.storage_tmc, water.inflow_cusecs, water.outflow_cusecs, 
+                         weather.max_temp, weather.visibility, weather.wind, weather.humidity, weather.cloudcover 
+                  FROM water INNER JOIN weather 
+                  ON  water.reservoir='krs' AND weather.location='karnataka' AND water.date = weather.date
+                      AND water.realdate >= {start}
+                  '''
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        return cur.fetchall()
+
     def display_all_weather(self):
         """
         Query all rows in the weather table
@@ -230,5 +243,6 @@ class DB:
 try:
     print(appdb.initialized)
 except:
-    database = r"./data/pythonsqlite.db"
+    database = get_full_path('data', "pythonsqlite.db")
+    print(database)
     appdb = DB(database)
