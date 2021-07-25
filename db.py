@@ -4,19 +4,19 @@ from datetime import date
 
 class DB:
 
-    def update_date_format(self):
-        sql = "SELECT * from water"
-        cur = self.conn.cursor()
-        cur.execute(sql)
-        rows = cur.fetchall()
-        for row in rows:
-            dt = row[0]
-            if "/" in dt:
-                dt = list(map(int, dt.split('/')))
-                dt = date(dt[2],dt[0], dt[1])
-                sql = f"UPDATE water SET date='{str(dt)}' where date='{row[0]}' and reservoir='{row[1]}'"
-                cur.execute(sql)
-        self.conn.commit()
+    # def update_date_format(self):
+    #     sql = "SELECT * from water"
+    #     cur = self.conn.cursor()
+    #     cur.execute(sql)
+    #     rows = cur.fetchall()
+    #     for row in rows:
+    #         dt = row[0]
+    #         if "/" in dt:
+    #             dt = list(map(int, dt.split('/')))
+    #             dt = date(dt[2],dt[0], dt[1])
+    #             sql = f"UPDATE water SET date='{str(dt)}' where date='{row[0]}' and reservoir='{row[1]}'"
+    #             cur.execute(sql)
+    #     self.conn.commit()
 
     def create_connection(self, db_file):
         """ create a database connection to the SQLite database
@@ -52,10 +52,10 @@ class DB:
     def create_water_record(self, data, commit = False):
         """
         Create a new data into the water table
-        :param data: (date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs, forecast)
+        :param data: (date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs)
         :return: data id
         """
-        sql = '''INSERT INTO water(date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs, forecast)
+        sql = '''INSERT INTO water(date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs)
                 VALUES(?,?,?,?,?,?,?)'''
         cur = self.conn.cursor()
         cur.execute(sql, data)
@@ -82,7 +82,7 @@ class DB:
     def upsert_water_record(self, data, commit=False):
         """
         Create a new data into the water table
-        :param data: (date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs, forecast)
+        :param data: (date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs)
         :return: data id
         """
         cur = self.conn.cursor()
@@ -93,7 +93,7 @@ class DB:
         if len(rows) > 0:
             # update
             sql = '''UPDATE water SET date=?, reservoir=?, level_ft=?, storage_tmc=?, 
-                     inflow_cusecs=?, outflow_cusecs=?, forecast=?
+                     inflow_cusecs=?, outflow_cusecs=?
                      WHERE date='{data[0]}' and reservoir='{data[1]}' '''
             cur.execute(sql, data)
             if commit:
@@ -194,8 +194,17 @@ class DB:
                                         level_ft real,
                                         storage_tmc real,
                                         inflow_cusecs real,
+                                        outflow_cusecs real
+                                    ); """
+
+        sql_create_forecast_table = """ CREATE TABLE IF NOT EXISTS water_forecast (
+                                        date text NOT NULL,
+                                        reservoir text NOT NULL,
+                                        level_ft real,
+                                        storage_tmc real,
+                                        inflow_cusecs real,
                                         outflow_cusecs real,
-                                        forecast integer
+                                        model integer
                                     ); """
 
 
@@ -209,6 +218,10 @@ class DB:
 
             # create water table
             self.create_table(sql_create_water_table)
+
+            # create water forecast table
+            self.create_table(sql_create_forecast_table)
+
             self.initialized = True
         else:
             print("Error! cannot create the database connection.")

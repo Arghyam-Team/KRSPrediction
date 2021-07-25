@@ -15,7 +15,7 @@ for d in filter(os.DirEntry.is_file, os.scandir(rpath)):
         df["location"] = d.name[:-4].lower().strip()
         for index,row in df.iterrows():
             #(date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs, forecast)
-            data = (row['FLOW_DATE'], row['location'], row['RES_LEVEL_FT'], row['PRESENT_STORAGE_TMC'], row['INFLOW_CUSECS'], row['OUTFLOW_CUECS'], 0)
+            data = (row['FLOW_DATE'], row['location'], row['RES_LEVEL_FT'], row['PRESENT_STORAGE_TMC'], row['INFLOW_CUSECS'], row['OUTFLOW_CUECS'])
             print(data)
             db.appdb.create_water_record(data)
 

@@ -58,16 +58,27 @@ def update_reservoir(today = date.today()):
         outflow = float(row.findAll('td')[6].string)
         reservoir = reservoir_name(row.find('td').string.split('-')[0].strip())
         isbad =  [level, storage, inflow, outflow] == baddata[reservoir]
-        data = (str(today), reservoir, level, storage/1000, inflow, outflow, 0)
+        data = (str(today), reservoir, level, storage/1000, inflow, outflow)
         if isbad:
             old = db.appdb.get_water_record(str(prevday), reservoir)
             data = (str(today), *old[1:])
         print(data)
+        # we need to record the error of predicted to actual somewhere
+
         db.appdb.upsert_water_record(data, True)
+        
             
+def run_predictions():
+    pass
+
 # TODO cron job to run daily
 update_weather()
 update_reservoir()
+run_predictions()
+
+# TODO cron jub to run weekly or monthly or manually done
+# re-train all the models on new data
+
 # end = date(2021,1,1)
 # dt = date(2020,12,17)
 # while dt < end:
