@@ -25,9 +25,7 @@ def update_weather():
 
     db.appdb.commit()
 
-def update_reservoir():
-    today = date.today()
-
+def update_reservoir(today = date.today()):
     def reservoir_name(givenname):
         if givenname.lower().startswith("krishna"):
             return "krs"
@@ -70,5 +68,10 @@ def update_reservoir():
 # TODO cron job to run daily
 update_weather()
 update_reservoir()
+# end = date(2021,1,1)
+# dt = date(2020,12,17)
+# while dt < end:
+#     update_reservoir(dt)
+#     dt += timedelta(1)
 #db.appdb.update_date_format()
-#db.appdb.display_all_water_data("krs")
+#db.appdb.display_all_water_data("kabini")
