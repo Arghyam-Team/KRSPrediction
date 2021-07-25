@@ -61,6 +61,33 @@ class DB:
             self.conn.commit()
         return cur.lastrowid
 
+    def upsert_weather_record(self, data, commit=False):
+        """
+        Create a new data into the weather table
+        :param data: (date, location, max_temp, min_temp, temp, precip, wind, wind_dir, visibility, cloudcover, humidity, forecast)
+        :return: data id
+        """
+        cur = self.conn.cursor()
+        sql = f"SELECT * FROM weather WHERE date='{data[0]}' and location='{data[1]}'"
+        
+        cur.execute(sql)
+        rows = cur.fetchall()
+        if len(rows) > 0:
+            # update
+            sql = '''UPDATE weather SET date=?, location=?, max_temp=?, min_temp=?, temp=?, precip=?, wind=?, 
+                     wind_dir=?, visibility=?, cloudcover=?, humidity=?, forecast=?
+                     WHERE date='{data[0]}' and location='{data[1]}' '''
+            cur.execute(sql, data)
+            if commit:
+                self.conn.commit()
+            print("UPDATING...", data[0], data[1])
+            return cur.lastrowid
+        else:
+            # insert
+            print("INSERTING...", data[0], data[1])
+            return self.create_weather_record(data, commit)
+        
+
     def display_all_weather(self):
         """
         Query all rows in the weather table
@@ -85,7 +112,7 @@ class DB:
         sql = 'DELETE FROM weather'
         cur = self.conn.cursor()
         cur.execute(sql)
-        #self.conn.commit()
+        self.conn.commit()
 
     def __init__(self, db_file):
         sql_create_weather_table = """ CREATE TABLE IF NOT EXISTS weather (

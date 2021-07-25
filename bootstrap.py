@@ -28,6 +28,7 @@ db.appdb.commit()
 wpath = "./data/weather"
 #db.appdb.delete_all_weather()
 for d in filter(os.DirEntry.is_file, os.scandir(wpath)):
+    print(d.name)
     if d.name.endswith(".csv"):
         df = pd.read_csv(d.path)
         df["location"] = d.name[:-4].lower().strip()
@@ -38,10 +39,11 @@ for d in filter(os.DirEntry.is_file, os.scandir(wpath)):
                     dt = list(map(int, dt.split('-')))
                 else:
                     dt = list(map(int, dt.split('/')))
-                dt = date(dt[2], dt[1], dt[0])
+                print(dt)
+                dt = date(dt[2], dt[0], dt[1])
             except ValueError as e:
                 if 'month' in str(e):
-                    dt = date(dt[2], dt[0], dt[1])
+                    dt = date(dt[2], dt[1], dt[2])
                 else:
                     continue
             except Exception as e:

@@ -1,0 +1,8199 @@
+{
+  "queryCost": 77,
+  "latitude": 12.9664,
+  "longitude": 77.5872,
+  "resolvedAddress": "KA, India",
+  "address": "Karnataka",
+  "timezone": "Asia/Kolkata",
+  "tzoffset": 5.5,
+  "description": "Similar temperatures continuing with a chance of rain Thursday & Saturday.",
+  "days": [
+    {
+      "datetime": "2021-07-25",
+      "datetimeEpoch": 1627151400,
+      "tempmax": 27.2,
+      "tempmin": 21.1,
+      "temp": 24.2,
+      "feelslikemax": 28,
+      "feelslikemin": 21.1,
+      "feelslike": 24.3,
+      "dew": 18.2,
+      "humidity": 70.2,
+      "precip": 0.3,
+      "precipprob": 42.9,
+      "precipcover": null,
+      "preciptype": null,
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 40.3,
+      "windspeed": 27,
+      "winddir": 261.8,
+      "pressure": 1008.4,
+      "cloudcover": 95.8,
+      "visibility": 24.1,
+      "solarradiation": 215.2,
+      "solarenergy": 14.1,
+      "uvindex": 5,
+      "severerisk": 10,
+      "sunrise": "06:03:43",
+      "sunriseEpoch": 1627173223,
+      "sunset": "18:48:36",
+      "sunsetEpoch": 1627219116,
+      "moonphase": 0.52,
+      "conditions": "Overcast",
+      "description": "Cloudy skies throughout the day.",
+      "icon": "cloudy",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          25.1,
+          28.5,
+          33.1
+        ],
+        "tempmin": [
+          18.9,
+          20.5,
+          21.5
+        ],
+        "feelslike": [
+          18.9,
+          28.5,
+          38.2
+        ],
+        "precip": [
+          0,
+          3.7,
+          36
+        ],
+        "humidity": [
+          63.6,
+          77.7,
+          89.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          23.8,
+          48.2
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          229,
+          259.9,
+          285.4
+        ],
+        "cloudcover": [
+          53,
+          77.6,
+          97.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-07-26",
+      "datetimeEpoch": 1627237800,
+      "tempmax": 27.2,
+      "tempmin": 19.7,
+      "temp": 23.3,
+      "feelslikemax": 27.8,
+      "feelslikemin": 19.7,
+      "feelslike": 23.4,
+      "dew": 17.8,
+      "humidity": 72.4,
+      "precip": 0,
+      "precipprob": 28.6,
+      "precipcover": null,
+      "preciptype": null,
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 44.3,
+      "windspeed": 27.7,
+      "winddir": 258.3,
+      "pressure": 1009.2,
+      "cloudcover": 86.6,
+      "visibility": 24.1,
+      "solarradiation": 213.1,
+      "solarenergy": 17.5,
+      "uvindex": 8,
+      "severerisk": 10,
+      "sunrise": "06:03:57",
+      "sunriseEpoch": 1627259637,
+      "sunset": "18:48:22",
+      "sunsetEpoch": 1627305502,
+      "moonphase": 0.54,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          23.7,
+          27.9,
+          34.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          21.4
+        ],
+        "feelslike": [
+          19.1,
+          27.9,
+          38.4
+        ],
+        "precip": [
+          0,
+          7,
+          63.5
+        ],
+        "humidity": [
+          64.8,
+          78.6,
+          86.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          11.2,
+          23,
+          36.7
+        ],
+        "windgust": [
+          57.6,
+          57.6,
+          57.6
+        ],
+        "winddir": [
+          236.7,
+          259,
+          295
+        ],
+        "cloudcover": [
+          51,
+          78.3,
+          95.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-07-27",
+      "datetimeEpoch": 1627324200,
+      "tempmax": 28.7,
+      "tempmin": 19.4,
+      "temp": 23.4,
+      "feelslikemax": 28.9,
+      "feelslikemin": 19.4,
+      "feelslike": 23.5,
+      "dew": 17.1,
+      "humidity": 69.5,
+      "precip": 0.1,
+      "precipprob": 23.7,
+      "precipcover": null,
+      "preciptype": null,
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 48.2,
+      "windspeed": 32.4,
+      "winddir": 259.2,
+      "pressure": 1008.7,
+      "cloudcover": 64,
+      "visibility": 24.1,
+      "solarradiation": 283.2,
+      "solarenergy": 23.3,
+      "uvindex": 10,
+      "severerisk": 10,
+      "sunrise": "06:04:11",
+      "sunriseEpoch": 1627346051,
+      "sunset": "18:48:07",
+      "sunsetEpoch": 1627391887,
+      "moonphase": 0.57,
+      "conditions": "Partially cloudy",
+      "description": "Becoming cloudy in the afternoon.",
+      "icon": "wind",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24.1,
+          27.9,
+          33.1
+        ],
+        "tempmin": [
+          19.2,
+          20.5,
+          21.1
+        ],
+        "feelslike": [
+          19.2,
+          27.9,
+          40.8
+        ],
+        "precip": [
+          0,
+          6,
+          48
+        ],
+        "humidity": [
+          67.1,
+          79.3,
+          89
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          11.2,
+          22.7,
+          37.1
+        ],
+        "windgust": [
+          44.6,
+          44.6,
+          44.6
+        ],
+        "winddir": [
+          236.2,
+          259.3,
+          288.8
+        ],
+        "cloudcover": [
+          54.7,
+          79,
+          97.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-07-28",
+      "datetimeEpoch": 1627410600,
+      "tempmax": 27.1,
+      "tempmin": 19.5,
+      "temp": 23,
+      "feelslikemax": 27.5,
+      "feelslikemin": 19.5,
+      "feelslike": 23,
+      "dew": 16.8,
+      "humidity": 69.5,
+      "precip": 0.2,
+      "precipprob": 33.2,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 49.3,
+      "windspeed": 31,
+      "winddir": 264.9,
+      "pressure": 1009.1,
+      "cloudcover": 96.8,
+      "visibility": 24.1,
+      "solarradiation": 218,
+      "solarenergy": 18,
+      "uvindex": 8,
+      "severerisk": 10,
+      "sunrise": "06:04:24",
+      "sunriseEpoch": 1627432464,
+      "sunset": "18:47:51",
+      "sunsetEpoch": 1627478271,
+      "moonphase": 0.61,
+      "conditions": "Overcast",
+      "description": "Cloudy skies throughout the day.",
+      "icon": "wind",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24.1,
+          28.1,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          21.2
+        ],
+        "feelslike": [
+          19.1,
+          28.1,
+          36.2
+        ],
+        "precip": [
+          0,
+          7.8,
+          52
+        ],
+        "humidity": [
+          70.4,
+          79.9,
+          90.4
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          9.4,
+          24.1,
+          44.3
+        ],
+        "windgust": [
+          46.4,
+          46.4,
+          46.4
+        ],
+        "winddir": [
+          243.5,
+          263.7,
+          297.1
+        ],
+        "cloudcover": [
+          54.1,
+          79.5,
+          98
+        ]
+      }
+    },
+    {
+      "datetime": "2021-07-29",
+      "datetimeEpoch": 1627497000,
+      "tempmax": 27.4,
+      "tempmin": 19.3,
+      "temp": 22.8,
+      "feelslikemax": 27.9,
+      "feelslikemin": 19.3,
+      "feelslike": 22.9,
+      "dew": 17.2,
+      "humidity": 71.4,
+      "precip": 1.3,
+      "precipprob": 52.4,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 47.2,
+      "windspeed": 30.6,
+      "winddir": 265.9,
+      "pressure": 1009.4,
+      "cloudcover": 96.5,
+      "visibility": 22.8,
+      "solarradiation": 215.1,
+      "solarenergy": 17.6,
+      "uvindex": 9,
+      "severerisk": 10,
+      "sunrise": "06:04:38",
+      "sunriseEpoch": 1627518878,
+      "sunset": "18:47:35",
+      "sunsetEpoch": 1627564655,
+      "moonphase": 0.66,
+      "conditions": "Rain, Overcast",
+      "description": "Cloudy skies throughout the day with afternoon rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24,
+          27.7,
+          34
+        ],
+        "tempmin": [
+          11.1,
+          20.1,
+          21.1
+        ],
+        "feelslike": [
+          11.1,
+          27.7,
+          36.2
+        ],
+        "precip": [
+          0,
+          5,
+          47.2
+        ],
+        "humidity": [
+          67.9,
+          79.2,
+          91.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          9.4,
+          23,
+          42.5
+        ],
+        "windgust": [
+          46.4,
+          46.4,
+          46.4
+        ],
+        "winddir": [
+          244.8,
+          265,
+          289.6
+        ],
+        "cloudcover": [
+          46.7,
+          77,
+          96.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-07-30",
+      "datetimeEpoch": 1627583400,
+      "tempmax": 26.9,
+      "tempmin": 19.9,
+      "temp": 22.9,
+      "feelslikemax": 27.4,
+      "feelslikemin": 19.9,
+      "feelslike": 23,
+      "dew": 17,
+      "humidity": 70.1,
+      "precip": 0.3,
+      "precipprob": 19,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 47.9,
+      "windspeed": 30.6,
+      "winddir": 270.8,
+      "pressure": 1009.7,
+      "cloudcover": 100,
+      "visibility": 24.1,
+      "solarradiation": 151.1,
+      "solarenergy": 12.4,
+      "uvindex": 4,
+      "severerisk": 10,
+      "sunrise": "06:04:50",
+      "sunriseEpoch": 1627605290,
+      "sunset": "18:47:17",
+      "sunsetEpoch": 1627651037,
+      "moonphase": 0.7,
+      "conditions": "Overcast",
+      "description": "Cloudy skies throughout the day.",
+      "icon": "wind",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          23.1,
+          27.6,
+          32.1
+        ],
+        "tempmin": [
+          18.9,
+          20.4,
+          21.9
+        ],
+        "feelslike": [
+          18.9,
+          27.6,
+          35.1
+        ],
+        "precip": [
+          0,
+          3.7,
+          22
+        ],
+        "humidity": [
+          67.4,
+          79.7,
+          89.5
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          22.7,
+          42.5
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          246.7,
+          264.3,
+          292.1
+        ],
+        "cloudcover": [
+          49.5,
+          79.7,
+          95
+        ]
+      }
+    },
+    {
+      "datetime": "2021-07-31",
+      "datetimeEpoch": 1627669800,
+      "tempmax": 27.8,
+      "tempmin": 20.3,
+      "temp": 23.2,
+      "feelslikemax": 28.3,
+      "feelslikemin": 20.3,
+      "feelslike": 23.3,
+      "dew": 17.1,
+      "humidity": 69.3,
+      "precip": 0.78,
+      "precipprob": 52.4,
+      "precipcover": null,
+      "preciptype": null,
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 46.4,
+      "windspeed": 29.9,
+      "winddir": 265.6,
+      "pressure": 1009.8,
+      "cloudcover": 77.4,
+      "visibility": 23.3,
+      "solarradiation": 212.6,
+      "solarenergy": 17.6,
+      "uvindex": 6,
+      "severerisk": 10,
+      "sunrise": "06:05:03",
+      "sunriseEpoch": 1627691703,
+      "sunset": "18:46:59",
+      "sunsetEpoch": 1627737419,
+      "moonphase": 0.75,
+      "conditions": "Rain, Partially cloudy",
+      "description": "Partly cloudy throughout the day with a chance of rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24.9,
+          27.9,
+          32.5
+        ],
+        "tempmin": [
+          19.4,
+          20.4,
+          22
+        ],
+        "feelslike": [
+          19.4,
+          27.9,
+          36
+        ],
+        "precip": [
+          0,
+          12.2,
+          145.4
+        ],
+        "humidity": [
+          65.6,
+          79.6,
+          89
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          23.4,
+          44.6
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          246.1,
+          264,
+          288.6
+        ],
+        "cloudcover": [
+          48,
+          80,
+          95.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-01",
+      "datetimeEpoch": 1627756200,
+      "tempmax": 26.5,
+      "tempmin": 19.5,
+      "temp": 22.8,
+      "feelslikemax": 26.5,
+      "feelslikemin": 19.5,
+      "feelslike": 22.8,
+      "dew": 16.9,
+      "humidity": 70.2,
+      "precip": 0.3,
+      "precipprob": 38,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 48.2,
+      "windspeed": 28.1,
+      "winddir": 264.7,
+      "pressure": 1009.9,
+      "cloudcover": 71.9,
+      "visibility": 24.1,
+      "solarradiation": 168.3,
+      "solarenergy": 14,
+      "uvindex": 4,
+      "severerisk": 10,
+      "sunrise": "06:05:15",
+      "sunriseEpoch": 1627778115,
+      "sunset": "18:46:40",
+      "sunsetEpoch": 1627823800,
+      "moonphase": 0.8,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          25.1,
+          28,
+          33
+        ],
+        "tempmin": [
+          19.7,
+          20.4,
+          21.9
+        ],
+        "feelslike": [
+          19.7,
+          28,
+          37.1
+        ],
+        "precip": [
+          0,
+          8.8,
+          107.3
+        ],
+        "humidity": [
+          65.8,
+          79.3,
+          90.4
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          24.1,
+          44.6
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          243.5,
+          264.8,
+          292.3
+        ],
+        "cloudcover": [
+          45.9,
+          79.6,
+          97.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-02",
+      "datetimeEpoch": 1627842600,
+      "tempmax": 29.1,
+      "tempmin": 19.1,
+      "temp": 23.7,
+      "feelslikemax": 29.2,
+      "feelslikemin": 19.1,
+      "feelslike": 23.8,
+      "dew": 16.8,
+      "humidity": 67,
+      "precip": 0.51,
+      "precipprob": 52.4,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 42.5,
+      "windspeed": 25.9,
+      "winddir": 265.7,
+      "pressure": 1009.5,
+      "cloudcover": 82.3,
+      "visibility": 24.1,
+      "solarradiation": 268.4,
+      "solarenergy": 22,
+      "uvindex": 9,
+      "severerisk": 10,
+      "sunrise": "06:05:27",
+      "sunriseEpoch": 1627864527,
+      "sunset": "18:46:19",
+      "sunsetEpoch": 1627910179,
+      "moonphase": 0.84,
+      "conditions": "Rain, Partially cloudy",
+      "description": "Partly cloudy throughout the day with a chance of rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          25.1,
+          28,
+          32.1
+        ],
+        "tempmin": [
+          19.4,
+          20.4,
+          22
+        ],
+        "feelslike": [
+          19.4,
+          28,
+          36.6
+        ],
+        "precip": [
+          0,
+          12.2,
+          183.8
+        ],
+        "humidity": [
+          71.6,
+          78.7,
+          89.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          24.1,
+          42.5
+        ],
+        "windgust": [
+          48.2,
+          48.2,
+          48.2
+        ],
+        "winddir": [
+          241.4,
+          264.1,
+          320
+        ],
+        "cloudcover": [
+          54.9,
+          76.1,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-03",
+      "datetimeEpoch": 1627929000,
+      "tempmax": 26.2,
+      "tempmin": 20,
+      "temp": 23.2,
+      "feelslikemax": 26.2,
+      "feelslikemin": 20,
+      "feelslike": 23.2,
+      "dew": 17.8,
+      "humidity": 72.8,
+      "precip": 3.9,
+      "precipprob": 66.6,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 37.1,
+      "windspeed": 24.8,
+      "winddir": 268.4,
+      "pressure": 1008.7,
+      "cloudcover": 88.3,
+      "visibility": 23.5,
+      "solarradiation": 161,
+      "solarenergy": 13.4,
+      "uvindex": 5,
+      "severerisk": 10,
+      "sunrise": "06:05:38",
+      "sunriseEpoch": 1627950938,
+      "sunset": "18:45:58",
+      "sunsetEpoch": 1627996558,
+      "moonphase": 0.89,
+      "conditions": "Rain, Partially cloudy",
+      "description": "Partly cloudy throughout the day with a chance of rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24.1,
+          27.3,
+          33.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          21.2
+        ],
+        "feelslike": [
+          19.1,
+          27.3,
+          37
+        ],
+        "precip": [
+          0,
+          4.8,
+          48.1
+        ],
+        "humidity": [
+          71.5,
+          79.9,
+          88
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          22.7,
+          36.7
+        ],
+        "windgust": [
+          46.4,
+          50,
+          53.6
+        ],
+        "winddir": [
+          250,
+          264.6,
+          312
+        ],
+        "cloudcover": [
+          57.6,
+          80.2,
+          97.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-04",
+      "datetimeEpoch": 1628015400,
+      "tempmax": 27.4,
+      "tempmin": 20.1,
+      "temp": 22.9,
+      "feelslikemax": 27.9,
+      "feelslikemin": 20.1,
+      "feelslike": 22.9,
+      "dew": 18.1,
+      "humidity": 75.5,
+      "precip": 2.37,
+      "precipprob": 61.9,
+      "precipcover": null,
+      "preciptype": null,
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 44.3,
+      "windspeed": 26.6,
+      "winddir": 265.9,
+      "pressure": 1009.3,
+      "cloudcover": 100,
+      "visibility": 23.1,
+      "solarradiation": 190.1,
+      "solarenergy": 16,
+      "uvindex": 6,
+      "severerisk": 10,
+      "sunrise": "06:05:49",
+      "sunriseEpoch": 1628037349,
+      "sunset": "18:45:37",
+      "sunsetEpoch": 1628082937,
+      "moonphase": 0.93,
+      "conditions": "Rain, Overcast",
+      "description": "Cloudy skies throughout the day with rain in the morning and afternoon.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          23.1,
+          27.5,
+          32
+        ],
+        "tempmin": [
+          19.4,
+          20.4,
+          21.7
+        ],
+        "feelslike": [
+          19.4,
+          27.5,
+          36.3
+        ],
+        "precip": [
+          0,
+          4.1,
+          50.8
+        ],
+        "humidity": [
+          73.3,
+          80.4,
+          92.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          23,
+          35.3
+        ],
+        "windgust": [
+          55.4,
+          119.5,
+          183.6
+        ],
+        "winddir": [
+          185,
+          256.9,
+          286.1
+        ],
+        "cloudcover": [
+          59.5,
+          79.6,
+          96.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-05",
+      "datetimeEpoch": 1628101800,
+      "tempmax": 26.5,
+      "tempmin": 19.8,
+      "temp": 22.4,
+      "feelslikemax": 26.5,
+      "feelslikemin": 19.8,
+      "feelslike": 22.4,
+      "dew": 17.2,
+      "humidity": 72.9,
+      "precip": 0,
+      "precipprob": 47.5,
+      "precipcover": null,
+      "preciptype": null,
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 45.7,
+      "windspeed": 32.4,
+      "winddir": 265.4,
+      "pressure": 1010,
+      "cloudcover": 93.9,
+      "visibility": 24.1,
+      "solarradiation": 215.8,
+      "solarenergy": 18,
+      "uvindex": 8,
+      "severerisk": 10,
+      "sunrise": "06:06:00",
+      "sunriseEpoch": 1628123760,
+      "sunset": "18:45:14",
+      "sunsetEpoch": 1628169314,
+      "moonphase": 0.96,
+      "conditions": "Rain, Overcast",
+      "description": "Cloudy skies throughout the day with a chance of rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          25.1,
+          27.7,
+          32
+        ],
+        "tempmin": [
+          19.7,
+          20.5,
+          22.1
+        ],
+        "feelslike": [
+          19.7,
+          27.7,
+          35.8
+        ],
+        "precip": [
+          0,
+          3.3,
+          22
+        ],
+        "humidity": [
+          74.7,
+          80.2,
+          88.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          23.8,
+          39.2
+        ],
+        "windgust": [
+          44.6,
+          114.1,
+          183.6
+        ],
+        "winddir": [
+          164,
+          256.4,
+          288.7
+        ],
+        "cloudcover": [
+          60.3,
+          78.5,
+          94.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-06",
+      "datetimeEpoch": 1628188200,
+      "tempmax": 26.5,
+      "tempmin": 19,
+      "temp": 22.7,
+      "feelslikemax": 26.5,
+      "feelslikemin": 19,
+      "feelslike": 22.7,
+      "dew": 17.1,
+      "humidity": 71.8,
+      "precip": 0.21,
+      "precipprob": 47.5,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 50,
+      "windspeed": 28.1,
+      "winddir": 266.3,
+      "pressure": 1009.2,
+      "cloudcover": 80.1,
+      "visibility": 24.1,
+      "solarradiation": 156.3,
+      "solarenergy": 13,
+      "uvindex": 4,
+      "severerisk": 10,
+      "sunrise": "06:06:10",
+      "sunriseEpoch": 1628210170,
+      "sunset": "18:44:50",
+      "sunsetEpoch": 1628255690,
+      "moonphase": 0.98,
+      "conditions": "Rain, Partially cloudy",
+      "description": "Partly cloudy throughout the day with afternoon rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24.4,
+          27.9,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.2,
+          21.1
+        ],
+        "feelslike": [
+          19.1,
+          27.9,
+          36
+        ],
+        "precip": [
+          0,
+          5.1,
+          27.4
+        ],
+        "humidity": [
+          72.4,
+          78.9,
+          86.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          24.5,
+          37.1
+        ],
+        "windgust": [
+          46.4,
+          56.5,
+          66.6
+        ],
+        "winddir": [
+          242.5,
+          260.2,
+          283
+        ],
+        "cloudcover": [
+          56.2,
+          77.6,
+          92.2
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-07",
+      "datetimeEpoch": 1628274600,
+      "tempmax": 27.6,
+      "tempmin": 19.9,
+      "temp": 23.3,
+      "feelslikemax": 28.2,
+      "feelslikemin": 19.9,
+      "feelslike": 23.4,
+      "dew": 17.6,
+      "humidity": 71.4,
+      "precip": 1.59,
+      "precipprob": 76.1,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 44.3,
+      "windspeed": 28.8,
+      "winddir": 269.2,
+      "pressure": 1008.6,
+      "cloudcover": 96.9,
+      "visibility": 23.3,
+      "solarradiation": 230.3,
+      "solarenergy": 19.1,
+      "uvindex": 7,
+      "severerisk": 10,
+      "sunrise": "06:06:20",
+      "sunriseEpoch": 1628296580,
+      "sunset": "18:44:26",
+      "sunsetEpoch": 1628342066,
+      "moonphase": 1,
+      "conditions": "Rain, Overcast",
+      "description": "Cloudy skies throughout the day with a chance of rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24.1,
+          27.8,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          21.1
+        ],
+        "feelslike": [
+          19.1,
+          27.8,
+          36.8
+        ],
+        "precip": [
+          0,
+          1.5,
+          7.7
+        ],
+        "humidity": [
+          64,
+          78.8,
+          88.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          11.2,
+          23.8,
+          36.4
+        ],
+        "windgust": [
+          46.4,
+          46.4,
+          46.4
+        ],
+        "winddir": [
+          243.5,
+          260.6,
+          286.7
+        ],
+        "cloudcover": [
+          52.3,
+          77.5,
+          96.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-08",
+      "datetimeEpoch": 1628361000,
+      "tempmax": 26.8,
+      "tempmin": 20.2,
+      "temp": 23.2,
+      "feelslikemax": 27.5,
+      "feelslikemin": 20.2,
+      "feelslike": 23.2,
+      "dew": 17.9,
+      "humidity": 73,
+      "precip": 2.19,
+      "precipprob": 85.6,
+      "precipcover": null,
+      "preciptype": [
+        "rain"
+      ],
+      "snow": 0,
+      "snowdepth": 0,
+      "windgust": 40,
+      "windspeed": 24.1,
+      "winddir": 267,
+      "pressure": 1008.8,
+      "cloudcover": 99.2,
+      "visibility": 21.8,
+      "solarradiation": 176.5,
+      "solarenergy": 14.6,
+      "uvindex": 5,
+      "severerisk": 10,
+      "sunrise": "06:06:30",
+      "sunriseEpoch": 1628382990,
+      "sunset": "18:44:01",
+      "sunsetEpoch": 1628428441,
+      "moonphase": 1,
+      "conditions": "Rain, Overcast",
+      "description": "Cloudy skies throughout the day with a chance of rain.",
+      "icon": "rain",
+      "stations": null,
+      "source": "fcst",
+      "normal": {
+        "tempmax": [
+          24.9,
+          27.5,
+          31.1
+        ],
+        "tempmin": [
+          19.9,
+          20.6,
+          22
+        ],
+        "feelslike": [
+          19.9,
+          27.5,
+          35.5
+        ],
+        "precip": [
+          0,
+          3.8,
+          20.9
+        ],
+        "humidity": [
+          66.7,
+          80.2,
+          89.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          11.2,
+          23.4,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          245.3,
+          258.7,
+          281.3
+        ],
+        "cloudcover": [
+          57.5,
+          79.5,
+          95.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-09",
+      "datetimeEpoch": 1628447400,
+      "tempmax": 27.6,
+      "tempmin": 20.5,
+      "temp": 23.5,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.7,
+      "humidity": 80.2,
+      "precip": 3.2,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 55.4,
+      "windspeed": 21.6,
+      "winddir": 261.1,
+      "pressure": null,
+      "cloudcover": 78.2,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:06:39",
+      "sunriseEpoch": 1628469399,
+      "sunset": "18:43:35",
+      "sunsetEpoch": 1628514815,
+      "moonphase": 0,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          22.4,
+          27.6,
+          31.5
+        ],
+        "tempmin": [
+          18.2,
+          20.5,
+          21.7
+        ],
+        "feelslike": [
+          18.2,
+          27.6,
+          37
+        ],
+        "precip": [
+          0,
+          3.2,
+          38
+        ],
+        "humidity": [
+          72.5,
+          80.2,
+          93.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          21.6,
+          36.4
+        ],
+        "windgust": [
+          55.4,
+          55.4,
+          55.4
+        ],
+        "winddir": [
+          234.1,
+          261.1,
+          283.5
+        ],
+        "cloudcover": [
+          55,
+          78.2,
+          100
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-10",
+      "datetimeEpoch": 1628533800,
+      "tempmax": 27.7,
+      "tempmin": 20.4,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.5,
+      "humidity": 79.4,
+      "precip": 5.2,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 48.2,
+      "windspeed": 22.3,
+      "winddir": 265.9,
+      "pressure": null,
+      "cloudcover": 77.9,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:06:48",
+      "sunriseEpoch": 1628555808,
+      "sunset": "18:43:08",
+      "sunsetEpoch": 1628601188,
+      "moonphase": 0.02,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.9,
+          27.7,
+          32.1
+        ],
+        "tempmin": [
+          18.7,
+          20.4,
+          21.1
+        ],
+        "feelslike": [
+          18.7,
+          27.7,
+          36
+        ],
+        "precip": [
+          0,
+          5.2,
+          51
+        ],
+        "humidity": [
+          68.8,
+          79.4,
+          85.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          9.4,
+          22.3,
+          38.9
+        ],
+        "windgust": [
+          48.2,
+          48.2,
+          48.2
+        ],
+        "winddir": [
+          250,
+          265.9,
+          292.1
+        ],
+        "cloudcover": [
+          54.9,
+          77.9,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-11",
+      "datetimeEpoch": 1628620200,
+      "tempmax": 27.8,
+      "tempmin": 20.5,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.7,
+      "dew": 19.7,
+      "humidity": 79.6,
+      "precip": 3.9,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 22,
+      "winddir": 264.9,
+      "pressure": 1007.8,
+      "cloudcover": 76.5,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:06:56",
+      "sunriseEpoch": 1628642216,
+      "sunset": "18:42:41",
+      "sunsetEpoch": 1628687561,
+      "moonphase": 0.05,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.2,
+          27.8,
+          32.6
+        ],
+        "tempmin": [
+          19.7,
+          20.5,
+          22.1
+        ],
+        "feelslike": [
+          19.7,
+          27.8,
+          37
+        ],
+        "precip": [
+          0,
+          3.9,
+          22
+        ],
+        "humidity": [
+          71.1,
+          79.6,
+          93.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          22,
+          40.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          246.5,
+          264.9,
+          293
+        ],
+        "cloudcover": [
+          53.8,
+          76.5,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-12",
+      "datetimeEpoch": 1628706600,
+      "tempmax": 27.8,
+      "tempmin": 20.3,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.8,
+      "dew": 19.5,
+      "humidity": 78.9,
+      "precip": 3.1,
+      "precipprob": 4.8,
+      "precipcover": 2,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 21.2,
+      "winddir": 265.7,
+      "pressure": 1008.7,
+      "cloudcover": 79.3,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:04",
+      "sunriseEpoch": 1628728624,
+      "sunset": "18:42:13",
+      "sunsetEpoch": 1628773933,
+      "moonphase": 0.09,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25,
+          27.8,
+          31.1
+        ],
+        "tempmin": [
+          17.7,
+          20.3,
+          22.4
+        ],
+        "feelslike": [
+          17.7,
+          27.8,
+          34.9
+        ],
+        "precip": [
+          0,
+          3.1,
+          19
+        ],
+        "humidity": [
+          70.4,
+          78.9,
+          88.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          21.2,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          242.1,
+          265.7,
+          291
+        ],
+        "cloudcover": [
+          57.3,
+          79.3,
+          97.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-13",
+      "datetimeEpoch": 1628793000,
+      "tempmax": 27.8,
+      "tempmin": 20.5,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.6,
+      "dew": 19.7,
+      "humidity": 79.5,
+      "precip": 2.9,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 70.6,
+      "windspeed": 21.2,
+      "winddir": 263.6,
+      "pressure": 1010.8,
+      "cloudcover": 77.3,
+      "visibility": 8.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:12",
+      "sunriseEpoch": 1628815032,
+      "sunset": "18:41:44",
+      "sunsetEpoch": 1628860304,
+      "moonphase": 0.13,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.2,
+          27.8,
+          32
+        ],
+        "tempmin": [
+          19.1,
+          20.5,
+          21.7
+        ],
+        "feelslike": [
+          19.1,
+          27.8,
+          36.8
+        ],
+        "precip": [
+          0,
+          2.9,
+          14
+        ],
+        "humidity": [
+          70.6,
+          79.5,
+          88.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          21.2,
+          31.7
+        ],
+        "windgust": [
+          70.6,
+          70.6,
+          70.6
+        ],
+        "winddir": [
+          241.3,
+          263.6,
+          293.8
+        ],
+        "cloudcover": [
+          59.2,
+          77.3,
+          94.1
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-14",
+      "datetimeEpoch": 1628879400,
+      "tempmax": 27.9,
+      "tempmin": 20.5,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.5,
+      "humidity": 78,
+      "precip": 6,
+      "precipprob": 38.1,
+      "precipcover": 16,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 48.2,
+      "windspeed": 19.4,
+      "winddir": 266.5,
+      "pressure": 1006,
+      "cloudcover": 75.6,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:19",
+      "sunriseEpoch": 1628901439,
+      "sunset": "18:41:14",
+      "sunsetEpoch": 1628946674,
+      "moonphase": 0.19,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.7,
+          27.9,
+          32.1
+        ],
+        "tempmin": [
+          19.2,
+          20.5,
+          21.7
+        ],
+        "feelslike": [
+          19.2,
+          27.9,
+          36.8
+        ],
+        "precip": [
+          0,
+          6,
+          53
+        ],
+        "humidity": [
+          66.2,
+          78,
+          91.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          19.4,
+          29.2
+        ],
+        "windgust": [
+          48.2,
+          48.2,
+          48.2
+        ],
+        "winddir": [
+          225.9,
+          266.5,
+          301.8
+        ],
+        "cloudcover": [
+          62.3,
+          75.6,
+          95.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-15",
+      "datetimeEpoch": 1628965800,
+      "tempmax": 28.2,
+      "tempmin": 20.4,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.6,
+      "humidity": 79.3,
+      "precip": 10.5,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 19.8,
+      "winddir": 265.6,
+      "pressure": 988.9,
+      "cloudcover": 74.6,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:26",
+      "sunriseEpoch": 1628987846,
+      "sunset": "18:40:44",
+      "sunsetEpoch": 1629033044,
+      "moonphase": 0.24,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.7,
+          28.2,
+          34.6
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          23.1
+        ],
+        "feelslike": [
+          19.1,
+          28.2,
+          38
+        ],
+        "precip": [
+          0,
+          10.5,
+          128.2
+        ],
+        "humidity": [
+          63.2,
+          79.3,
+          90.8
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          19.8,
+          28.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          243.7,
+          265.6,
+          285.5
+        ],
+        "cloudcover": [
+          49.6,
+          74.6,
+          93.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-16",
+      "datetimeEpoch": 1629052200,
+      "tempmax": 27.8,
+      "tempmin": 20.6,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.8,
+      "humidity": 80.9,
+      "precip": 10.6,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 23.8,
+      "winddir": 260.5,
+      "pressure": 1007.2,
+      "cloudcover": 78.9,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:33",
+      "sunriseEpoch": 1629074253,
+      "sunset": "18:40:13",
+      "sunsetEpoch": 1629119413,
+      "moonphase": 0.3,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          27.8,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.6,
+          22.2
+        ],
+        "feelslike": [
+          19.1,
+          27.8,
+          37.2
+        ],
+        "precip": [
+          0,
+          10.6,
+          107
+        ],
+        "humidity": [
+          62.1,
+          80.9,
+          92.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          23.8,
+          133.6
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          238,
+          260.5,
+          277.3
+        ],
+        "cloudcover": [
+          47.2,
+          78.9,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-17",
+      "datetimeEpoch": 1629138600,
+      "tempmax": 27.8,
+      "tempmin": 20.5,
+      "temp": 23.5,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.1,
+      "dew": 19.7,
+      "humidity": 80.5,
+      "precip": 7.9,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 20.2,
+      "winddir": 265.1,
+      "pressure": 1003.8,
+      "cloudcover": 80.6,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:39",
+      "sunriseEpoch": 1629160659,
+      "sunset": "18:39:41",
+      "sunsetEpoch": 1629205781,
+      "moonphase": 0.35,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          27.8,
+          32.5
+        ],
+        "tempmin": [
+          19.1,
+          20.5,
+          22.1
+        ],
+        "feelslike": [
+          19.1,
+          27.8,
+          37.3
+        ],
+        "precip": [
+          0,
+          7.9,
+          75.8
+        ],
+        "humidity": [
+          69.9,
+          80.5,
+          86.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          20.2,
+          31.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          211.2,
+          265.1,
+          294.4
+        ],
+        "cloudcover": [
+          56.6,
+          80.6,
+          95
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-18",
+      "datetimeEpoch": 1629225000,
+      "tempmax": 28.1,
+      "tempmin": 20.4,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.8,
+      "humidity": 80.4,
+      "precip": 8.2,
+      "precipprob": 33.3,
+      "precipcover": 14,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 38.9,
+      "windspeed": 18.4,
+      "winddir": 259.9,
+      "pressure": 1008.8,
+      "cloudcover": 78.5,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:45",
+      "sunriseEpoch": 1629247065,
+      "sunset": "18:39:09",
+      "sunsetEpoch": 1629292149,
+      "moonphase": 0.4,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25,
+          28.1,
+          34
+        ],
+        "tempmin": [
+          19.2,
+          20.4,
+          21.9
+        ],
+        "feelslike": [
+          19.2,
+          28.1,
+          38
+        ],
+        "precip": [
+          0,
+          8.2,
+          45.6
+        ],
+        "humidity": [
+          66.4,
+          80.4,
+          89.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          18.4,
+          35.3
+        ],
+        "windgust": [
+          38.9,
+          38.9,
+          38.9
+        ],
+        "winddir": [
+          154.2,
+          259.9,
+          292.5
+        ],
+        "cloudcover": [
+          52.6,
+          78.5,
+          98.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-19",
+      "datetimeEpoch": 1629311400,
+      "tempmax": 28.4,
+      "tempmin": 20.6,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 19.6,
+      "humidity": 78.2,
+      "precip": 4.2,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 22.3,
+      "windspeed": 20.2,
+      "winddir": 252.1,
+      "pressure": 1005.2,
+      "cloudcover": 76,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:50",
+      "sunriseEpoch": 1629333470,
+      "sunset": "18:38:36",
+      "sunsetEpoch": 1629378516,
+      "moonphase": 0.44,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.2,
+          28.4,
+          34.5
+        ],
+        "tempmin": [
+          19.7,
+          20.6,
+          22.7
+        ],
+        "feelslike": [
+          19.7,
+          28.4,
+          38.9
+        ],
+        "precip": [
+          0,
+          4.2,
+          18
+        ],
+        "humidity": [
+          63.5,
+          78.2,
+          86.8
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          20.2,
+          31.7
+        ],
+        "windgust": [
+          22.3,
+          22.3,
+          22.3
+        ],
+        "winddir": [
+          156.2,
+          252.1,
+          287.5
+        ],
+        "cloudcover": [
+          58.7,
+          76,
+          93.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-20",
+      "datetimeEpoch": 1629397800,
+      "tempmax": 27.9,
+      "tempmin": 20.4,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 31,
+      "dew": 19.6,
+      "humidity": 79.8,
+      "precip": 5.1,
+      "precipprob": 47.6,
+      "precipcover": 20,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 19.8,
+      "winddir": 259.5,
+      "pressure": 1003.6,
+      "cloudcover": 76.4,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:07:55",
+      "sunriseEpoch": 1629419875,
+      "sunset": "18:38:03",
+      "sunsetEpoch": 1629464883,
+      "moonphase": 0.48,
+      "conditions": "Rain, Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "rain",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          21.1,
+          27.9,
+          36.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          22.9
+        ],
+        "feelslike": [
+          19.1,
+          27.9,
+          40.1
+        ],
+        "precip": [
+          0,
+          5.1,
+          18.2
+        ],
+        "humidity": [
+          63.8,
+          79.8,
+          90.4
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          19.8,
+          39.2
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          151.3,
+          259.5,
+          298.5
+        ],
+        "cloudcover": [
+          55.7,
+          76.4,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-21",
+      "datetimeEpoch": 1629484200,
+      "tempmax": 27.9,
+      "tempmin": 20.4,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.7,
+      "humidity": 80.3,
+      "precip": 9,
+      "precipprob": 42.9,
+      "precipcover": 18,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 19.1,
+      "winddir": 260.6,
+      "pressure": null,
+      "cloudcover": 78.5,
+      "visibility": 6.7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:00",
+      "sunriseEpoch": 1629506280,
+      "sunset": "18:37:28",
+      "sunsetEpoch": 1629551248,
+      "moonphase": 0.49,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.2,
+          27.9,
+          34.1
+        ],
+        "tempmin": [
+          18.1,
+          20.4,
+          22.1
+        ],
+        "feelslike": [
+          18.1,
+          27.9,
+          38.4
+        ],
+        "precip": [
+          0,
+          9,
+          41
+        ],
+        "humidity": [
+          66.9,
+          80.3,
+          88.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          19.1,
+          33.5
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          211.1,
+          260.6,
+          295.7
+        ],
+        "cloudcover": [
+          54.6,
+          78.5,
+          98.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-22",
+      "datetimeEpoch": 1629570600,
+      "tempmax": 27.9,
+      "tempmin": 20.4,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.1,
+      "dew": 19.6,
+      "humidity": 80,
+      "precip": 6.2,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18.7,
+      "winddir": 260.9,
+      "pressure": 1008.3,
+      "cloudcover": 76.8,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:05",
+      "sunriseEpoch": 1629592685,
+      "sunset": "18:36:54",
+      "sunsetEpoch": 1629637614,
+      "moonphase": 0.5,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          22.7,
+          27.9,
+          34.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          22.4
+        ],
+        "feelslike": [
+          19.1,
+          27.9,
+          38.2
+        ],
+        "precip": [
+          0,
+          6.2,
+          46
+        ],
+        "humidity": [
+          72.9,
+          80,
+          95.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          18.7,
+          35.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          131.5,
+          260.9,
+          294
+        ],
+        "cloudcover": [
+          55.6,
+          76.8,
+          98.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-23",
+      "datetimeEpoch": 1629657000,
+      "tempmax": 28.1,
+      "tempmin": 20.4,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.8,
+      "humidity": 79.9,
+      "precip": 10.9,
+      "precipprob": 38.1,
+      "precipcover": 16,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 16.6,
+      "winddir": 257,
+      "pressure": 1006,
+      "cloudcover": 75.2,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:09",
+      "sunriseEpoch": 1629679089,
+      "sunset": "18:36:18",
+      "sunsetEpoch": 1629723978,
+      "moonphase": 0.51,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.7,
+          28.1,
+          33.1
+        ],
+        "tempmin": [
+          19.4,
+          20.4,
+          21.1
+        ],
+        "feelslike": [
+          19.4,
+          28.1,
+          36.3
+        ],
+        "precip": [
+          0,
+          10.9,
+          66
+        ],
+        "humidity": [
+          68.7,
+          79.9,
+          88.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          16.6,
+          25.9
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          168.2,
+          257,
+          303
+        ],
+        "cloudcover": [
+          60.3,
+          75.2,
+          98.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-24",
+      "datetimeEpoch": 1629743400,
+      "tempmax": 27.7,
+      "tempmin": 20.3,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30,
+      "dew": 19.6,
+      "humidity": 79.5,
+      "precip": 7.3,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18.7,
+      "winddir": 271.3,
+      "pressure": 1006,
+      "cloudcover": 76.2,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:13",
+      "sunriseEpoch": 1629765493,
+      "sunset": "18:35:42",
+      "sunsetEpoch": 1629810342,
+      "moonphase": 0.53,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.9,
+          27.7,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.3,
+          21.4
+        ],
+        "feelslike": [
+          19.1,
+          27.7,
+          36
+        ],
+        "precip": [
+          0,
+          7.3,
+          61
+        ],
+        "humidity": [
+          63.4,
+          79.5,
+          87.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          9.4,
+          18.7,
+          29.5
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          241.7,
+          271.3,
+          306.5
+        ],
+        "cloudcover": [
+          55.6,
+          76.2,
+          96.2
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-25",
+      "datetimeEpoch": 1629829800,
+      "tempmax": 28,
+      "tempmin": 20.5,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.6,
+      "dew": 19.6,
+      "humidity": 79,
+      "precip": 7.8,
+      "precipprob": 33.3,
+      "precipcover": 14,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 64.8,
+      "windspeed": 18.7,
+      "winddir": 266.9,
+      "pressure": 1004,
+      "cloudcover": 74,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:16",
+      "sunriseEpoch": 1629851896,
+      "sunset": "18:35:06",
+      "sunsetEpoch": 1629896706,
+      "moonphase": 0.55,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.1,
+          28,
+          32.1
+        ],
+        "tempmin": [
+          19.4,
+          20.5,
+          22.1
+        ],
+        "feelslike": [
+          19.4,
+          28,
+          36
+        ],
+        "precip": [
+          0,
+          7.8,
+          58.6
+        ],
+        "humidity": [
+          67,
+          79,
+          92.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          18.7,
+          31.3
+        ],
+        "windgust": [
+          64.8,
+          64.8,
+          64.8
+        ],
+        "winddir": [
+          245.8,
+          266.9,
+          290.2
+        ],
+        "cloudcover": [
+          46.4,
+          74,
+          98.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-26",
+      "datetimeEpoch": 1629916200,
+      "tempmax": 28,
+      "tempmin": 20.3,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30,
+      "dew": 19.4,
+      "humidity": 78.9,
+      "precip": 6.8,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 20.5,
+      "winddir": 264.4,
+      "pressure": 1010.6,
+      "cloudcover": 75.3,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:20",
+      "sunriseEpoch": 1629938300,
+      "sunset": "18:34:29",
+      "sunsetEpoch": 1629983069,
+      "moonphase": 0.59,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          28,
+          32.5
+        ],
+        "tempmin": [
+          19.1,
+          20.3,
+          21.4
+        ],
+        "feelslike": [
+          19.1,
+          28,
+          35.6
+        ],
+        "precip": [
+          0,
+          6.8,
+          68
+        ],
+        "humidity": [
+          63.9,
+          78.9,
+          92.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          20.5,
+          31.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          238.6,
+          264.4,
+          293
+        ],
+        "cloudcover": [
+          52.5,
+          75.3,
+          98.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-27",
+      "datetimeEpoch": 1630002600,
+      "tempmax": 27.6,
+      "tempmin": 20.5,
+      "temp": 23.5,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.8,
+      "dew": 19.5,
+      "humidity": 79.8,
+      "precip": 5.9,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 40.7,
+      "windspeed": 19.1,
+      "winddir": 265.4,
+      "pressure": 1006.4,
+      "cloudcover": 78.4,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:23",
+      "sunriseEpoch": 1630024703,
+      "sunset": "18:33:52",
+      "sunsetEpoch": 1630069432,
+      "moonphase": 0.63,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.9,
+          27.6,
+          30.6
+        ],
+        "tempmin": [
+          19.1,
+          20.5,
+          22.2
+        ],
+        "feelslike": [
+          19.1,
+          27.6,
+          38.3
+        ],
+        "precip": [
+          0,
+          5.9,
+          52
+        ],
+        "humidity": [
+          62.6,
+          79.8,
+          90.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          19.1,
+          31.7
+        ],
+        "windgust": [
+          40.7,
+          40.7,
+          40.7
+        ],
+        "winddir": [
+          180,
+          265.4,
+          310
+        ],
+        "cloudcover": [
+          50,
+          78.4,
+          94.4
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-28",
+      "datetimeEpoch": 1630089000,
+      "tempmax": 27.6,
+      "tempmin": 20.2,
+      "temp": 23.5,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.7,
+      "dew": 19.4,
+      "humidity": 79,
+      "precip": 5.3,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 183.6,
+      "windspeed": 19.4,
+      "winddir": 262.2,
+      "pressure": 1009.7,
+      "cloudcover": 73.1,
+      "visibility": 7.2,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:25",
+      "sunriseEpoch": 1630111105,
+      "sunset": "18:33:14",
+      "sunsetEpoch": 1630155794,
+      "moonphase": 0.67,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          27.6,
+          30.1
+        ],
+        "tempmin": [
+          19.1,
+          20.2,
+          21.4
+        ],
+        "feelslike": [
+          19.1,
+          27.6,
+          33
+        ],
+        "precip": [
+          0,
+          5.3,
+          58.4
+        ],
+        "humidity": [
+          69.2,
+          79,
+          86.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          19.4,
+          37.1
+        ],
+        "windgust": [
+          183.6,
+          183.6,
+          183.6
+        ],
+        "winddir": [
+          177.3,
+          262.2,
+          300.9
+        ],
+        "cloudcover": [
+          48.8,
+          73.1,
+          100
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-29",
+      "datetimeEpoch": 1630175400,
+      "tempmax": 27.9,
+      "tempmin": 20.5,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.2,
+      "dew": 19.5,
+      "humidity": 77.7,
+      "precip": 3.6,
+      "precipprob": 9.5,
+      "precipcover": 4,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 46.4,
+      "windspeed": 19.1,
+      "winddir": 257.7,
+      "pressure": 1003.6,
+      "cloudcover": 74.8,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:28",
+      "sunriseEpoch": 1630197508,
+      "sunset": "18:32:36",
+      "sunsetEpoch": 1630242156,
+      "moonphase": 0.72,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.4,
+          27.9,
+          32
+        ],
+        "tempmin": [
+          19.1,
+          20.5,
+          22.4
+        ],
+        "feelslike": [
+          19.1,
+          27.9,
+          35.4
+        ],
+        "precip": [
+          0,
+          3.6,
+          36
+        ],
+        "humidity": [
+          66.7,
+          77.7,
+          86.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          19.1,
+          37.1
+        ],
+        "windgust": [
+          46.4,
+          46.4,
+          46.4
+        ],
+        "winddir": [
+          106.7,
+          257.7,
+          295.2
+        ],
+        "cloudcover": [
+          53.8,
+          74.8,
+          95.6
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-30",
+      "datetimeEpoch": 1630261800,
+      "tempmax": 28.4,
+      "tempmin": 20.7,
+      "temp": 24,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.6,
+      "humidity": 77.7,
+      "precip": 5.6,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 96.5,
+      "windspeed": 19.8,
+      "winddir": 259.5,
+      "pressure": 1003.1,
+      "cloudcover": 72.7,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:30",
+      "sunriseEpoch": 1630283910,
+      "sunset": "18:31:57",
+      "sunsetEpoch": 1630328517,
+      "moonphase": 0.76,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.4,
+          28.4,
+          32
+        ],
+        "tempmin": [
+          19.1,
+          20.7,
+          22.1
+        ],
+        "feelslike": [
+          19.1,
+          28.4,
+          35.8
+        ],
+        "precip": [
+          0,
+          5.6,
+          43
+        ],
+        "humidity": [
+          65.1,
+          77.7,
+          88.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          19.8,
+          37.1
+        ],
+        "windgust": [
+          96.5,
+          96.5,
+          96.5
+        ],
+        "winddir": [
+          152.3,
+          259.5,
+          294.3
+        ],
+        "cloudcover": [
+          37.5,
+          72.7,
+          93.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-08-31",
+      "datetimeEpoch": 1630348200,
+      "tempmax": 27.9,
+      "tempmin": 20.6,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.7,
+      "humidity": 79.6,
+      "precip": 4.2,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18.7,
+      "winddir": 259,
+      "pressure": 1004.7,
+      "cloudcover": 77.1,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:32",
+      "sunriseEpoch": 1630370312,
+      "sunset": "18:31:18",
+      "sunsetEpoch": 1630414878,
+      "moonphase": 0.81,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.2,
+          27.9,
+          33
+        ],
+        "tempmin": [
+          19.1,
+          20.6,
+          22.1
+        ],
+        "feelslike": [
+          19.1,
+          27.9,
+          35.8
+        ],
+        "precip": [
+          0,
+          4.2,
+          41.4
+        ],
+        "humidity": [
+          65.3,
+          79.6,
+          87.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          18.7,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          175.4,
+          259,
+          290.9
+        ],
+        "cloudcover": [
+          60,
+          77.1,
+          93.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-01",
+      "datetimeEpoch": 1630434600,
+      "tempmax": 28,
+      "tempmin": 20.5,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.1,
+      "dew": 19.4,
+      "humidity": 77.3,
+      "precip": 11.4,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18.4,
+      "winddir": 257.1,
+      "pressure": 1008.7,
+      "cloudcover": 71.6,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:34",
+      "sunriseEpoch": 1630456714,
+      "sunset": "18:30:38",
+      "sunsetEpoch": 1630501238,
+      "moonphase": 0.86,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.9,
+          28,
+          33
+        ],
+        "tempmin": [
+          19.7,
+          20.5,
+          22.1
+        ],
+        "feelslike": [
+          19.7,
+          28,
+          35
+        ],
+        "precip": [
+          0,
+          11.4,
+          111
+        ],
+        "humidity": [
+          64.6,
+          77.3,
+          86.4
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          18.4,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          137.4,
+          257.1,
+          316.7
+        ],
+        "cloudcover": [
+          28.8,
+          71.6,
+          92.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-02",
+      "datetimeEpoch": 1630521000,
+      "tempmax": 28.1,
+      "tempmin": 20.4,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.6,
+      "dew": 19.6,
+      "humidity": 79.3,
+      "precip": 10.9,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18.7,
+      "winddir": 258.3,
+      "pressure": 1011.8,
+      "cloudcover": 73.1,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:35",
+      "sunriseEpoch": 1630543115,
+      "sunset": "18:29:58",
+      "sunsetEpoch": 1630587598,
+      "moonphase": 0.9,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          28.1,
+          33
+        ],
+        "tempmin": [
+          18.7,
+          20.4,
+          22.1
+        ],
+        "feelslike": [
+          18.7,
+          28.1,
+          35.4
+        ],
+        "precip": [
+          0,
+          10.9,
+          60.6
+        ],
+        "humidity": [
+          61.9,
+          79.3,
+          93.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          18.7,
+          31.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          173.6,
+          258.3,
+          293
+        ],
+        "cloudcover": [
+          40.9,
+          73.1,
+          91.2
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-03",
+      "datetimeEpoch": 1630607400,
+      "tempmax": 28.3,
+      "tempmin": 20.5,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.7,
+      "humidity": 78.6,
+      "precip": 3.4,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 40.7,
+      "windspeed": 18.4,
+      "winddir": 249.2,
+      "pressure": 1006.5,
+      "cloudcover": 74.4,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:37",
+      "sunriseEpoch": 1630629517,
+      "sunset": "18:29:18",
+      "sunsetEpoch": 1630673958,
+      "moonphase": 0.94,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.7,
+          28.3,
+          34.6
+        ],
+        "tempmin": [
+          19.4,
+          20.5,
+          22.4
+        ],
+        "feelslike": [
+          19.4,
+          28.3,
+          37.1
+        ],
+        "precip": [
+          0,
+          3.4,
+          33
+        ],
+        "humidity": [
+          66.6,
+          78.6,
+          88.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          18.4,
+          40.7
+        ],
+        "windgust": [
+          40.7,
+          40.7,
+          40.7
+        ],
+        "winddir": [
+          183.7,
+          249.2,
+          283.3
+        ],
+        "cloudcover": [
+          44.9,
+          74.4,
+          91.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-04",
+      "datetimeEpoch": 1630693800,
+      "tempmax": 28.2,
+      "tempmin": 20.4,
+      "temp": 24,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.7,
+      "humidity": 78.8,
+      "precip": 8.4,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18.7,
+      "winddir": 254.3,
+      "pressure": 1008.4,
+      "cloudcover": 74.1,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:38",
+      "sunriseEpoch": 1630715918,
+      "sunset": "18:28:37",
+      "sunsetEpoch": 1630760317,
+      "moonphase": 0.97,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          28.2,
+          34
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          22.9
+        ],
+        "feelslike": [
+          19.1,
+          28.2,
+          39.3
+        ],
+        "precip": [
+          0,
+          8.4,
+          55.8
+        ],
+        "humidity": [
+          65.7,
+          78.8,
+          86.8
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          18.7,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          197.4,
+          254.3,
+          290
+        ],
+        "cloudcover": [
+          30.1,
+          74.1,
+          92.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-05",
+      "datetimeEpoch": 1630780200,
+      "tempmax": 28.2,
+      "tempmin": 20.4,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.2,
+      "dew": 19.5,
+      "humidity": 78.3,
+      "precip": 3.2,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 20.5,
+      "winddir": 258.6,
+      "pressure": 1006.9,
+      "cloudcover": 74.6,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:39",
+      "sunriseEpoch": 1630802319,
+      "sunset": "18:27:56",
+      "sunsetEpoch": 1630846676,
+      "moonphase": 0.99,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.1,
+          28.2,
+          32.6
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          22.2
+        ],
+        "feelslike": [
+          19.1,
+          28.2,
+          38
+        ],
+        "precip": [
+          0,
+          3.2,
+          37
+        ],
+        "humidity": [
+          65.1,
+          78.3,
+          90.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          20.5,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          155.3,
+          258.6,
+          302.5
+        ],
+        "cloudcover": [
+          49.8,
+          74.6,
+          90.6
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-06",
+      "datetimeEpoch": 1630866600,
+      "tempmax": 27.8,
+      "tempmin": 20.2,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.3,
+      "dew": 19.7,
+      "humidity": 79.9,
+      "precip": 4.6,
+      "precipprob": 4.8,
+      "precipcover": 2,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 48.2,
+      "windspeed": 18.7,
+      "winddir": 256.9,
+      "pressure": 1010.2,
+      "cloudcover": 74.8,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:40",
+      "sunriseEpoch": 1630888720,
+      "sunset": "18:27:15",
+      "sunsetEpoch": 1630933035,
+      "moonphase": 1,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          22.4,
+          27.8,
+          33
+        ],
+        "tempmin": [
+          19.1,
+          20.2,
+          21.1
+        ],
+        "feelslike": [
+          19.1,
+          27.8,
+          38.1
+        ],
+        "precip": [
+          0,
+          4.6,
+          32.2
+        ],
+        "humidity": [
+          67.7,
+          79.9,
+          94
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          18.7,
+          37.1
+        ],
+        "windgust": [
+          48.2,
+          48.2,
+          48.2
+        ],
+        "winddir": [
+          191.7,
+          256.9,
+          288.3
+        ],
+        "cloudcover": [
+          41.3,
+          74.8,
+          96.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-07",
+      "datetimeEpoch": 1630953000,
+      "tempmax": 27.9,
+      "tempmin": 20.5,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.1,
+      "dew": 19.6,
+      "humidity": 79.4,
+      "precip": 6.9,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 46.4,
+      "windspeed": 19.8,
+      "winddir": 255.1,
+      "pressure": 991.6,
+      "cloudcover": 78.4,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:40",
+      "sunriseEpoch": 1630975120,
+      "sunset": "18:26:34",
+      "sunsetEpoch": 1631019394,
+      "moonphase": 0,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          27.9,
+          31.6
+        ],
+        "tempmin": [
+          18.1,
+          20.5,
+          21.4
+        ],
+        "feelslike": [
+          18.1,
+          27.9,
+          37
+        ],
+        "precip": [
+          0,
+          6.9,
+          50
+        ],
+        "humidity": [
+          68,
+          79.4,
+          90.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          19.8,
+          33.5
+        ],
+        "windgust": [
+          46.4,
+          46.4,
+          46.4
+        ],
+        "winddir": [
+          156.4,
+          255.1,
+          290
+        ],
+        "cloudcover": [
+          54.6,
+          78.4,
+          95
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-08",
+      "datetimeEpoch": 1631039400,
+      "tempmax": 28.1,
+      "tempmin": 20.3,
+      "temp": 23.8,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.2,
+      "dew": 19.5,
+      "humidity": 78.4,
+      "precip": 8.2,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 19.1,
+      "winddir": 257.9,
+      "pressure": 1005.1,
+      "cloudcover": 74,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:41",
+      "sunriseEpoch": 1631061521,
+      "sunset": "18:25:52",
+      "sunsetEpoch": 1631105752,
+      "moonphase": 0.01,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          28.1,
+          32.1
+        ],
+        "tempmin": [
+          19,
+          20.3,
+          22.2
+        ],
+        "feelslike": [
+          19,
+          28.1,
+          34.9
+        ],
+        "precip": [
+          0,
+          8.2,
+          68.2
+        ],
+        "humidity": [
+          66.2,
+          78.4,
+          92.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          19.1,
+          35.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          124.6,
+          257.9,
+          292.5
+        ],
+        "cloudcover": [
+          50.3,
+          74,
+          96.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-09",
+      "datetimeEpoch": 1631125800,
+      "tempmax": 28.1,
+      "tempmin": 20.4,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.6,
+      "humidity": 78.8,
+      "precip": 4.7,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 24.1,
+      "windspeed": 18.4,
+      "winddir": 246.9,
+      "pressure": 1009.8,
+      "cloudcover": 73.4,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:41",
+      "sunriseEpoch": 1631147921,
+      "sunset": "18:25:10",
+      "sunsetEpoch": 1631192110,
+      "moonphase": 0.04,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          28.1,
+          33.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          22.1
+        ],
+        "feelslike": [
+          19.1,
+          28.1,
+          36.6
+        ],
+        "precip": [
+          0,
+          4.7,
+          36.2
+        ],
+        "humidity": [
+          68.7,
+          78.8,
+          89.8
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          18.4,
+          31.3
+        ],
+        "windgust": [
+          24.1,
+          24.1,
+          24.1
+        ],
+        "winddir": [
+          125.6,
+          246.9,
+          283.9
+        ],
+        "cloudcover": [
+          45.8,
+          73.4,
+          92.2
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-10",
+      "datetimeEpoch": 1631212200,
+      "tempmax": 28.1,
+      "tempmin": 20.1,
+      "temp": 23.8,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.1,
+      "dew": 19.4,
+      "humidity": 78.1,
+      "precip": 9,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 17.3,
+      "winddir": 250.4,
+      "pressure": null,
+      "cloudcover": 72.5,
+      "visibility": 7.2,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631234322,
+      "sunset": "18:24:28",
+      "sunsetEpoch": 1631278468,
+      "moonphase": 0.07,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.7,
+          28.1,
+          33.1
+        ],
+        "tempmin": [
+          18.1,
+          20.1,
+          22.1
+        ],
+        "feelslike": [
+          18.1,
+          28.1,
+          34.3
+        ],
+        "precip": [
+          0,
+          9,
+          65
+        ],
+        "humidity": [
+          67.2,
+          78.1,
+          89.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          17.3,
+          33.5
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          114,
+          250.4,
+          285
+        ],
+        "cloudcover": [
+          47.5,
+          72.5,
+          94.4
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-11",
+      "datetimeEpoch": 1631298600,
+      "tempmax": 27.8,
+      "tempmin": 20.3,
+      "temp": 23.8,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.3,
+      "humidity": 77.6,
+      "precip": 2.8,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18.7,
+      "winddir": 253,
+      "pressure": 1004.4,
+      "cloudcover": 73.7,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631320722,
+      "sunset": "18:23:46",
+      "sunsetEpoch": 1631364826,
+      "moonphase": 0.12,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.4,
+          27.8,
+          33.1
+        ],
+        "tempmin": [
+          18.7,
+          20.3,
+          22.4
+        ],
+        "feelslike": [
+          18.7,
+          27.8,
+          34.8
+        ],
+        "precip": [
+          0,
+          2.8,
+          24.7
+        ],
+        "humidity": [
+          66.2,
+          77.6,
+          91.5
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          18.7,
+          38.9
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          110.5,
+          253,
+          286.5
+        ],
+        "cloudcover": [
+          44.2,
+          73.7,
+          97.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-12",
+      "datetimeEpoch": 1631385000,
+      "tempmax": 28.1,
+      "tempmin": 20.4,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.4,
+      "humidity": 77.4,
+      "precip": 4,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 17.6,
+      "winddir": 258.6,
+      "pressure": null,
+      "cloudcover": 70.7,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631407122,
+      "sunset": "18:23:03",
+      "sunsetEpoch": 1631451183,
+      "moonphase": 0.17,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.7,
+          28.1,
+          33.1
+        ],
+        "tempmin": [
+          18.7,
+          20.4,
+          22
+        ],
+        "feelslike": [
+          18.7,
+          28.1,
+          35.8
+        ],
+        "precip": [
+          0,
+          4,
+          32
+        ],
+        "humidity": [
+          66.8,
+          77.4,
+          91.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          17.6,
+          44.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          109.5,
+          258.6,
+          300
+        ],
+        "cloudcover": [
+          38.8,
+          70.7,
+          93.2
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-13",
+      "datetimeEpoch": 1631471400,
+      "tempmax": 28.7,
+      "tempmin": 20.4,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.7,
+      "dew": 19.6,
+      "humidity": 77.2,
+      "precip": 5,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.8,
+      "winddir": 255.3,
+      "pressure": 1006.1,
+      "cloudcover": 70.8,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631493522,
+      "sunset": "18:22:21",
+      "sunsetEpoch": 1631537541,
+      "moonphase": 0.23,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.2,
+          28.7,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          22
+        ],
+        "feelslike": [
+          19.1,
+          28.7,
+          36.2
+        ],
+        "precip": [
+          0,
+          5,
+          41
+        ],
+        "humidity": [
+          66.6,
+          77.2,
+          89.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          15.8,
+          38.9
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          132.3,
+          255.3,
+          295
+        ],
+        "cloudcover": [
+          38.6,
+          70.8,
+          92.6
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-14",
+      "datetimeEpoch": 1631557800,
+      "tempmax": 28.4,
+      "tempmin": 20.6,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.7,
+      "dew": 19.6,
+      "humidity": 78.4,
+      "precip": 13.1,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 17.6,
+      "winddir": 257.2,
+      "pressure": 1005.5,
+      "cloudcover": 76.1,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631579922,
+      "sunset": "18:21:38",
+      "sunsetEpoch": 1631623898,
+      "moonphase": 0.28,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.4,
+          28.4,
+          31.1
+        ],
+        "tempmin": [
+          19.1,
+          20.6,
+          22
+        ],
+        "feelslike": [
+          19.1,
+          28.4,
+          35.5
+        ],
+        "precip": [
+          0,
+          13.1,
+          92
+        ],
+        "humidity": [
+          68.4,
+          78.4,
+          90.4
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          17.6,
+          31.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          189.5,
+          257.2,
+          275
+        ],
+        "cloudcover": [
+          53.6,
+          76.1,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-15",
+      "datetimeEpoch": 1631644200,
+      "tempmax": 28.3,
+      "tempmin": 20.2,
+      "temp": 23.8,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.3,
+      "dew": 19.7,
+      "humidity": 79.3,
+      "precip": 8.7,
+      "precipprob": 9.5,
+      "precipcover": 4,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 19.1,
+      "winddir": 261.6,
+      "pressure": 1006.3,
+      "cloudcover": 75.9,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631666322,
+      "sunset": "18:20:56",
+      "sunsetEpoch": 1631710256,
+      "moonphase": 0.34,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.1,
+          28.3,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.2,
+          21.1
+        ],
+        "feelslike": [
+          19.1,
+          28.3,
+          35.1
+        ],
+        "precip": [
+          0,
+          8.7,
+          42.2
+        ],
+        "humidity": [
+          69.9,
+          79.3,
+          91.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          19.1,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          226,
+          261.6,
+          303.6
+        ],
+        "cloudcover": [
+          52.7,
+          75.9,
+          92.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-16",
+      "datetimeEpoch": 1631730600,
+      "tempmax": 28.3,
+      "tempmin": 20.5,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.1,
+      "dew": 19.7,
+      "humidity": 79.3,
+      "precip": 11.1,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 20.2,
+      "winddir": 262.5,
+      "pressure": 1004.7,
+      "cloudcover": 75.5,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631752722,
+      "sunset": "18:20:13",
+      "sunsetEpoch": 1631796613,
+      "moonphase": 0.39,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.1,
+          28.3,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.5,
+          21.1
+        ],
+        "feelslike": [
+          19.1,
+          28.3,
+          36.2
+        ],
+        "precip": [
+          0,
+          11.1,
+          67.9
+        ],
+        "humidity": [
+          69.7,
+          79.3,
+          89.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          7.6,
+          20.2,
+          38.9
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          221.7,
+          262.5,
+          286.2
+        ],
+        "cloudcover": [
+          45,
+          75.5,
+          92.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-17",
+      "datetimeEpoch": 1631817000,
+      "tempmax": 27.7,
+      "tempmin": 20.2,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.6,
+      "humidity": 79.6,
+      "precip": 7.3,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 19.4,
+      "winddir": 259.1,
+      "pressure": 1005,
+      "cloudcover": 75.4,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631839122,
+      "sunset": "18:19:30",
+      "sunsetEpoch": 1631882970,
+      "moonphase": 0.43,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          27.7,
+          33.1
+        ],
+        "tempmin": [
+          19.1,
+          20.2,
+          21.2
+        ],
+        "feelslike": [
+          19.1,
+          27.7,
+          39.4
+        ],
+        "precip": [
+          0,
+          7.3,
+          77.9
+        ],
+        "humidity": [
+          68.4,
+          79.6,
+          94.8
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          19.4,
+          38.9
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          220,
+          259.1,
+          283.3
+        ],
+        "cloudcover": [
+          39.1,
+          75.4,
+          93.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-18",
+      "datetimeEpoch": 1631903400,
+      "tempmax": 28.2,
+      "tempmin": 20.2,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30,
+      "dew": 19.2,
+      "humidity": 76.6,
+      "precip": 5.2,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 31.7,
+      "windspeed": 18,
+      "winddir": 265.5,
+      "pressure": 1008.2,
+      "cloudcover": 72.5,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1631925522,
+      "sunset": "18:18:47",
+      "sunsetEpoch": 1631969327,
+      "moonphase": 0.47,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.4,
+          28.2,
+          31.1
+        ],
+        "tempmin": [
+          19.1,
+          20.2,
+          22.7
+        ],
+        "feelslike": [
+          19.1,
+          28.2,
+          36.3
+        ],
+        "precip": [
+          0,
+          5.2,
+          38
+        ],
+        "humidity": [
+          65,
+          76.6,
+          88.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          18,
+          33.5
+        ],
+        "windgust": [
+          31.7,
+          31.7,
+          31.7
+        ],
+        "winddir": [
+          227.5,
+          265.5,
+          300
+        ],
+        "cloudcover": [
+          47.7,
+          72.5,
+          91.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-19",
+      "datetimeEpoch": 1631989800,
+      "tempmax": 28.8,
+      "tempmin": 20.4,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.5,
+      "dew": 19.3,
+      "humidity": 77.5,
+      "precip": 7.6,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 64.8,
+      "windspeed": 18.4,
+      "winddir": 259.5,
+      "pressure": null,
+      "cloudcover": 76.2,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1632011922,
+      "sunset": "18:18:04",
+      "sunsetEpoch": 1632055684,
+      "moonphase": 0.49,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.2,
+          28.8,
+          37.3
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          21.9
+        ],
+        "feelslike": [
+          19.1,
+          28.8,
+          40.2
+        ],
+        "precip": [
+          0,
+          7.6,
+          99
+        ],
+        "humidity": [
+          65.9,
+          77.5,
+          94.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          18.4,
+          37.1
+        ],
+        "windgust": [
+          64.8,
+          64.8,
+          64.8
+        ],
+        "winddir": [
+          220,
+          259.5,
+          289.3
+        ],
+        "cloudcover": [
+          55.6,
+          76.2,
+          95.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-20",
+      "datetimeEpoch": 1632076200,
+      "tempmax": 28,
+      "tempmin": 20.6,
+      "temp": 23.8,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30,
+      "dew": 19.4,
+      "humidity": 77.8,
+      "precip": 10.5,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 18,
+      "winddir": 263,
+      "pressure": 1005.3,
+      "cloudcover": 74.7,
+      "visibility": 7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:42",
+      "sunriseEpoch": 1632098322,
+      "sunset": "18:17:21",
+      "sunsetEpoch": 1632142041,
+      "moonphase": 0.5,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.7,
+          28,
+          31
+        ],
+        "tempmin": [
+          19.1,
+          20.6,
+          22.1
+        ],
+        "feelslike": [
+          19.1,
+          28,
+          36.6
+        ],
+        "precip": [
+          0,
+          10.5,
+          121
+        ],
+        "humidity": [
+          61.8,
+          77.8,
+          88.4
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          0,
+          18,
+          37.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          226.3,
+          263,
+          284.3
+        ],
+        "cloudcover": [
+          32,
+          74.7,
+          95
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-21",
+      "datetimeEpoch": 1632162600,
+      "tempmax": 28.6,
+      "tempmin": 20.8,
+      "temp": 24.2,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30,
+      "dew": 19.2,
+      "humidity": 75.4,
+      "precip": 3.6,
+      "precipprob": 4.8,
+      "precipcover": 2,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 17.3,
+      "winddir": 244.6,
+      "pressure": 977.7,
+      "cloudcover": 69.4,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:43",
+      "sunriseEpoch": 1632184723,
+      "sunset": "18:16:39",
+      "sunsetEpoch": 1632228399,
+      "moonphase": 0.5,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.7,
+          28.6,
+          32.1
+        ],
+        "tempmin": [
+          19.1,
+          20.8,
+          24.4
+        ],
+        "feelslike": [
+          19.1,
+          28.6,
+          34.4
+        ],
+        "precip": [
+          0,
+          3.6,
+          42.3
+        ],
+        "humidity": [
+          56,
+          75.4,
+          88.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          17.3,
+          27.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          70,
+          244.6,
+          295
+        ],
+        "cloudcover": [
+          43.8,
+          69.4,
+          93.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-22",
+      "datetimeEpoch": 1632249000,
+      "tempmax": 29,
+      "tempmin": 20.5,
+      "temp": 24.4,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.3,
+      "dew": 18.9,
+      "humidity": 73.4,
+      "precip": 8.3,
+      "precipprob": 9.5,
+      "precipcover": 4,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.8,
+      "winddir": 240.6,
+      "pressure": 1008,
+      "cloudcover": 62.9,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:43",
+      "sunriseEpoch": 1632271123,
+      "sunset": "18:15:56",
+      "sunsetEpoch": 1632314756,
+      "moonphase": 0.52,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.7,
+          29,
+          33
+        ],
+        "tempmin": [
+          18.1,
+          20.5,
+          22.1
+        ],
+        "feelslike": [
+          18.1,
+          29,
+          37
+        ],
+        "precip": [
+          0,
+          8.3,
+          165
+        ],
+        "humidity": [
+          53.9,
+          73.4,
+          88.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          15.8,
+          29.5
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          72.5,
+          240.6,
+          283.3
+        ],
+        "cloudcover": [
+          37.1,
+          62.9,
+          91.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-23",
+      "datetimeEpoch": 1632335400,
+      "tempmax": 29.3,
+      "tempmin": 20.3,
+      "temp": 24.5,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 19,
+      "humidity": 73.5,
+      "precip": 17.1,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 14.4,
+      "winddir": 231.2,
+      "pressure": 1006.3,
+      "cloudcover": 66.4,
+      "visibility": 7.2,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:43",
+      "sunriseEpoch": 1632357523,
+      "sunset": "18:15:13",
+      "sunsetEpoch": 1632401113,
+      "moonphase": 0.53,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          29.3,
+          34.1
+        ],
+        "tempmin": [
+          18.1,
+          20.3,
+          22.1
+        ],
+        "feelslike": [
+          18.1,
+          29.3,
+          39.4
+        ],
+        "precip": [
+          0,
+          17.1,
+          91
+        ],
+        "humidity": [
+          59,
+          73.5,
+          85.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          14.4,
+          31.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          96.7,
+          231.2,
+          310
+        ],
+        "cloudcover": [
+          42,
+          66.4,
+          83.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-24",
+      "datetimeEpoch": 1632421800,
+      "tempmax": 28.9,
+      "tempmin": 20,
+      "temp": 24,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 19.4,
+      "humidity": 77.1,
+      "precip": 17.4,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.8,
+      "winddir": 228.4,
+      "pressure": 946.9,
+      "cloudcover": 67.9,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:44",
+      "sunriseEpoch": 1632443924,
+      "sunset": "18:14:31",
+      "sunsetEpoch": 1632487471,
+      "moonphase": 0.56,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          28.9,
+          34.6
+        ],
+        "tempmin": [
+          16.7,
+          20,
+          21.1
+        ],
+        "feelslike": [
+          16.7,
+          28.9,
+          40.6
+        ],
+        "precip": [
+          0,
+          17.4,
+          113
+        ],
+        "humidity": [
+          56.4,
+          77.1,
+          92.5
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          15.8,
+          43.2
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          81.4,
+          228.4,
+          289.5
+        ],
+        "cloudcover": [
+          33.2,
+          67.9,
+          91.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-25",
+      "datetimeEpoch": 1632508200,
+      "tempmax": 28.7,
+      "tempmin": 20.4,
+      "temp": 24.2,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.6,
+      "dew": 19.4,
+      "humidity": 76.5,
+      "precip": 14.2,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 16.6,
+      "winddir": 244.9,
+      "pressure": 1003.9,
+      "cloudcover": 67.9,
+      "visibility": 7.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:44",
+      "sunriseEpoch": 1632530324,
+      "sunset": "18:13:48",
+      "sunsetEpoch": 1632573828,
+      "moonphase": 0.6,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.7,
+          28.7,
+          33.1
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          21.2
+        ],
+        "feelslike": [
+          19.1,
+          28.7,
+          38.2
+        ],
+        "precip": [
+          0,
+          14.2,
+          130
+        ],
+        "humidity": [
+          56.8,
+          76.5,
+          85.5
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          16.6,
+          27.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          101.4,
+          244.9,
+          360
+        ],
+        "cloudcover": [
+          33.8,
+          67.9,
+          90.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-26",
+      "datetimeEpoch": 1632594600,
+      "tempmax": 28.7,
+      "tempmin": 20.3,
+      "temp": 24.2,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 19.5,
+      "humidity": 77,
+      "precip": 4.6,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.5,
+      "winddir": 230.9,
+      "pressure": 1005.2,
+      "cloudcover": 67.9,
+      "visibility": 7.2,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:45",
+      "sunriseEpoch": 1632616725,
+      "sunset": "18:13:06",
+      "sunsetEpoch": 1632660186,
+      "moonphase": 0.64,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.4,
+          28.7,
+          33.1
+        ],
+        "tempmin": [
+          19.1,
+          20.3,
+          21.4
+        ],
+        "feelslike": [
+          19.1,
+          28.7,
+          37.2
+        ],
+        "precip": [
+          0,
+          4.6,
+          30.9
+        ],
+        "humidity": [
+          57.8,
+          77,
+          89.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          15.5,
+          24.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          90,
+          230.9,
+          298.9
+        ],
+        "cloudcover": [
+          38.6,
+          67.9,
+          92.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-27",
+      "datetimeEpoch": 1632681000,
+      "tempmax": 28.7,
+      "tempmin": 20.5,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 31,
+      "dew": 19.7,
+      "humidity": 78.3,
+      "precip": 9.1,
+      "precipprob": 33.3,
+      "precipcover": 14,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 14.4,
+      "winddir": 218.1,
+      "pressure": 1004.9,
+      "cloudcover": 68.6,
+      "visibility": 6.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:46",
+      "sunriseEpoch": 1632703126,
+      "sunset": "18:12:24",
+      "sunsetEpoch": 1632746544,
+      "moonphase": 0.68,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.7,
+          28.7,
+          34.1
+        ],
+        "tempmin": [
+          19.1,
+          20.5,
+          21.4
+        ],
+        "feelslike": [
+          19.1,
+          28.7,
+          40.7
+        ],
+        "precip": [
+          0,
+          9.1,
+          48.1
+        ],
+        "humidity": [
+          65.8,
+          78.3,
+          93.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          14.4,
+          23.4
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          85,
+          218.1,
+          305.5
+        ],
+        "cloudcover": [
+          38.7,
+          68.6,
+          93.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-28",
+      "datetimeEpoch": 1632767400,
+      "tempmax": 28.4,
+      "tempmin": 20.6,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 31.3,
+      "dew": 19.7,
+      "humidity": 77.9,
+      "precip": 2.2,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 31.7,
+      "windspeed": 14.4,
+      "winddir": 216.2,
+      "pressure": 1005.1,
+      "cloudcover": 70.9,
+      "visibility": 6.9,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:47",
+      "sunriseEpoch": 1632789527,
+      "sunset": "18:11:42",
+      "sunsetEpoch": 1632832902,
+      "moonphase": 0.73,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          28.4,
+          33.1
+        ],
+        "tempmin": [
+          20.1,
+          20.6,
+          22.1
+        ],
+        "feelslike": [
+          20.1,
+          28.4,
+          38.2
+        ],
+        "precip": [
+          0,
+          2.2,
+          9
+        ],
+        "humidity": [
+          63.8,
+          77.9,
+          89.8
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          14.4,
+          24.1
+        ],
+        "windgust": [
+          31.7,
+          31.7,
+          31.7
+        ],
+        "winddir": [
+          90,
+          216.2,
+          303.2
+        ],
+        "cloudcover": [
+          38.3,
+          70.9,
+          92.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-29",
+      "datetimeEpoch": 1632853800,
+      "tempmax": 28.5,
+      "tempmin": 20.5,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.7,
+      "dew": 19.8,
+      "humidity": 78.9,
+      "precip": 6.5,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.7,
+      "winddir": 218.9,
+      "pressure": 1004,
+      "cloudcover": 73.7,
+      "visibility": 6.8,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:49",
+      "sunriseEpoch": 1632875929,
+      "sunset": "18:11:01",
+      "sunsetEpoch": 1632919261,
+      "moonphase": 0.77,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          28.5,
+          33.1
+        ],
+        "tempmin": [
+          18.1,
+          20.5,
+          21.9
+        ],
+        "feelslike": [
+          18.1,
+          28.5,
+          37.2
+        ],
+        "precip": [
+          0,
+          6.5,
+          41
+        ],
+        "humidity": [
+          66,
+          78.9,
+          91
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          13.7,
+          27.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          86.7,
+          218.9,
+          291.1
+        ],
+        "cloudcover": [
+          45.2,
+          73.7,
+          95
+        ]
+      }
+    },
+    {
+      "datetime": "2021-09-30",
+      "datetimeEpoch": 1632940200,
+      "tempmax": 28.6,
+      "tempmin": 20.6,
+      "temp": 24,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 20,
+      "humidity": 80.3,
+      "precip": 15,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 14.4,
+      "winddir": 205.5,
+      "pressure": 1002.4,
+      "cloudcover": 71.5,
+      "visibility": 6.5,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:50",
+      "sunriseEpoch": 1632962330,
+      "sunset": "18:10:20",
+      "sunsetEpoch": 1633005620,
+      "moonphase": 0.82,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.2,
+          28.6,
+          34.1
+        ],
+        "tempmin": [
+          19.1,
+          20.6,
+          22.1
+        ],
+        "feelslike": [
+          19.1,
+          28.6,
+          43.7
+        ],
+        "precip": [
+          0,
+          15,
+          82
+        ],
+        "humidity": [
+          67.5,
+          80.3,
+          92.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          14.4,
+          27.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          86,
+          205.5,
+          282.9
+        ],
+        "cloudcover": [
+          37.5,
+          71.5,
+          97.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-01",
+      "datetimeEpoch": 1633026600,
+      "tempmax": 28.4,
+      "tempmin": 20.9,
+      "temp": 24,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 31,
+      "dew": 20,
+      "humidity": 80,
+      "precip": 16.9,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.5,
+      "winddir": 210.2,
+      "pressure": 1006,
+      "cloudcover": 75.8,
+      "visibility": 6.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:52",
+      "sunriseEpoch": 1633048732,
+      "sunset": "18:09:39",
+      "sunsetEpoch": 1633091979,
+      "moonphase": 0.87,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.1,
+          28.4,
+          35.1
+        ],
+        "tempmin": [
+          19.7,
+          20.9,
+          22.4
+        ],
+        "feelslike": [
+          19.7,
+          28.4,
+          42.3
+        ],
+        "precip": [
+          0,
+          16.9,
+          104
+        ],
+        "humidity": [
+          62.9,
+          80,
+          92.5
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          15.5,
+          31.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          95.3,
+          210.2,
+          294
+        ],
+        "cloudcover": [
+          47.5,
+          75.8,
+          95
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-02",
+      "datetimeEpoch": 1633113000,
+      "tempmax": 28.7,
+      "tempmin": 20.5,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.6,
+      "dew": 19.7,
+      "humidity": 78.4,
+      "precip": 9.9,
+      "precipprob": 0,
+      "precipcover": 0,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 37.1,
+      "windspeed": 14.4,
+      "winddir": 207.7,
+      "pressure": 978.3,
+      "cloudcover": 72.5,
+      "visibility": 6.7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:54",
+      "sunriseEpoch": 1633135134,
+      "sunset": "18:08:58",
+      "sunsetEpoch": 1633178338,
+      "moonphase": 0.91,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.1,
+          28.7,
+          35.1
+        ],
+        "tempmin": [
+          18.1,
+          20.5,
+          22.2
+        ],
+        "feelslike": [
+          18.1,
+          28.7,
+          38
+        ],
+        "precip": [
+          0,
+          9.9,
+          147
+        ],
+        "humidity": [
+          67.5,
+          78.4,
+          87.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          14.4,
+          33.5
+        ],
+        "windgust": [
+          37.1,
+          37.1,
+          37.1
+        ],
+        "winddir": [
+          75,
+          207.7,
+          285
+        ],
+        "cloudcover": [
+          38.3,
+          72.5,
+          92.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-03",
+      "datetimeEpoch": 1633199400,
+      "tempmax": 28.6,
+      "tempmin": 20.6,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 31.1,
+      "dew": 19.7,
+      "humidity": 78.2,
+      "precip": 7.7,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.1,
+      "winddir": 209.3,
+      "pressure": 1004.9,
+      "cloudcover": 69.5,
+      "visibility": 6.7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:57",
+      "sunriseEpoch": 1633221537,
+      "sunset": "18:08:18",
+      "sunsetEpoch": 1633264698,
+      "moonphase": 0.95,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.2,
+          28.6,
+          33.1
+        ],
+        "tempmin": [
+          18.2,
+          20.6,
+          22.9
+        ],
+        "feelslike": [
+          18.2,
+          28.6,
+          38
+        ],
+        "precip": [
+          0,
+          7.7,
+          71
+        ],
+        "humidity": [
+          64.7,
+          78.2,
+          89.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          15.1,
+          40.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          83.3,
+          209.3,
+          283.7
+        ],
+        "cloudcover": [
+          35.9,
+          69.5,
+          91.4
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-04",
+      "datetimeEpoch": 1633285800,
+      "tempmax": 28.5,
+      "tempmin": 20.6,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.9,
+      "dew": 19.6,
+      "humidity": 78.8,
+      "precip": 10.3,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 27.7,
+      "windspeed": 15.8,
+      "winddir": 214.4,
+      "pressure": 1005.1,
+      "cloudcover": 67.2,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:08:59",
+      "sunriseEpoch": 1633307939,
+      "sunset": "18:07:38",
+      "sunsetEpoch": 1633351058,
+      "moonphase": 0.98,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.9,
+          28.5,
+          34.1
+        ],
+        "tempmin": [
+          19.1,
+          20.6,
+          22.2
+        ],
+        "feelslike": [
+          19.1,
+          28.5,
+          39.2
+        ],
+        "precip": [
+          0,
+          10.3,
+          60
+        ],
+        "humidity": [
+          61.8,
+          78.8,
+          92.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          15.8,
+          38.9
+        ],
+        "windgust": [
+          27.7,
+          27.7,
+          27.7
+        ],
+        "winddir": [
+          73.4,
+          214.4,
+          280
+        ],
+        "cloudcover": [
+          25.2,
+          67.2,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-05",
+      "datetimeEpoch": 1633372200,
+      "tempmax": 28.5,
+      "tempmin": 20.2,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 19.5,
+      "humidity": 79.2,
+      "precip": 9.9,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.8,
+      "winddir": 215.5,
+      "pressure": 1004,
+      "cloudcover": 70.2,
+      "visibility": 6.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:02",
+      "sunriseEpoch": 1633394342,
+      "sunset": "18:06:58",
+      "sunsetEpoch": 1633437418,
+      "moonphase": 1,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.2,
+          28.5,
+          35.1
+        ],
+        "tempmin": [
+          18.1,
+          20.2,
+          21.4
+        ],
+        "feelslike": [
+          18.1,
+          28.5,
+          39.7
+        ],
+        "precip": [
+          0,
+          9.9,
+          76.8
+        ],
+        "humidity": [
+          62.9,
+          79.2,
+          93.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          15.8,
+          38.9
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          76.8,
+          215.5,
+          286.7
+        ],
+        "cloudcover": [
+          33.5,
+          70.2,
+          92.9
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-06",
+      "datetimeEpoch": 1633458600,
+      "tempmax": 28.3,
+      "tempmin": 20.3,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 19.8,
+      "humidity": 80.3,
+      "precip": 10.1,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 31.7,
+      "windspeed": 15.8,
+      "winddir": 216,
+      "pressure": 1004.7,
+      "cloudcover": 72.2,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:06",
+      "sunriseEpoch": 1633480746,
+      "sunset": "18:06:19",
+      "sunsetEpoch": 1633523779,
+      "moonphase": 0,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          22.2,
+          28.3,
+          32.1
+        ],
+        "tempmin": [
+          18.4,
+          20.3,
+          21.4
+        ],
+        "feelslike": [
+          18.4,
+          28.3,
+          37
+        ],
+        "precip": [
+          0,
+          10.1,
+          36
+        ],
+        "humidity": [
+          62.2,
+          80.3,
+          95.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          15.8,
+          31.3
+        ],
+        "windgust": [
+          31.7,
+          31.7,
+          31.7
+        ],
+        "winddir": [
+          62,
+          216,
+          285.4
+        ],
+        "cloudcover": [
+          40.3,
+          72.2,
+          100
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-07",
+      "datetimeEpoch": 1633545000,
+      "tempmax": 28.3,
+      "tempmin": 20.1,
+      "temp": 23.8,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.4,
+      "dew": 19.7,
+      "humidity": 79.8,
+      "precip": 8.8,
+      "precipprob": 9.5,
+      "precipcover": 4,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13,
+      "winddir": 209,
+      "pressure": 1046.3,
+      "cloudcover": 69.5,
+      "visibility": 6.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:09",
+      "sunriseEpoch": 1633567149,
+      "sunset": "18:05:40",
+      "sunsetEpoch": 1633610140,
+      "moonphase": 0.01,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          28.3,
+          32.1
+        ],
+        "tempmin": [
+          18.2,
+          20.1,
+          21.1
+        ],
+        "feelslike": [
+          18.2,
+          28.3,
+          36
+        ],
+        "precip": [
+          0,
+          8.8,
+          43.3
+        ],
+        "humidity": [
+          61.5,
+          79.8,
+          90.3
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          0,
+          13,
+          22.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          79.7,
+          209,
+          295.5
+        ],
+        "cloudcover": [
+          23.8,
+          69.5,
+          96.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-08",
+      "datetimeEpoch": 1633631400,
+      "tempmax": 28.5,
+      "tempmin": 20.4,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.8,
+      "dew": 20,
+      "humidity": 80.2,
+      "precip": 14.4,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 14.8,
+      "winddir": 219.3,
+      "pressure": 1006.9,
+      "cloudcover": 70.3,
+      "visibility": 6.7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:13",
+      "sunriseEpoch": 1633653553,
+      "sunset": "18:05:02",
+      "sunsetEpoch": 1633696502,
+      "moonphase": 0.03,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.1,
+          28.5,
+          31.6
+        ],
+        "tempmin": [
+          19.1,
+          20.4,
+          21.4
+        ],
+        "feelslike": [
+          19.1,
+          28.5,
+          37.9
+        ],
+        "precip": [
+          0,
+          14.4,
+          92.6
+        ],
+        "humidity": [
+          67.2,
+          80.2,
+          90
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          14.8,
+          24.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          88.2,
+          219.3,
+          290
+        ],
+        "cloudcover": [
+          22.5,
+          70.3,
+          92.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-09",
+      "datetimeEpoch": 1633717800,
+      "tempmax": 28.7,
+      "tempmin": 20.3,
+      "temp": 24,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.7,
+      "dew": 19.7,
+      "humidity": 78.5,
+      "precip": 8.3,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.7,
+      "winddir": 210.4,
+      "pressure": 1006.6,
+      "cloudcover": 70.4,
+      "visibility": 6.7,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:18",
+      "sunriseEpoch": 1633739958,
+      "sunset": "18:04:24",
+      "sunsetEpoch": 1633782864,
+      "moonphase": 0.06,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.4,
+          28.7,
+          32.1
+        ],
+        "tempmin": [
+          18.4,
+          20.3,
+          22
+        ],
+        "feelslike": [
+          18.4,
+          28.7,
+          37.4
+        ],
+        "precip": [
+          0,
+          8.3,
+          45
+        ],
+        "humidity": [
+          67.7,
+          78.5,
+          90.5
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          13.7,
+          22
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          90,
+          210.4,
+          300
+        ],
+        "cloudcover": [
+          25,
+          70.4,
+          92.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-10",
+      "datetimeEpoch": 1633804200,
+      "tempmax": 28.8,
+      "tempmin": 20.2,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 31,
+      "dew": 19.6,
+      "humidity": 78.1,
+      "precip": 10.3,
+      "precipprob": 23.8,
+      "precipcover": 10,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.7,
+      "winddir": 205.9,
+      "pressure": 1006.6,
+      "cloudcover": 67.1,
+      "visibility": 6.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:23",
+      "sunriseEpoch": 1633826363,
+      "sunset": "18:03:47",
+      "sunsetEpoch": 1633869227,
+      "moonphase": 0.11,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.2,
+          28.8,
+          32.1
+        ],
+        "tempmin": [
+          18.1,
+          20.2,
+          21.2
+        ],
+        "feelslike": [
+          18.1,
+          28.8,
+          38.1
+        ],
+        "precip": [
+          0,
+          10.3,
+          71.3
+        ],
+        "humidity": [
+          58.2,
+          78.1,
+          91.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          13.7,
+          23.8
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          79.4,
+          205.9,
+          290.2
+        ],
+        "cloudcover": [
+          26.2,
+          67.1,
+          93.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-11",
+      "datetimeEpoch": 1633890600,
+      "tempmax": 28.8,
+      "tempmin": 20.4,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.7,
+      "dew": 19.7,
+      "humidity": 78.5,
+      "precip": 7.1,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13,
+      "winddir": 189.5,
+      "pressure": 1007,
+      "cloudcover": 71.8,
+      "visibility": 6.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:28",
+      "sunriseEpoch": 1633912768,
+      "sunset": "18:03:10",
+      "sunsetEpoch": 1633955590,
+      "moonphase": 0.16,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.1,
+          28.8,
+          31
+        ],
+        "tempmin": [
+          18.1,
+          20.4,
+          21.7
+        ],
+        "feelslike": [
+          18.1,
+          28.8,
+          37.8
+        ],
+        "precip": [
+          0,
+          7.1,
+          72.4
+        ],
+        "humidity": [
+          61.2,
+          78.5,
+          89.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          13,
+          22.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          72.2,
+          189.5,
+          280.9
+        ],
+        "cloudcover": [
+          30.3,
+          71.8,
+          95.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-12",
+      "datetimeEpoch": 1633977000,
+      "tempmax": 28.3,
+      "tempmin": 20.1,
+      "temp": 24,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.9,
+      "dew": 19.3,
+      "humidity": 77.2,
+      "precip": 13,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13,
+      "winddir": 169.6,
+      "pressure": 1008.2,
+      "cloudcover": 70.1,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:34",
+      "sunriseEpoch": 1633999174,
+      "sunset": "18:02:34",
+      "sunsetEpoch": 1634041954,
+      "moonphase": 0.21,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.2,
+          28.3,
+          32.1
+        ],
+        "tempmin": [
+          18.1,
+          20.1,
+          21.7
+        ],
+        "feelslike": [
+          18.1,
+          28.3,
+          35.5
+        ],
+        "precip": [
+          0,
+          13,
+          109.4
+        ],
+        "humidity": [
+          60.1,
+          77.2,
+          92.7
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          13,
+          25.9
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          50,
+          169.6,
+          295
+        ],
+        "cloudcover": [
+          34.6,
+          70.1,
+          95.7
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-13",
+      "datetimeEpoch": 1634063400,
+      "tempmax": 28.2,
+      "tempmin": 20.2,
+      "temp": 23.9,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.9,
+      "dew": 19.2,
+      "humidity": 77.7,
+      "precip": 7.8,
+      "precipprob": 28.6,
+      "precipcover": 12,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 14,
+      "winddir": 168.1,
+      "pressure": 1011,
+      "cloudcover": 68.7,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:40",
+      "sunriseEpoch": 1634085580,
+      "sunset": "18:01:58",
+      "sunsetEpoch": 1634128318,
+      "moonphase": 0.27,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          22.1,
+          28.2,
+          33.1
+        ],
+        "tempmin": [
+          18.1,
+          20.2,
+          21.7
+        ],
+        "feelslike": [
+          18.1,
+          28.2,
+          33.6
+        ],
+        "precip": [
+          0,
+          7.8,
+          63
+        ],
+        "humidity": [
+          61.3,
+          77.7,
+          94.9
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          14,
+          27.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          74.9,
+          168.1,
+          291.2
+        ],
+        "cloudcover": [
+          31.5,
+          68.7,
+          97.1
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-14",
+      "datetimeEpoch": 1634149800,
+      "tempmax": 28.7,
+      "tempmin": 20.5,
+      "temp": 24.1,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.6,
+      "dew": 19.3,
+      "humidity": 76.8,
+      "precip": 5.8,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.7,
+      "winddir": 171.3,
+      "pressure": 1009,
+      "cloudcover": 64.4,
+      "visibility": 6.5,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:46",
+      "sunriseEpoch": 1634171986,
+      "sunset": "18:01:23",
+      "sunsetEpoch": 1634214683,
+      "moonphase": 0.33,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.9,
+          28.7,
+          34.1
+        ],
+        "tempmin": [
+          18.1,
+          20.5,
+          22
+        ],
+        "feelslike": [
+          18.1,
+          28.7,
+          35.9
+        ],
+        "precip": [
+          0,
+          5.8,
+          33
+        ],
+        "humidity": [
+          54.2,
+          76.8,
+          93.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          13.7,
+          22.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          40,
+          171.3,
+          294
+        ],
+        "cloudcover": [
+          10.3,
+          64.4,
+          94.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-15",
+      "datetimeEpoch": 1634236200,
+      "tempmax": 28.6,
+      "tempmin": 20.2,
+      "temp": 23.8,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.3,
+      "dew": 19.3,
+      "humidity": 78.3,
+      "precip": 11.4,
+      "precipprob": 14.3,
+      "precipcover": 6,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.3,
+      "winddir": 157.2,
+      "pressure": 981.5,
+      "cloudcover": 66,
+      "visibility": 6.3,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:09:53",
+      "sunriseEpoch": 1634258393,
+      "sunset": "18:00:49",
+      "sunsetEpoch": 1634301049,
+      "moonphase": 0.37,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.9,
+          28.6,
+          33.1
+        ],
+        "tempmin": [
+          18.1,
+          20.2,
+          21.4
+        ],
+        "feelslike": [
+          18.1,
+          28.6,
+          36.3
+        ],
+        "precip": [
+          0,
+          11.4,
+          60.2
+        ],
+        "humidity": [
+          55.5,
+          78.3,
+          92.2
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          13.3,
+          29.5
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          50,
+          157.2,
+          283.7
+        ],
+        "cloudcover": [
+          27.3,
+          66,
+          92.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-16",
+      "datetimeEpoch": 1634322600,
+      "tempmax": 28.2,
+      "tempmin": 20,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 30.2,
+      "dew": 19.2,
+      "humidity": 77.9,
+      "precip": 6.4,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.3,
+      "winddir": 154.1,
+      "pressure": 1033.5,
+      "cloudcover": 65.4,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:10:01",
+      "sunriseEpoch": 1634344801,
+      "sunset": "18:00:15",
+      "sunsetEpoch": 1634387415,
+      "moonphase": 0.42,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          21.2,
+          28.2,
+          33.1
+        ],
+        "tempmin": [
+          17.1,
+          20,
+          21.2
+        ],
+        "feelslike": [
+          17.1,
+          28.2,
+          37.2
+        ],
+        "precip": [
+          0,
+          6.4,
+          37.1
+        ],
+        "humidity": [
+          58.3,
+          77.9,
+          91.5
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          13.3,
+          24.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          80,
+          154.1,
+          314
+        ],
+        "cloudcover": [
+          16.8,
+          65.4,
+          98.3
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-17",
+      "datetimeEpoch": 1634409000,
+      "tempmax": 28.4,
+      "tempmin": 20,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.9,
+      "dew": 18.9,
+      "humidity": 77,
+      "precip": 6.9,
+      "precipprob": 33.3,
+      "precipcover": 14,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13,
+      "winddir": 158.1,
+      "pressure": 1010.1,
+      "cloudcover": 66.9,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:10:09",
+      "sunriseEpoch": 1634431209,
+      "sunset": "17:59:42",
+      "sunsetEpoch": 1634473782,
+      "moonphase": 0.45,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          20.1,
+          28.4,
+          32.9
+        ],
+        "tempmin": [
+          17.1,
+          20,
+          21.1
+        ],
+        "feelslike": [
+          17.1,
+          28.4,
+          36
+        ],
+        "precip": [
+          0,
+          6.9,
+          51
+        ],
+        "humidity": [
+          58.4,
+          77,
+          96.8
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          13,
+          22.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          67.1,
+          158.1,
+          313.3
+        ],
+        "cloudcover": [
+          27.2,
+          66.9,
+          95
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-18",
+      "datetimeEpoch": 1634495400,
+      "tempmax": 28.3,
+      "tempmin": 20.1,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.8,
+      "dew": 19.1,
+      "humidity": 77.8,
+      "precip": 2.6,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 27.7,
+      "windspeed": 13.7,
+      "winddir": 154.8,
+      "pressure": 1004.8,
+      "cloudcover": 66.9,
+      "visibility": 6.2,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:10:17",
+      "sunriseEpoch": 1634517617,
+      "sunset": "17:59:09",
+      "sunsetEpoch": 1634560149,
+      "moonphase": 0.48,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          25.4,
+          28.3,
+          32.6
+        ],
+        "tempmin": [
+          17.1,
+          20.1,
+          22.1
+        ],
+        "feelslike": [
+          17.1,
+          28.3,
+          35.4
+        ],
+        "precip": [
+          0,
+          2.6,
+          24
+        ],
+        "humidity": [
+          57.2,
+          77.8,
+          92
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          13.7,
+          24.1
+        ],
+        "windgust": [
+          27.7,
+          27.7,
+          27.7
+        ],
+        "winddir": [
+          66,
+          154.8,
+          297.1
+        ],
+        "cloudcover": [
+          14.8,
+          66.9,
+          92.5
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-19",
+      "datetimeEpoch": 1634581800,
+      "tempmax": 28.4,
+      "tempmin": 19.8,
+      "temp": 23.7,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.9,
+      "dew": 19.2,
+      "humidity": 78.3,
+      "precip": 2.9,
+      "precipprob": 9.5,
+      "precipcover": 4,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.3,
+      "winddir": 143.4,
+      "pressure": null,
+      "cloudcover": 66.2,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:10:26",
+      "sunriseEpoch": 1634604026,
+      "sunset": "17:58:38",
+      "sunsetEpoch": 1634646518,
+      "moonphase": 0.49,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          26.2,
+          28.4,
+          33
+        ],
+        "tempmin": [
+          17.1,
+          19.8,
+          21.4
+        ],
+        "feelslike": [
+          17.1,
+          28.4,
+          34.6
+        ],
+        "precip": [
+          0,
+          2.9,
+          17
+        ],
+        "humidity": [
+          55.7,
+          78.3,
+          91.6
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          13.3,
+          24.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          70.6,
+          143.4,
+          303.3
+        ],
+        "cloudcover": [
+          25,
+          66.2,
+          98.6
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-20",
+      "datetimeEpoch": 1634668200,
+      "tempmax": 27.8,
+      "tempmin": 19.9,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.9,
+      "dew": 19,
+      "humidity": 78.1,
+      "precip": 6.8,
+      "precipprob": 9.5,
+      "precipcover": 4,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.7,
+      "winddir": 142.9,
+      "pressure": 1007.3,
+      "cloudcover": 67.1,
+      "visibility": 6.1,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:10:36",
+      "sunriseEpoch": 1634690436,
+      "sunset": "17:58:07",
+      "sunsetEpoch": 1634732887,
+      "moonphase": 0.5,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          22.4,
+          27.8,
+          33
+        ],
+        "tempmin": [
+          17.1,
+          19.9,
+          21.9
+        ],
+        "feelslike": [
+          17.1,
+          27.8,
+          34.7
+        ],
+        "precip": [
+          0,
+          6.8,
+          51
+        ],
+        "humidity": [
+          53.6,
+          78.1,
+          95
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          13.7,
+          22.3
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          50,
+          142.9,
+          281.3
+        ],
+        "cloudcover": [
+          31.2,
+          67.1,
+          98.8
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-21",
+      "datetimeEpoch": 1634754600,
+      "tempmax": 28,
+      "tempmin": 20.1,
+      "temp": 23.6,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.7,
+      "dew": 18.9,
+      "humidity": 77.5,
+      "precip": 7.9,
+      "precipprob": 9.5,
+      "precipcover": 4,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": 27.7,
+      "windspeed": 14,
+      "winddir": 134.5,
+      "pressure": 1009.8,
+      "cloudcover": 66.4,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:10:46",
+      "sunriseEpoch": 1634776846,
+      "sunset": "17:57:36",
+      "sunsetEpoch": 1634819256,
+      "moonphase": 0.51,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.2,
+          28,
+          32.5
+        ],
+        "tempmin": [
+          17.1,
+          20.1,
+          21.4
+        ],
+        "feelslike": [
+          17.1,
+          28,
+          34.4
+        ],
+        "precip": [
+          0,
+          7.9,
+          107.5
+        ],
+        "humidity": [
+          54.4,
+          77.5,
+          92
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          14,
+          27.7
+        ],
+        "windgust": [
+          27.7,
+          27.7,
+          27.7
+        ],
+        "winddir": [
+          52.9,
+          134.5,
+          304.3
+        ],
+        "cloudcover": [
+          10.8,
+          66.4,
+          90
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-22",
+      "datetimeEpoch": 1634841000,
+      "tempmax": 27.9,
+      "tempmin": 19.9,
+      "temp": 23.3,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.3,
+      "dew": 18.3,
+      "humidity": 76.3,
+      "precip": 15.5,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 15.1,
+      "winddir": 133,
+      "pressure": 1005.8,
+      "cloudcover": 63,
+      "visibility": 6.4,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:10:56",
+      "sunriseEpoch": 1634863256,
+      "sunset": "17:57:07",
+      "sunsetEpoch": 1634905627,
+      "moonphase": 0.52,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          23.7,
+          27.9,
+          32
+        ],
+        "tempmin": [
+          17,
+          19.9,
+          21.9
+        ],
+        "feelslike": [
+          17,
+          27.9,
+          34.7
+        ],
+        "precip": [
+          0,
+          15.5,
+          241.7
+        ],
+        "humidity": [
+          55.2,
+          76.3,
+          94.1
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          5.4,
+          15.1,
+          27.7
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          56.7,
+          133,
+          292.5
+        ],
+        "cloudcover": [
+          13.7,
+          63,
+          92.2
+        ]
+      }
+    },
+    {
+      "datetime": "2021-10-23",
+      "datetimeEpoch": 1634927400,
+      "tempmax": 27.7,
+      "tempmin": 19.2,
+      "temp": 23,
+      "feelslikemax": 0,
+      "feelslikemin": 0,
+      "feelslike": 29.3,
+      "dew": 18,
+      "humidity": 76.7,
+      "precip": 22.1,
+      "precipprob": 19,
+      "precipcover": 8,
+      "preciptype": null,
+      "snow": null,
+      "snowdepth": null,
+      "windgust": null,
+      "windspeed": 13.7,
+      "winddir": 130,
+      "pressure": 979.8,
+      "cloudcover": 64,
+      "visibility": 6.6,
+      "solarradiation": null,
+      "solarenergy": null,
+      "uvindex": null,
+      "sunrise": "06:11:08",
+      "sunriseEpoch": 1634949668,
+      "sunset": "17:56:38",
+      "sunsetEpoch": 1634991998,
+      "moonphase": 0.54,
+      "conditions": "Partially cloudy",
+      "description": "Partly cloudy throughout the day.",
+      "icon": "partly-cloudy-day",
+      "stations": null,
+      "source": "stats",
+      "normal": {
+        "tempmax": [
+          24.1,
+          27.7,
+          33
+        ],
+        "tempmin": [
+          16.1,
+          19.2,
+          21.1
+        ],
+        "feelslike": [
+          16.1,
+          27.7,
+          33.8
+        ],
+        "precip": [
+          0,
+          22.1,
+          263.7
+        ],
+        "humidity": [
+          54.7,
+          76.7,
+          92.4
+        ],
+        "snowdepth": [
+          null,
+          null,
+          null
+        ],
+        "windspeed": [
+          3.6,
+          13.7,
+          24.1
+        ],
+        "windgust": [
+          null,
+          null,
+          null
+        ],
+        "winddir": [
+          50,
+          130,
+          300.9
+        ],
+        "cloudcover": [
+          7.9,
+          64,
+          97.5
+        ]
+      }
+    }
+  ],
+  "stations": {
+    "VOBG": {
+      "distance": 4989,
+      "latitude": 12.95,
+      "longitude": 77.63,
+      "useCount": 0,
+      "id": "VOBG",
+      "name": "VOBG",
+      "quality": 37,
+      "contribution": 0
+    },
+    "VOBL": {
+      "distance": 28293,
+      "latitude": 13.2,
+      "longitude": 77.69,
+      "useCount": 0,
+      "id": "VOBL",
+      "name": "VOBL",
+      "quality": 49,
+      "contribution": 0
+    }
+  },
+  "currentConditions": {
+    "datetime": "14:00:00",
+    "datetimeEpoch": 1627201800,
+    "temp": 28,
+    "feelslike": 30,
+    "humidity": 65.4,
+    "dew": 20.9,
+    "precip": 0,
+    "precipprob": null,
+    "snow": null,
+    "snowdepth": 0,
+    "preciptype": null,
+    "windgust": null,
+    "windspeed": 26,
+    "winddir": 260,
+    "pressure": 1010,
+    "visibility": 6.1,
+    "cloudcover": 50,
+    "solarradiation": null,
+    "solarenergy": null,
+    "uvindex": null,
+    "conditions": "Partially cloudy",
+    "icon": "partly-cloudy-day",
+    "stations": [
+      "VOBG",
+      "VOBL"
+    ],
+    "sunrise": "06:03:43",
+    "sunriseEpoch": 1627173223,
+    "sunset": "18:48:36",
+    "sunsetEpoch": 1627219116,
+    "moonphase": 0.52
+  }
+}
