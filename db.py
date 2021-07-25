@@ -1,7 +1,23 @@
 import sqlite3
 from sqlite3 import Error
+from datetime import date
 
 class DB:
+
+    def update_date_format(self):
+        sql = "SELECT * from water"
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        for row in rows:
+            dt = row[0]
+            if "/" in dt:
+                dt = list(map(int, dt.split('/')))
+                dt = date(dt[2],dt[0], dt[1])
+                sql = f"UPDATE water SET date='{str(dt)}' where date='{row[0]}' and reservoir='{row[1]}'"
+                cur.execute(sql)
+        self.conn.commit()
+
     def create_connection(self, db_file):
         """ create a database connection to the SQLite database
             specified by db_file
@@ -46,6 +62,48 @@ class DB:
         if commit:
             self.conn.commit()
         return cur.lastrowid
+
+    def display_all_water_data(self, reservoir):
+        sql = f"SELECT * FROM water WHERE reservoir='{reservoir}'"
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        for row in rows:
+            print(row)
+
+    def get_water_record(self, day, reservoir):
+        sql = f"SELECT * FROM water WHERE date='{day}' and reservoir='{reservoir}'"
+        #print(sql)
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        return rows[0]
+
+    def upsert_water_record(self, data, commit=False):
+        """
+        Create a new data into the water table
+        :param data: (date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs, forecast)
+        :return: data id
+        """
+        cur = self.conn.cursor()
+        sql = f"SELECT * FROM water WHERE date='{data[0]}' and reservoir='{data[1]}'"
+        
+        cur.execute(sql)
+        rows = cur.fetchall()
+        if len(rows) > 0:
+            # update
+            sql = '''UPDATE water SET date=?, reservoir=?, level_ft=?, storage_tmc=?, 
+                     inflow_cusecs=?, outflow_cusecs=?, forecast=?
+                     WHERE date='{data[0]}' and reservoir='{data[1]}' '''
+            cur.execute(sql, data)
+            if commit:
+                self.conn.commit()
+            print("UPDATING...", data[0], data[1])
+            return cur.lastrowid
+        else:
+            # insert
+            print("INSERTING...", data[0], data[1])
+            return self.create_water_record(data, commit)
 
     def create_weather_record(self, data, commit=False):
         """
