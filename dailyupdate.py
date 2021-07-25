@@ -63,12 +63,12 @@ def update_reservoir(today = date.today()):
             old = db.appdb.get_water_record(str(prevday), reservoir)
             data = (str(today), *old[1:])
         print(data)
-        # we need to record the error of predicted to actual somewhere
-
         db.appdb.upsert_water_record(data, True)
         
             
 def run_predictions():
+    "predictions will be in forecast table"
+    "we can always compare them with actual data as future evolves"
     pass
 
 # TODO cron job to run daily
