@@ -79,7 +79,7 @@ def run_predictions(dt=date.today()):
 # TODO cron job to run daily
 #update_weather()
 #update_reservoir()
-#run_predictions()
+run_predictions()
 
 # TODO cron jub to run weekly or monthly or manually done
 # re-train all the models on new data

@@ -6,3 +6,4 @@ numpy
 streamlit
 requests
 bs4
+tensorflow

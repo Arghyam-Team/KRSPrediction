@@ -17,7 +17,7 @@ def predict(modelconfig, afterdate):
 
     # process data
     krs = pd.DataFrame(data, columns=['date', 'present_storage_tmc', 'inflow', 'outflow', 'max_temp', 'visibility', 'wind', 'humidity', 'cloudcover'])
-    krs = krs.drop_duplicates(subset=["date"])
+    #krs = krs.drop_duplicates(subset=["date"])
     krs.date = pd.to_datetime(krs.date)
     krs['inflow'] = pd.to_numeric(krs.inflow, errors='coerce')
     krs['outflow'] = pd.to_numeric(krs.outflow, errors='coerce')
@@ -42,8 +42,9 @@ def predict(modelconfig, afterdate):
     # fetch model
     model_path = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
     print("LOADING...", model_path)
+   
     model = keras.models.load_model(model_path)
-
+    print(model.summary())
     # run predictions
     y_scaler = MinMaxScaler()
     y_scaler.fit(krs[["present_storage_tmc"]])
