@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import datetime 
 from sklearn.preprocessing import MinMaxScaler
 import seaborn as sns
+from setup import MODELS
 
 URI_SQLITE_DB = "./data/pythonsqlite.db"
 
@@ -70,10 +71,10 @@ def display_correlation(conn : Connection):
     st.pyplot(fig)
 
 def display_forecast(conn: Connection):
-    actual = pd.read_sql("select date, storage_tmc from water where reservoir == 'krs'", con=conn)
+    actual = pd.read_sql("select date, storage_tmc from water where reservoir='krs'", con=conn)
     pred = pd.read_sql("select date, model, storage_tmc from water_forecast",con = conn)
-
-    model = st.selectbox("Select model",[0])
+    modelnumbers = [x['number'] for x in MODELS]
+    model = st.selectbox("Select model", modelnumbers)
     pred = pred[pred['model']==model]
 
     actual['date'] = pd.to_datetime(actual['date'])
