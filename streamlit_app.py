@@ -68,7 +68,7 @@ def display_correlation(conn : Connection):
     st.write("HeatMap for correlation between various features of data collected")
     #heatmap for normalised data
     cor = df.corr()
-    fig, ax = plt.subplots(figsize=(10,10)) 
+    fig, ax = plt.subplots(figsize=(8,8)) 
     sns.heatmap(cor, xticklabels=cor.columns, yticklabels=cor.columns, annot=True,ax = ax)
     st.pyplot(fig)
 
@@ -92,17 +92,17 @@ def display_forecast(conn: Connection):
     df.set_index('date',inplace = True)
 
     if st.checkbox('Display monthly forecast plot for selected year'):
-            year = st.slider("Year",2019,2021)
-            input_date = str(year)
+            forecast_year = st.slider("Select Year",2019,2021)
+            input_date = str(forecast_year)
             if st.checkbox('Display daily forecast plot for selected month'):
 
-                month = st.slider("Month",1,12)
+                forecast_month = st.slider("Select Month",1,12)
 
 
-                if month <10:
-                    input_date = str(year) + '-' + '0' +  str(month)
+                if forecast_month <10:
+                    input_date = str(forecast_year) + '-' + '0' +  str(forecast_month)
                 else:
-                    input_date = str(year) + '-' + str(month)
+                    input_date = str(forecast_year) + '-' + str(forecast_month)
             df = df.loc[input_date]
 
     fig, ax = plt.subplots(figsize=(15,7)) 
