@@ -1,7 +1,8 @@
 import sqlite3
 from sqlite3 import Error
 from datetime import date, timedelta
-from config.files import get_full_path
+from setup import get_full_path
+
 class DB:
 
     def realdate(self, dt):
@@ -152,8 +153,8 @@ class DB:
             return self.create_weather_record(data, commit)
         
 
-    def get_data_for_prediction(self, window):
-        start = self.realdate(date.today() + timedelta(-window))
+    def get_data_for_prediction(self, todate, window):
+        start = self.realdate(todate + timedelta(-window))
         sql = f''' SELECT water.date, water.storage_tmc, water.inflow_cusecs, water.outflow_cusecs, 
                          weather.max_temp, weather.visibility, weather.wind, weather.humidity, weather.cloudcover 
                   FROM water INNER JOIN weather 
@@ -163,6 +164,38 @@ class DB:
         cur = self.conn.cursor()
         cur.execute(sql)
         return cur.fetchall()
+
+    def upsert_forecast_record(self, data, commit=False):
+        """
+        Create a new data into the water_forecast table
+        :param data: (date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs, model)
+        :return: data id
+        """
+        cur = self.conn.cursor()
+        sql = f"SELECT * FROM water_forecast WHERE date='{data[0]}' and reservoir='{data[1]}'"
+        
+        cur.execute(sql)
+        rows = cur.fetchall()
+        if len(rows) > 0:
+            # update
+            sql = f'''UPDATE water SET realdate={self.realdate(data[0])}, date=?, reservoir=?, storage_tmc=?
+                     WHERE date='{data[0]}' and reservoir='{data[1]}' '''
+            cur.execute(sql, data)
+            if commit:
+                self.conn.commit()
+            print("UPDATING...", data[0], data[1])
+            return cur.lastrowid
+        else:
+            # insert
+            print("INSERTING...", data[0], data[1])
+            sql = f'''INSERT INTO water_forecast(realdate, date, reservoir, storage_tmc)
+                VALUES({self.realdate(data[0])},?,?,?)'''
+            cur = self.conn.cursor()
+            cur.execute(sql, data)
+            if commit:
+                self.conn.commit()
+            return cur.lastrowid
+
 
     def display_all_weather(self):
         """

@@ -3,7 +3,8 @@ from datetime import date, timedelta
 import db
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-
+from config.setup import MODELS
+from forecasting import forecasting
 # weather
 def update_weather():
     today = date.today()
@@ -70,7 +71,10 @@ def update_reservoir(today = date.today()):
 def run_predictions():
     "predictions will be in forecast table"
     "we can always compare them with actual data as future evolves"
-    pass
+    afterdate = date.today()
+    for model in MODELS:
+        print("Now running model", model["number"], "-", model["title"])
+        forecasting.predict(model, afterdate)
 
 # TODO cron job to run daily
 update_weather()
