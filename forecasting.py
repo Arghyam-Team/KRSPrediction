@@ -54,6 +54,6 @@ def predict(modelconfig, afterdate):
     # store this in db
     for t in range(1, HORIZON+1):
         dt = afterdate + timedelta(t)
-        db.appdb.upsert_forecast_record((str(dt), modelconfig["reservoir"], ts_predictions[t-1], modelconfig["number"]))
+        db.appdb.upsert_forecast_record((str(dt), modelconfig["reservoir"], float(ts_predictions[t-1]), modelconfig["number"]))
     
     db.appdb.commit()
