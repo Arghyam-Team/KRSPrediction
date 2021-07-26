@@ -47,10 +47,10 @@ def predict(modelconfig, afterdate):
     y_scaler.fit(krs[["present_storage_tmc"]])
     ts_predictions = model.predict(tensor)
     ts_predictions = y_scaler.inverse_transform(ts_predictions)[0]
-
+    print(ts_predictions)
     # store this in db
-    for t in range(1, HORIZON+1):
-        dt = afterdate + timedelta(t)
-        db.appdb.upsert_forecast_record((str(dt), modelconfig["reservoir"], ts_predictions[t-1], modelconfig["number"]))
+    # for t in range(1, HORIZON+1):
+    #     dt = afterdate + timedelta(t)
+    #     db.appdb.upsert_forecast_record((str(dt), modelconfig["reservoir"], ts_predictions[t-1], modelconfig["number"]))
     
-    db.appdb.commit()
+    # db.appdb.commit()
