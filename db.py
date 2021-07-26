@@ -163,11 +163,12 @@ class DB:
 
     def get_data_for_prediction(self, todate, window):
         start = self.realdate(todate + timedelta(-window))
+        end = self.realdate(todate)
         sql = f''' SELECT water.date, water.storage_tmc, water.inflow_cusecs, water.outflow_cusecs, 
                          weather.max_temp, weather.visibility, weather.wind, weather.humidity, weather.cloudcover 
                   FROM water INNER JOIN weather 
                   ON  water.reservoir='krs' AND weather.location='karnataka' AND water.date = weather.date
-                      AND water.realdate > {start}
+                      AND water.realdate > {start} AND water.realdate <= {end} 
                   '''
         cur = self.conn.cursor()
         cur.execute(sql)
@@ -175,8 +176,9 @@ class DB:
 
     def get_water_data_for_prediction(self, todate, window):
         start = self.realdate(todate + timedelta(-window))
+        end = self.realdate(todate)
         sql = f''' SELECT date, water.storage_tmc
-                  FROM water WHERE reservoir='krs' AND realdate > {start}
+                  FROM water WHERE reservoir='krs' AND realdate > {start} AND realdate <= {end} 
                   '''
         cur = self.conn.cursor()
         cur.execute(sql)
@@ -184,9 +186,10 @@ class DB:
 
     def get_weather_data_for_prediction(self, todate, window):
         start = self.realdate(todate + timedelta(-window))
+        end = self.realdate(todate +  timedelta(90))
         sql = f''' SELECT date, max_temp, visibility, wind, humidity, cloudcover 
                   FROM weather 
-                  WHERE location='karnataka' AND realdate > {start}
+                  WHERE location='karnataka' AND realdate > {start} AND realdate <= {end} 
                   '''
         cur = self.conn.cursor()
         cur.execute(sql)

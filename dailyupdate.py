@@ -80,8 +80,8 @@ def run_predictions(dt=date.today()):
             predict(m, afterdate)
 
 # TODO cron job to run daily
-#update_weather()
-#update_reservoir()
+update_weather()
+update_reservoir()
 run_predictions()
 
 # TODO cron jub to run weekly or monthly or manually done
@@ -94,3 +94,16 @@ run_predictions()
 #     dt += timedelta(1)
 #db.appdb.update_date_format()
 #db.appdb.display_all_water_data("kabini")
+
+def old_predictions():
+    for m in MODELS:
+        afterdate = date(2019,12,31)
+        while afterdate<date.today():
+            if m.get('onlyweather', False):
+                predict_from_weather(m, afterdate)
+                afterdate += timedelta(30)
+            else:
+                predict(m, afterdate)
+                afterdate += timedelta(m['HORIZON'])
+
+#old_predictions()

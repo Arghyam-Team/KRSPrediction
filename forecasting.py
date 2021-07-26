@@ -7,7 +7,21 @@ from setup import get_full_path
 import db
 import pandas as pd
 
+model = None
+model_path = None
+
 def predict(modelconfig, afterdate):
+    global model, model_path
+    # fetch model
+    mp = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
+    if model_path!=mp:
+        model_path = mp
+        print("LOADING...", model_path)
+    
+        model = keras.models.load_model(model_path)
+        print(model.summary())
+
+
     T = modelconfig['T']
     LATENT_DIM = T
     HORIZON = modelconfig['HORIZON']
@@ -35,13 +49,6 @@ def predict(modelconfig, afterdate):
     tensor = tensor.reshape((1, *(tensor.shape)))
     print(tensor.shape)
 
-
-    # fetch model
-    model_path = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
-    print("LOADING...", model_path)
-   
-    model = keras.models.load_model(model_path)
-    print(model.summary())
     # run predictions
     y_scaler = MinMaxScaler()
     y_scaler.fit(krs[["present_storage_tmc"]])
@@ -59,6 +66,15 @@ def predict(modelconfig, afterdate):
     db.appdb.commit()
 
 def predict_from_weather(modelconfig, afterdate):
+    global model, model_path
+    mp = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
+    if model_path!=mp:
+        model_path = mp
+        print("LOADING...", model_path)
+    
+        model = keras.models.load_model(model_path)
+        print(model.summary())
+
     T = modelconfig['T']
     LATENT_DIM = T
     HORIZON = modelconfig['HORIZON']
@@ -76,13 +92,6 @@ def predict_from_weather(modelconfig, afterdate):
     
     weather = pd.DataFrame(data2, columns=['date', 'max_temp', 'visibility', 'wind', 'humidity', 'cloudcover'])
     weather.date = pd.to_datetime(weather.date)
-
-    # fetch model
-    model_path = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
-    print("LOADING...", model_path)
-
-    model = keras.models.load_model(model_path)
-    print(model.summary())
 
     for s in range(0,90,HORIZON):
         df = weather.merge(krs)
