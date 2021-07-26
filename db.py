@@ -173,6 +173,25 @@ class DB:
         cur.execute(sql)
         return cur.fetchall()
 
+    def get_water_data_for_prediction(self, todate, window):
+        start = self.realdate(todate + timedelta(-window))
+        sql = f''' SELECT date, water.storage_tmc
+                  FROM water WHERE reservoir='krs' AND realdate > {start}
+                  '''
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        return cur.fetchall()
+
+    def get_weather_data_for_prediction(self, todate, window):
+        start = self.realdate(todate + timedelta(-window))
+        sql = f''' SELECT date, max_temp, visibility, wind, humidity, cloudcover 
+                  FROM weather 
+                  WHERE location='karnataka' AND realdate > {start}
+                  '''
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        return cur.fetchall()
+
     def upsert_forecast_record(self, data, commit=False):
         """
         Create a new data into the water_forecast table

@@ -4,7 +4,7 @@ import db
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from setup import MODELS
-from forecasting import predict
+from forecasting import predict, predict_from_weather
 # weather
 def update_weather():
     today = date.today()
@@ -74,7 +74,10 @@ def run_predictions(dt=date.today()):
     afterdate = dt
     for m in MODELS:
         print("Now running model", m["number"], "-", m["title"])
-        predict(m, afterdate)
+        if m.get('onlyweather', False):
+            predict_from_weather(m, afterdate)
+        else:
+            predict(m, afterdate)
 
 # TODO cron job to run daily
 #update_weather()
