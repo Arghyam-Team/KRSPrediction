@@ -191,11 +191,11 @@ class DB:
             cur.execute(sql, data)
             if commit:
                 self.conn.commit()
-            print("UPDATING...", data[0], data[1])
+            print("UPDATING...", data)
             return cur.lastrowid
         else:
             # insert
-            print("INSERTING...", data[0], data[1])
+            print("INSERTING...", data)
             sql = f'''INSERT INTO water_forecast(realdate, date, reservoir, storage_tmc, model)
                 VALUES({self.realdate(data[0])},?,?,?,?)'''
             cur = self.conn.cursor()
