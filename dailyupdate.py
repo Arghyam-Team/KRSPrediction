@@ -75,7 +75,6 @@ def run_predictions(dt=date.today()):
     for m in MODELS:
         print("Now running model", m["number"], "-", m["title"])
         predict(m, afterdate)
-        break
 
 # TODO cron job to run daily
 #update_weather()
