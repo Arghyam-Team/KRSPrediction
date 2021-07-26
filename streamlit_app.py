@@ -24,9 +24,11 @@ def main():
 def display_weather_data(conn : Connection):
     df = pd.read_sql("SELECT * FROM weather where location == 'karnataka'", con=conn)
     req = df.set_index(pd.to_datetime(df['date']))
-    weather_param = st.selectbox("Please select the weather parameter for which you would like to view weather data ",
-                     ['min_temp', 'max_temp'])
+    map_param = {'Maximum Temperature ': 'max_temp', 'Visibility': 'visibility','Cloud Cover': 'cloudcover','Humidity': 'humidity','View All': ['max_temp','visibility','cloudcover','humidity']}
+    weather_selected = st.selectbox("Please select the weather parameter for which you would like to view weather data ",
+                     map_param.keys())
 
+    weather_param = map_param.get(weather_selected)
     if st.checkbox('Display monthly plot for selected year'):
         year = st.slider("Year",2011,2020)
         input_date = str(year)
@@ -41,12 +43,12 @@ def display_weather_data(conn : Connection):
                 input_date = str(year) + '-' + str(month)
         req = req.loc[input_date]
 
-    st.write('Showing details for',weather_param)
+    st.write('Showing details for',weather_selected)
 
 
 
-    fig, ax = plt.subplots(figsize=(15,10)) 
-    req[weather_param].plot(ax =ax, colormap = 'Dark2')
+    fig, ax = plt.subplots(figsize=(15,8)) 
+    req[weather_param].plot(ax =ax, colormap = 'Dark2',subplots = True)
     st.pyplot(fig)
     if st.checkbox('show full data'):
         st.dataframe(req[weather_param])
@@ -103,8 +105,8 @@ def display_forecast(conn: Connection):
                     input_date = str(year) + '-' + str(month)
             df = df.loc[input_date]
 
-    fig, ax = plt.subplots(figsize=(15,8)) 
-    df.plot(ax =ax, subplots = False)
+    fig, ax = plt.subplots(figsize=(15,7)) 
+    df.plot(ax =ax, subplots = False,colormap = 'Dark2')
     plt.axhline(y=49.45, color='r', linestyle='--',label = 'Full Capacity of Dam Reached')
     ax.axhspan(49.45, 49.45-2, alpha=0.2, color='red')
     plt.axhline(y=4.4, color='black', linestyle='--',label = 'Dead Storage')
@@ -116,7 +118,7 @@ def display_forecast(conn: Connection):
 
 def display_model_info(model_selected):
     st.markdown('**Model Information**')
-    st.write("Creating a space to insert information or static images. Just for demo")
+    #st.write("Creating a space to insert information or static images. Just for demo")
     details = [item for item in MODELS if item['title'] == model_selected][0]
     for key,value in details.items():
         st.write(str(key).capitalize() + ' : '+ str(value))
