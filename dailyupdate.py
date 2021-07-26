@@ -80,9 +80,9 @@ def run_predictions(dt=date.today()):
             predict(m, afterdate)
 
 # TODO cron job to run daily
-update_weather()
-update_reservoir()
-run_predictions()
+#update_weather()
+#update_reservoir()
+
 
 # TODO cron jub to run weekly or monthly or manually done
 # re-train all the models on new data
@@ -106,4 +106,5 @@ def old_predictions():
                 predict(m, afterdate)
                 afterdate += timedelta(m['HORIZON'])
 
-#old_predictions()
+old_predictions()
+run_predictions()
