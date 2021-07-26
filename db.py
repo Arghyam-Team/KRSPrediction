@@ -223,6 +223,16 @@ class DB:
         cur.execute(sql)
         self.conn.commit()
 
+    def delete_all_forecast(self):
+        """
+        Delete all rows in the weather table
+        :return:
+        """
+        sql = 'DELETE FROM water_forecast'
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        self.conn.commit()
+
     def __init__(self, db_file):
         sql_create_weather_table = """ CREATE TABLE IF NOT EXISTS weather (
                                         date text NOT NULL,

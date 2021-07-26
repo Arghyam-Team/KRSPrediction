@@ -3,8 +3,8 @@ from datetime import date, timedelta
 import db
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from config.setup import MODELS
-from forecasting import forecasting
+from setup import MODELS
+from forecasting import predict
 # weather
 def update_weather():
     today = date.today()
@@ -68,18 +68,18 @@ def update_reservoir(today = date.today()):
         db.appdb.upsert_water_record(data, True)
         
             
-def run_predictions():
+def run_predictions(dt=date.today()):
     "predictions will be in forecast table"
     "we can always compare them with actual data as future evolves"
-    afterdate = date.today()
+    afterdate = dt
     for model in MODELS:
         print("Now running model", model["number"], "-", model["title"])
-        forecasting.predict(model, afterdate)
+        predict(model, afterdate)
 
 # TODO cron job to run daily
-update_weather()
-update_reservoir()
-run_predictions()
+#update_weather()
+#update_reservoir()
+#run_predictions()
 
 # TODO cron jub to run weekly or monthly or manually done
 # re-train all the models on new data

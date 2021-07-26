@@ -36,10 +36,12 @@ def predict(modelconfig, afterdate):
     X_scaler = MinMaxScaler()
     ts_data_load[flist] = X_scaler.fit_transform(ts_data_load)
     ts_data_inputs = TimeSeriesTensor(ts_data_load, "present_storage_tmc", HORIZON, tensor_structure, freq='D')
-    
+    print("INPUT DATA SHAPE:", ts_data_inputs['X'].shape)
+    #print(ts_data_inputs['X'])
 
     # fetch model
     model_path = get_full_path("models", modelconfig["folder"])
+    print("LOADING...", model_path)
     model = keras.models.load_model(model_path)
 
     # run predictions
