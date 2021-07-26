@@ -159,7 +159,7 @@ class DB:
                          weather.max_temp, weather.visibility, weather.wind, weather.humidity, weather.cloudcover 
                   FROM water INNER JOIN weather 
                   ON  water.reservoir='krs' AND weather.location='karnataka' AND water.date = weather.date
-                      AND water.realdate >= {start}
+                      AND water.realdate > {start}
                   '''
         cur = self.conn.cursor()
         cur.execute(sql)

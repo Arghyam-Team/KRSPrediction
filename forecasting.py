@@ -30,13 +30,15 @@ def predict(modelconfig, afterdate):
     # prepare tensor
     ts_data_load = krs[[ "present_storage_tmc", "inflow_tmc", "outflow_tmc", "max_temp", "visibility", "humidity", "wind"]]
     ts_data_load.sort_index(axis = 1)
-    features = len(ts_data_load.columns)
-    flist = list(ts_data_load.columns)
-    tensor_structure = {"X": (range(-T + 1, 1), flist)}
+    # features = len(ts_data_load.columns)
+    # flist = list(ts_data_load.columns)
+    # tensor_structure = {"X": (range(-T + 1, 1), flist)}
     X_scaler = MinMaxScaler()
-    ts_data_load[flist] = X_scaler.fit_transform(ts_data_load)
-    ts_data_inputs = TimeSeriesTensor(ts_data_load, "present_storage_tmc", HORIZON, tensor_structure, freq='D')
-    print("INPUT DATA SHAPE:", ts_data_inputs['X'].shape)
+    tensor = X_scaler.fit_transform(ts_data_load)
+    tensor = tensor.reshape((1, *(tensor.shape)))
+    print(tensor.shape)
+    #ts_data_inputs = TimeSeriesTensor(ts_data_load, "present_storage_tmc", HORIZON, tensor_structure, freq='D')
+    #print("INPUT DATA SHAPE:", ts_data_inputs['X'].shape)
     #print(ts_data_inputs['X'])
 
     # fetch model
@@ -48,7 +50,7 @@ def predict(modelconfig, afterdate):
     # run predictions
     y_scaler = MinMaxScaler()
     y_scaler.fit(krs[["present_storage_tmc"]])
-    ts_predictions = model.predict(ts_data_inputs["X"])
+    ts_predictions = model.predict(tensor)
     ts_predictions = y_scaler.inverse_transform(ts_predictions)[0]
 
     # store this in db
