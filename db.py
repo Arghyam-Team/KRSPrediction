@@ -4,6 +4,11 @@ from datetime import date, timedelta
 from config.files import get_full_path
 class DB:
 
+    def realdate(self, dt):
+        if not isinstance(dt, date):
+            d = list(map(int, dt.split('-')))
+            dt = date(d[0], d[1], d[2])
+        return dt.toordinal() + 1721424.5
     # def update_date_format(self):
     #     sql = "SELECT * from water"
     #     cur = self.conn.cursor()
@@ -55,8 +60,9 @@ class DB:
         :param data: (date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs)
         :return: data id
         """
-        sql = '''INSERT INTO water(date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs)
-                VALUES(?,?,?,?,?,?,?)'''
+
+        sql = f'''INSERT INTO water(realdate, date, reservoir, level_ft, storage_tmc, inflow_cusecs, outflow_cusecs)
+                VALUES({self.realdate(data[0])},?,?,?,?,?,?)'''
         cur = self.conn.cursor()
         cur.execute(sql, data)
         if commit:
@@ -92,7 +98,7 @@ class DB:
         rows = cur.fetchall()
         if len(rows) > 0:
             # update
-            sql = '''UPDATE water SET date=?, reservoir=?, level_ft=?, storage_tmc=?, 
+            sql = f'''UPDATE water SET realdate={self.realdate(data[0])}, date=?, reservoir=?, level_ft=?, storage_tmc=?, 
                      inflow_cusecs=?, outflow_cusecs=?
                      WHERE date='{data[0]}' and reservoir='{data[1]}' '''
             cur.execute(sql, data)
@@ -111,8 +117,8 @@ class DB:
         :param data: (date, location, max_temp, min_temp, temp, precip, wind, wind_dir, visibility, cloudcover, humidity, forecast)
         :return: data id
         """
-        sql = '''INSERT INTO weather(date, location, max_temp, min_temp, temp, precip, wind, wind_dir, visibility, cloudcover, humidity, forecast)
-                VALUES(?,?,?,?,?,?,?,?,?,?,?,?)'''
+        sql = f'''INSERT INTO weather(realdate, date, location, max_temp, min_temp, temp, precip, wind, wind_dir, visibility, cloudcover, humidity, forecast)
+                VALUES({self.realdate(data[0])}, ?,?,?,?,?,?,?,?,?,?,?,?)'''
         cur = self.conn.cursor()
         cur.execute(sql, data)
         if commit:
@@ -132,7 +138,7 @@ class DB:
         rows = cur.fetchall()
         if len(rows) > 0:
             # update
-            sql = '''UPDATE weather SET date=?, location=?, max_temp=?, min_temp=?, temp=?, precip=?, wind=?, 
+            sql = f'''UPDATE weather SET realdate={self.realdate(data[0])}, date=?, location=?, max_temp=?, min_temp=?, temp=?, precip=?, wind=?, 
                      wind_dir=?, visibility=?, cloudcover=?, humidity=?, forecast=?
                      WHERE date='{data[0]}' and location='{data[1]}' '''
             cur.execute(sql, data)
@@ -147,8 +153,7 @@ class DB:
         
 
     def get_data_for_prediction(self, window):
-        start = date.today() + timedelta(-window)
-        start = start.toordinal() + 1721424.5
+        start = self.realdate(date.today() + timedelta(-window))
         sql = f''' SELECT water.date, water.storage_tmc, water.inflow_cusecs, water.outflow_cusecs, 
                          weather.max_temp, weather.visibility, weather.wind, weather.humidity, weather.cloudcover 
                   FROM water INNER JOIN weather 
@@ -198,7 +203,8 @@ class DB:
                                         visibility real,
                                         cloudcover real,
                                         humidity real,
-                                        forecast integer
+                                        forecast integer,
+                                        realdate real
                                     ); """
 
         sql_create_water_table = """ CREATE TABLE IF NOT EXISTS water (
@@ -207,7 +213,8 @@ class DB:
                                         level_ft real,
                                         storage_tmc real,
                                         inflow_cusecs real,
-                                        outflow_cusecs real
+                                        outflow_cusecs real,
+                                        realdate real
                                     ); """
 
         sql_create_forecast_table = """ CREATE TABLE IF NOT EXISTS water_forecast (
@@ -217,7 +224,8 @@ class DB:
                                         storage_tmc real,
                                         inflow_cusecs real,
                                         outflow_cusecs real,
-                                        model integer
+                                        model integer,
+                                        realdate real
                                     ); """
 
 

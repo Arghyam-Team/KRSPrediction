@@ -60,8 +60,9 @@ def update_reservoir(today = date.today()):
         isbad =  [level, storage, inflow, outflow] == baddata[reservoir]
         data = (str(today), reservoir, level, storage/1000, inflow, outflow)
         if isbad:
+            print("Improper data found, reverting to previous day data...")
             old = db.appdb.get_water_record(str(prevday), reservoir)
-            data = (str(today), *old[1:])
+            data = (str(today), *old[1:-1])
         print(data)
         db.appdb.upsert_water_record(data, True)
         
