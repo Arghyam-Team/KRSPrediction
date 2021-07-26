@@ -73,9 +73,13 @@ def display_correlation(conn : Connection):
 def display_forecast(conn: Connection):
     actual = pd.read_sql("select date, storage_tmc from water where reservoir='krs'", con=conn)
     pred = pd.read_sql("select date, model, storage_tmc from water_forecast",con = conn)
-    modelnumbers = [x['number'] for x in MODELS]
-    model = st.selectbox("Select model", modelnumbers)
+    modeltitles = [x['title'] for x in MODELS]
+    model_selected = st.selectbox("Select model", modeltitles)
+    
+    model = [item['number'] for item in MODELS if item['title'] == model_selected][0]
     pred = pred[pred['model']==model]
+
+    display_model_info(model_selected)
 
     actual['date'] = pd.to_datetime(actual['date'])
     pred['date'] = pd.to_datetime(pred['date'])
@@ -100,10 +104,22 @@ def display_forecast(conn: Connection):
             df = df.loc[input_date]
 
     fig, ax = plt.subplots(figsize=(15,8)) 
-    df.plot(ax =ax)
+    df.plot(ax =ax, subplots = False)
+    plt.axhline(y=49.45, color='r', linestyle='--',label = 'Full Capacity of Dam Reached')
+    ax.axhspan(49.45, 49.45-2, alpha=0.2, color='red')
+    plt.axhline(y=4.4, color='black', linestyle='--',label = 'Dead Storage')
+    ax.axhspan(4.4, 4.4+2, alpha=0.2, color='black')
+    plt.plot()
+    plt.legend()
+    plt.autoscale()
     st.pyplot(fig)
 
-
+def display_model_info(model_selected):
+    st.markdown('**Model Information**')
+    st.write("Creating a space to insert information or static images. Just for demo")
+    details = [item for item in MODELS if item['title'] == model_selected][0]
+    for key,value in details.items():
+        st.write(str(key).capitalize() + ' : '+ str(value))
 
 
 @st.cache(hash_funcs={Connection: id})
