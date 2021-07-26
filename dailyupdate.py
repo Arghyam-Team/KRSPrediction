@@ -72,9 +72,9 @@ def run_predictions(dt=date.today()):
     "predictions will be in forecast table"
     "we can always compare them with actual data as future evolves"
     afterdate = dt
-    for model in MODELS:
-        print("Now running model", model["number"], "-", model["title"])
-        predict(model, afterdate)
+    for m in MODELS:
+        print("Now running model", m["number"], "-", m["title"])
+        predict(m, afterdate)
 
 # TODO cron job to run daily
 #update_weather()

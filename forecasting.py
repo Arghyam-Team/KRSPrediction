@@ -40,7 +40,7 @@ def predict(modelconfig, afterdate):
     #print(ts_data_inputs['X'])
 
     # fetch model
-    model_path = get_full_path("models", modelconfig["folder"])
+    model_path = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
     print("LOADING...", model_path)
     model = keras.models.load_model(model_path)
 
