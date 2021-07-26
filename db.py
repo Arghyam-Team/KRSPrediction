@@ -172,14 +172,14 @@ class DB:
         :return: data id
         """
         cur = self.conn.cursor()
-        sql = f"SELECT * FROM water_forecast WHERE date='{data[0]}' and reservoir='{data[1]}'"
+        sql = f"SELECT * FROM water_forecast WHERE date='{data[0]}' and reservoir='{data[1]}' and model={data[-1]}"
         
         cur.execute(sql)
         rows = cur.fetchall()
         if len(rows) > 0:
             # update
-            sql = f'''UPDATE water SET realdate={self.realdate(data[0])}, date=?, reservoir=?, storage_tmc=?
-                     WHERE date='{data[0]}' and reservoir='{data[1]}' '''
+            sql = f'''UPDATE water SET realdate={self.realdate(data[0])}, date=?, reservoir=?, storage_tmc=?, model=?
+                     WHERE date='{data[0]}' and reservoir='{data[1]}' and model={data[-1]}'''
             cur.execute(sql, data)
             if commit:
                 self.conn.commit()
@@ -188,8 +188,8 @@ class DB:
         else:
             # insert
             print("INSERTING...", data[0], data[1])
-            sql = f'''INSERT INTO water_forecast(realdate, date, reservoir, storage_tmc)
-                VALUES({self.realdate(data[0])},?,?,?)'''
+            sql = f'''INSERT INTO water_forecast(realdate, date, reservoir, storage_tmc, model)
+                VALUES({self.realdate(data[0])},?,?,?,?)'''
             cur = self.conn.cursor()
             cur.execute(sql, data)
             if commit:
