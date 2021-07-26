@@ -82,22 +82,21 @@ def predict_from_weather(modelconfig, afterdate):
     print("LOADING...", model_path)
 
     model = keras.models.load_model(model_path)
-    #print(model.summary())
+    print(model.summary())
 
     for s in range(0,90,HORIZON):
         df = weather.merge(krs)
-        print(len(df))
         df.sort_values(by=['date'], inplace=True, ascending=True)
         df.set_index('date', inplace=True)
         df = df.sort_index(axis=1)
-        print(df.info())
+        #print(df.info())
         # prepare tensor
         ts_data_load = df[["present_storage_tmc", "max_temp", "visibility", "humidity", "wind"]]
         ts_data_load.sort_index(axis = 1)
         X_scaler = MinMaxScaler()
         tensor = X_scaler.fit_transform(ts_data_load)
         tensor = tensor.reshape((1, *(tensor.shape)))
-        print(tensor.shape)
+        #print(tensor.shape)
 
         # run predictions
         ts_predictions = model.predict(tensor)
@@ -107,20 +106,13 @@ def predict_from_weather(modelconfig, afterdate):
             p = float(ts_predictions[t-1])
             afterdate = afterdate + timedelta(1)
             newrow = {"date": afterdate, "present_storage_tmc": p}
+            db.appdb.upsert_forecast_record((str(afterdate), modelconfig["reservoir"], p, modelconfig["number"]))
             krs = krs.append(newrow, ignore_index=True)
 
         sdate = afterdate - timedelta(T-HORIZON) 
-        krs.drop(krs[krs['date']]<sdate, inplace=True)
-        print(krs)
-        
-
-    # print(ts_predictions)
-    # for t in range(1, HORIZON+1):
-    #     dt = afterdate + timedelta(t)
-    #     print((str(dt), modelconfig["reservoir"], ts_predictions[t-1], modelconfig["number"]))
-    # store this in db
-    # for t in range(1, HORIZON+1):
-    #     dt = afterdate + timedelta(t)
-    #     db.appdb.upsert_forecast_record((str(dt), modelconfig["reservoir"], float(ts_predictions[t-1]), modelconfig["number"]))
+        #print(sdate)
+        krs.drop(krs[krs.date<sdate].index, inplace=True)
+        krs.date = pd.to_datetime(krs.date)
+        #print(krs)
     
-    # db.appdb.commit()
+    db.appdb.commit()
