@@ -78,6 +78,14 @@ class DB:
         for row in rows:
             print(row)
 
+    def display_all_water_forecast_data(self, reservoir='krs'):
+        sql = f"SELECT * FROM water_forecast WHERE reservoir='{reservoir}'"
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        for row in rows:
+            print(row)
+
     def get_water_record(self, day, reservoir):
         sql = f"SELECT * FROM water WHERE date='{day}' and reservoir='{reservoir}'"
         #print(sql)
