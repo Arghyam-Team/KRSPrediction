@@ -8,7 +8,7 @@ import datetime
 from sklearn.preprocessing import MinMaxScaler
 import seaborn as sns
 
-URI_SQLITE_DB = "data\\pythonsqlite.db"
+URI_SQLITE_DB = "./data/pythonsqlite.db"
 
 def main():
     st.title("KRS Water Level Forecasting")
