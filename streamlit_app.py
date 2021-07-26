@@ -17,6 +17,7 @@ def main():
 
     display_weather_data(conn)
     display_correlation(conn)
+    display_forecast(conn)
 
 
 def display_weather_data(conn : Connection):
@@ -66,6 +67,39 @@ def display_correlation(conn : Connection):
     cor = df.corr()
     fig, ax = plt.subplots(figsize=(10,10)) 
     sns.heatmap(cor, xticklabels=cor.columns, yticklabels=cor.columns, annot=True,ax = ax)
+    st.pyplot(fig)
+
+def display_forecast(conn: Connection):
+    actual = pd.read_sql("select date, storage_tmc from water where reservoir == 'krs'", con=conn)
+    pred = pd.read_sql("select date, model, storage_tmc from water_forecast",con = conn)
+
+    model = st.selectbox("Select model",[0])
+    pred = pred[pred['model']==model]
+
+    actual['date'] = pd.to_datetime(actual['date'])
+    pred['date'] = pd.to_datetime(pred['date'])
+    pred['storage_tmc_prediction'] = pred['storage_tmc']
+    pred.drop(columns = ['storage_tmc','model'],inplace=True)
+
+    df = pd.merge(actual, pred, on = 'date', how = 'outer')
+    df.set_index('date',inplace = True)
+
+    if st.checkbox('Display monthly forecast plot for selected year'):
+            year = st.slider("Year",2019,2021)
+            input_date = str(year)
+            if st.checkbox('Display daily forecast plot for selected month'):
+
+                month = st.slider("Month",1,12)
+
+
+                if month <10:
+                    input_date = str(year) + '-' + '0' +  str(month)
+                else:
+                    input_date = str(year) + '-' + str(month)
+            df = df.loc[input_date]
+
+    fig, ax = plt.subplots(figsize=(15,8)) 
+    df.plot(ax =ax)
     st.pyplot(fig)
 
 
