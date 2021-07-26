@@ -122,7 +122,7 @@ def predict_from_weather(modelconfig, afterdate):
         #print(sdate)
         krs.drop(krs[krs.date<sdate].index, inplace=True)
         krs.date = pd.to_datetime(krs.date)
-        y_scaler.fit(krs[["present_storage_tmc"]])
+        #y_scaler.fit(krs[["present_storage_tmc"]])
         #print(krs)
     
     db.appdb.commit()
