@@ -186,7 +186,7 @@ class DB:
         rows = cur.fetchall()
         if len(rows) > 0:
             # update
-            sql = f'''UPDATE water SET realdate={self.realdate(data[0])}, date=?, reservoir=?, storage_tmc=?, model=?
+            sql = f'''UPDATE water_forecast SET realdate={self.realdate(data[0])}, date=?, reservoir=?, storage_tmc=?, model=?
                      WHERE date='{data[0]}' and reservoir='{data[1]}' and model={data[-1]}'''
             cur.execute(sql, data)
             if commit:
