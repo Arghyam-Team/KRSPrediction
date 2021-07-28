@@ -6,7 +6,7 @@ def get_full_path(*path):
     return join(ROOT_DIR, *path)
 
 MODELS = [
-    {'number': 9, 'title': '30 day Prediction from 180 day Window (Vanilla LSTM)', 'folder':'180daysto30dayo', 'T':180, 'HORIZON': 30, 'reservoir': 'krs'},
+    #{'number': 9, 'title': '30 day Prediction from 180 day Window (Vanilla LSTM)', 'folder':'180daysto30dayo', 'T':180, 'HORIZON': 30, 'reservoir': 'krs'},
     {'number': 1, 'title': 'One day Prediction from 30 day Window', 'folder':'30daysto1day', 'T':30, 'HORIZON': 1, 'reservoir': 'krs'},
     {'number': 2, 'title': '15 day Prediction from 30 day Window', 'folder':'30daysto15days', 'T':30, 'HORIZON': 15, 'reservoir': 'krs'},
     {'number': 3, 'title': '30 day Prediction from 30 day Window', 'folder':'30daysto30days', 'T':30, 'HORIZON': 30, 'reservoir': 'krs','model type': 'LSTM - Deep Learning Model','training loss' : 0.0049 , 'validation loss': 0.0084},

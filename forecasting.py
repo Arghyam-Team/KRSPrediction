@@ -30,7 +30,7 @@ krs = krs.sort_index(axis=1)
 ts_data_load = krs[[ "present_storage_tmc", "inflow_tmc", "outflow_tmc", "max_temp", "visibility", "humidity", "wind"]]
 ts_data_load.sort_index(axis = 1)
 
-valid_st_data_load = "2020-01-01 00:00:00"
+valid_st_data_load = "2021-07-24 00:00:00"
 
 T = 180
 HORIZON = 30
@@ -40,6 +40,9 @@ train = ts_data_load.copy()[ts_data_load.index < valid_st_data_load]
 y_scaler = MinMaxScaler()
 y_scaler.fit(train[["present_storage_tmc"]])
 X_scaler.fit(train)
+
+X_scaler2 = MinMaxScaler()
+X_scaler2.fit(train[[ "present_storage_tmc", "max_temp", "visibility", "humidity", "wind"]])
 
 
 def predict(modelconfig, afterdate):
@@ -98,7 +101,7 @@ def predict(modelconfig, afterdate):
     db.appdb.commit()
 
 def predict_from_weather(modelconfig, afterdate):
-    global model, model_path
+    global model, model_path, X_scaler2, y_scaler
     mp = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
     if model_path!=mp:
         model_path = mp
@@ -119,8 +122,8 @@ def predict_from_weather(modelconfig, afterdate):
     krs = pd.DataFrame(data1, columns=['date', 'present_storage_tmc'])
     krs.date = pd.to_datetime(krs.date)
 
-    y_scaler = MinMaxScaler()
-    y_scaler.fit(krs[["present_storage_tmc"]])
+    #y_scaler = MinMaxScaler()
+    #y_scaler.fit(krs[["present_storage_tmc"]])
     
     weather = pd.DataFrame(data2, columns=['date', 'max_temp', 'visibility', 'wind', 'humidity', 'cloudcover'])
     weather.date = pd.to_datetime(weather.date)
@@ -134,8 +137,8 @@ def predict_from_weather(modelconfig, afterdate):
         # prepare tensor
         ts_data_load = df[["present_storage_tmc", "max_temp", "visibility", "humidity", "wind"]]
         ts_data_load.sort_index(axis = 1)
-        X_scaler = MinMaxScaler()
-        tensor = X_scaler.fit_transform(ts_data_load)
+        #X_scaler = MinMaxScaler()
+        tensor = X_scaler2.transform(ts_data_load)
         tensor = tensor.reshape((1, *(tensor.shape)))
         #print(tensor.shape)
 
