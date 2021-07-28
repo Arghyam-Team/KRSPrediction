@@ -30,7 +30,7 @@ krs = krs.sort_index(axis=1)
 ts_data_load = krs[[ "present_storage_tmc", "inflow_tmc", "outflow_tmc", "max_temp", "visibility", "humidity", "wind"]]
 ts_data_load.sort_index(axis = 1)
 
-valid_st_data_load = "2021-07-24 00:00:00"
+valid_st_data_load = "2020-01-01 00:00:00"
 
 T = 180
 HORIZON = 30
