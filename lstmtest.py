@@ -32,14 +32,14 @@ ts_data_load.sort_index(axis = 1)
 flist = list(ts_data_load.columns)
 features = len(ts_data_load.columns)
 
-# valid_st_data_load = "2018-01-01 00:00:00"
-# test_st_data_load = "2020-01-01 00:00:00"
+#valid_st_data_load = "2018-01-01 00:00:00"
+#test_st_data_load = "2020-01-01 00:00:00"
 
 valid_st_data_load = "2020-01-01 00:00:00"
 #test_st_data_load = "2020-01-01 00:00:00"
 
 T = 180
-HORIZON = 90
+HORIZON = 60
 X_scaler = MinMaxScaler()
 train = ts_data_load.copy()[ts_data_load.index < valid_st_data_load]
 
@@ -71,7 +71,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.layers import GRU, Dense, LSTM
 from tensorflow.keras.models import Model, Sequential
 
-LATENT_DIM = 100#(T+HORIZON)//2
+LATENT_DIM = 70#(T+HORIZON)//2
 BATCH_SIZE = 16
 EPOCHS = (
     100
@@ -79,7 +79,7 @@ EPOCHS = (
 DROPOUT = 0.1
 RECURRENT_DROPOUT=0.2
 
-checkpoint_filepath = "./models/180daysto90day"
+checkpoint_filepath = "./models/180daysto60day"
 if not os.path.exists(checkpoint_filepath):
     os.makedirs(checkpoint_filepath)
     print("saving model")
