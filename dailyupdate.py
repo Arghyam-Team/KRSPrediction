@@ -107,4 +107,4 @@ def old_predictions():
                 afterdate += timedelta(m['HORIZON'])
 
 old_predictions()
-#run_predictions()
+run_predictions()
