@@ -26,6 +26,38 @@ def predict(modelconfig, afterdate):
     LATENT_DIM = T
     HORIZON = modelconfig['HORIZON']
 
+        # fetch data
+    data = db.appdb.get_data_for_training()
+
+    # process data
+    krs = pd.DataFrame(data, columns=['date', 'present_storage_tmc', 'inflow', 'outflow', 'max_temp', 'visibility', 'wind', 'humidity', 'cloudcover'])
+    #krs = krs.drop_duplicates(subset=["date"])
+    krs = krs.drop_duplicates(subset=["date"])
+    krs.date = pd.to_datetime(krs.date)
+    krs['inflow'] = pd.to_numeric(krs.inflow, errors='coerce')
+    krs['outflow'] = pd.to_numeric(krs.outflow, errors='coerce')
+    krs['inflow_tmc'] = krs['inflow'] /11000
+    krs['outflow_tmc'] = krs['outflow'] / 11000
+    krs.sort_values(by=['date'], inplace=True, ascending=True)
+    krs.set_index('date', inplace=True)
+    krs = krs.sort_index(axis=1)
+
+    # prepare tensor
+    ts_data_load = krs[[ "present_storage_tmc", "inflow_tmc", "outflow_tmc", "max_temp", "visibility", "humidity", "wind"]]
+    ts_data_load.sort_index(axis = 1)
+
+    valid_st_data_load = "2020-01-01 00:00:00"
+
+    T = 180
+    HORIZON = 30
+    X_scaler = MinMaxScaler()
+    train = ts_data_load.copy()[ts_data_load.index < valid_st_data_load]
+
+    y_scaler = MinMaxScaler()
+    y_scaler.fit(train[["present_storage_tmc"]])
+    X_scaler.fit(train)
+
+
     # fetch data
     data = db.appdb.get_data_for_prediction(afterdate, T)
 
@@ -44,14 +76,14 @@ def predict(modelconfig, afterdate):
     # prepare tensor
     ts_data_load = krs[[ "present_storage_tmc", "inflow_tmc", "outflow_tmc", "max_temp", "visibility", "humidity", "wind"]]
     ts_data_load.sort_index(axis = 1)
-    X_scaler = MinMaxScaler()
-    tensor = X_scaler.fit_transform(ts_data_load)
+    #X_scaler = MinMaxScaler()
+    tensor = X_scaler.transform(ts_data_load)
     tensor = tensor.reshape((1, *(tensor.shape)))
     print(tensor.shape)
 
     # run predictions
-    y_scaler = MinMaxScaler()
-    y_scaler.fit(krs[["present_storage_tmc"]])
+    #y_scaler = MinMaxScaler()
+    #y_scaler.fit(krs[["present_storage_tmc"]])
     ts_predictions = model.predict(tensor)
     ts_predictions = y_scaler.inverse_transform(ts_predictions)[0]
     # print(ts_predictions)
