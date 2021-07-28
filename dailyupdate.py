@@ -80,8 +80,8 @@ def run_predictions(dt=date.today()):
             predict(m, afterdate)
 
 # TODO cron job to run daily
-update_weather()
-update_reservoir(date.today() - timedelta(1))
+#update_weather()
+#update_reservoir(date.today() - timedelta(1))
 
 
 # TODO cron jub to run weekly or monthly or manually done
