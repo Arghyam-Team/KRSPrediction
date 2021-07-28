@@ -121,7 +121,8 @@ def display_model_info(model_selected):
     #st.write("Creating a space to insert information or static images. Just for demo")
     details = [item for item in MODELS if item['title'] == model_selected][0]
     for key,value in details.items():
-        st.write(str(key).capitalize() + ' : '+ str(value))
+        if key.lower() not in ['t', 'folder', 'horizon', 'reservoir', 'number']:
+            st.write(str(key).capitalize() + ' : '+ str(value))
 
 
 @st.cache(hash_funcs={Connection: id})
