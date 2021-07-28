@@ -38,8 +38,8 @@ features = len(ts_data_load.columns)
 valid_st_data_load = "2020-01-01 00:00:00"
 #test_st_data_load = "2020-01-01 00:00:00"
 
-T = 30
-HORIZON = 1
+T = 180
+HORIZON = 90
 X_scaler = MinMaxScaler()
 train = ts_data_load.copy()[ts_data_load.index < valid_st_data_load]
 
@@ -72,9 +72,9 @@ from tensorflow.keras.layers import GRU, Dense, LSTM
 from tensorflow.keras.models import Model, Sequential
 
 LATENT_DIM = 100#(T+HORIZON)//2
-BATCH_SIZE = 8
+BATCH_SIZE = 256
 EPOCHS = (
-    50
+    300
 )
 DROPOUT = 0.1
 RECURRENT_DROPOUT=0.2
