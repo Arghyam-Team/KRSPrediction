@@ -117,12 +117,11 @@ def display_forecast(conn: Connection):
     st.pyplot(fig)
 
 def display_model_info(model_selected):
-    st.markdown('**Model Information**')
     #st.write("Creating a space to insert information or static images. Just for demo")
     details = [item for item in MODELS if item['title'] == model_selected][0]
     for key,value in details.items():
         if key.lower() not in ['t', 'folder', 'horizon', 'reservoir', 'number', 'title']:
-            st.write(str(key).capitalize() + ' : '+ str(value))
+            st.markdown('**'+str(key).capitalize() + '** : '+ str(value))
 
 
 @st.cache(hash_funcs={Connection: id})
