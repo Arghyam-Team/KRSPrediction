@@ -27,13 +27,13 @@ krs.set_index('date', inplace=True)
 krs = krs.sort_index(axis=1)
 
 # prepare tensor
-ts_data_load = krs[[ "present_storage_tmc", "max_temp", "visibility", "humidity", "wind"]]
+ts_data_load = krs[[ "present_storage_tmc", 'inflow', 'outflow', "max_temp", "visibility", "humidity", "wind"]]
 ts_data_load.sort_index(axis = 1)
 flist = list(ts_data_load.columns)
 features = len(ts_data_load.columns)
 
-#valid_st_data_load = "2018-01-01 00:00:00"
-#test_st_data_load = "2020-01-01 00:00:00"
+# valid_st_data_load = "2018-01-01 00:00:00"
+# test_st_data_load = "2020-01-01 00:00:00"
 
 valid_st_data_load = "2020-01-01 00:00:00"
 #test_st_data_load = "2020-01-01 00:00:00"
@@ -72,14 +72,14 @@ from tensorflow.keras.layers import GRU, Dense, LSTM
 from tensorflow.keras.models import Model, Sequential
 
 LATENT_DIM = 100#(T+HORIZON)//2
-BATCH_SIZE = 256
+BATCH_SIZE = 16
 EPOCHS = (
-    300
+    100
 )
 DROPOUT = 0.1
 RECURRENT_DROPOUT=0.2
 
-checkpoint_filepath = "./models/30daysto1dayw2"
+checkpoint_filepath = "./models/180daysto90day"
 if not os.path.exists(checkpoint_filepath):
     os.makedirs(checkpoint_filepath)
     print("saving model")
@@ -116,7 +116,7 @@ model_history = model.fit(
     verbose=1,
 )
 
-# load the best model
+# # load the best model
 # model = keras.models.load_model(checkpoint_filepath)
 # back_ts_data = dt.datetime.strptime(test_st_data_load, "%Y-%m-%d %H:%M:%S") - dt.timedelta(
 #     days=T - 1
