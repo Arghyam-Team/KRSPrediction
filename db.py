@@ -174,6 +174,16 @@ class DB:
         cur.execute(sql)
         return cur.fetchall()
 
+    def get_data_for_training(self):
+        sql = f''' SELECT water.date, water.storage_tmc, water.inflow_cusecs, water.outflow_cusecs, 
+                         weather.max_temp, weather.visibility, weather.wind, weather.humidity, weather.cloudcover 
+                  FROM water INNER JOIN weather 
+                  ON  water.reservoir='krs' AND weather.location='karnataka' AND water.realdate = weather.realdate
+                  '''
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        return cur.fetchall()
+
     def get_water_data_for_prediction(self, todate, window):
         start = self.realdate(todate + timedelta(-window))
         end = self.realdate(todate)
