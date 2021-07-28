@@ -6,10 +6,13 @@ def get_full_path(*path):
     return join(ROOT_DIR, *path)
 
 MODELS = [
+    {'number': 13, 'title': '60 day Prediction from 60 day Window (Vanilla LSTM)', 'folder':'60daysto60daylstm', 'T':60, 'HORIZON': 60, 'reservoir': 'krs', 'model type': 'LSTM - Single layer','training loss' : 0.037 , 'validation loss': 0.0010},
+    {'number': 14, 'title': '30 day Prediction from 30 day Window (Vanilla LSTM)', 'folder':'30daysto30daylstm', 'T':30, 'HORIZON': 30, 'reservoir': 'krs', 'model type': 'LSTM - Single layer','training loss' : 0.098 , 'validation loss': 0.0011},
     {'number': 9, 'title': '30 day Prediction from 180 day Window (Vanilla LSTM)', 'folder':'180daysto30dayo', 'T':180, 'HORIZON': 30, 'reservoir': 'krs', 'model type': 'LSTM - Single layer','training loss' : 0.0028 , 'validation loss': 0.0015},
     {'number': 11, 'title': '60 day Prediction from 180 day Window (Vanilla LSTM)', 'folder':'180daysto60day', 'T':180, 'HORIZON': 60, 'reservoir': 'krs', 'model type': 'LSTM - Single layer','training loss' : 0.0048 , 'validation loss': 0.0015},
     {'number': 10, 'title': '90 day Prediction from 180 day Window (Vanilla LSTM)', 'folder':'180daysto90day', 'T':180, 'HORIZON': 90, 'reservoir': 'krs', 'model type': 'LSTM - Single layer','training loss' : 0.059 , 'validation loss': 0.0016},
-    {'number': 12, 'title': '90 day Prediction from 0 day Window (Vanilla LSTM)', 'folder':'90daysto90daylstm', 'T':90, 'HORIZON': 90, 'reservoir': 'krs', 'model type': 'LSTM - Single layer','training loss' : 0.098 , 'validation loss': 0.0011},
+    {'number': 12, 'title': '90 day Prediction from 90 day Window (Vanilla LSTM)', 'folder':'90daysto90daylstm', 'T':90, 'HORIZON': 90, 'reservoir': 'krs', 'model type': 'LSTM - Single layer','training loss' : 0.098 , 'validation loss': 0.0011},
+    {'number': 8, 'title': '90 day Prediction from 30 day Weather forecast', 'folder':'30daysto1dayw', 'T':30, 'HORIZON': 1, 'reservoir': 'krs', 'onlyweather':True}
     #{'number': 1, 'title': 'One day Prediction from 30 day Window', 'folder':'30daysto1day', 'T':30, 'HORIZON': 1, 'reservoir': 'krs'},
     #{'number': 2, 'title': '15 day Prediction from 30 day Window', 'folder':'30daysto15days', 'T':30, 'HORIZON': 15, 'reservoir': 'krs'},
     #{'number': 3, 'title': '30 day Prediction from 30 day Window', 'folder':'30daysto30days', 'T':30, 'HORIZON': 30, 'reservoir': 'krs','model type': 'LSTM - Deep Learning Model','training loss' : 0.0049 , 'validation loss': 0.0084},
@@ -17,5 +20,5 @@ MODELS = [
     #{'number': 5, 'title': '30 day Prediction from 90 day Window', 'folder':'90daysto30days', 'T':90, 'HORIZON': 30, 'reservoir': 'krs'},
     #{'number': 6, 'title': '60 day Prediction from 60 day Window', 'folder':'60daysto60days', 'T':60, 'HORIZON': 60, 'reservoir': 'krs'},
     #{'number': 7, 'title': '90 day Prediction from 90 day Window', 'folder':'90daysto90days', 'T':90, 'HORIZON': 90, 'reservoir': 'krs'},
-    #{'number': 8, 'title': '90 day Prediction from 30 day Weather forecast', 'folder':'30daysto1day_only_weather', 'T':30, 'HORIZON': 1, 'reservoir': 'krs', 'onlyweather':True}
+    
 ]
