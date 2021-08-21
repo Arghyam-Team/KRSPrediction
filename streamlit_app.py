@@ -81,7 +81,10 @@ def display_forecast(conn: Connection):
     model = [item['number'] for item in MODELS if item['title'] == model_selected][0]
     pred = pred[pred['model']==model]
 
-    display_model_info(model_selected)
+    last_n_days = display_model_info(model_selected)
+
+    if st.checkbox("Display last " +  str(last_n_days) + " days prediction data"):
+        st.dataframe(pred[-last_n_days:])
 
     actual['date'] = pd.to_datetime(actual['date'])
     pred['date'] = pd.to_datetime(pred['date'])
@@ -122,6 +125,9 @@ def display_model_info(model_selected):
     for key,value in details.items():
         if key.lower() not in ['t', 'folder', 'horizon', 'reservoir', 'number', 'title']:
             st.markdown('**'+str(key).capitalize() + '** : '+ str(value))
+    last_n_days = details.get('HORIZON')
+    return(last_n_days)
+    
 
 
 @st.cache(hash_funcs={Connection: id})
