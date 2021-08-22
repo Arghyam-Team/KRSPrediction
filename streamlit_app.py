@@ -2,6 +2,8 @@ import pandas as pd
 from pathlib import Path
 import sqlite3
 from sqlite3 import Connection
+
+from pandas.core.frame import DataFrame
 import streamlit as st
 import matplotlib.pyplot as plt
 import datetime 
@@ -93,11 +95,12 @@ def display_forecast(conn: Connection):
 
     df = pd.merge(actual, pred, on = 'date', how = 'outer')
     df.set_index('date',inplace = True)
+    
 
     if st.checkbox('Display monthly forecast plot for selected year'):
             forecast_year = st.slider("Select Year",2019,2021)
             input_date = str(forecast_year)
-            if st.checkbox('Display daily forecast plot for selected month'):
+            if st.checkbox('Check box to further zoom into selected month'):
 
                 forecast_month = st.slider("Select Month",1,12)
 
@@ -107,6 +110,10 @@ def display_forecast(conn: Connection):
                 else:
                     input_date = str(forecast_year) + '-' + str(forecast_month)
             df = df.loc[input_date]
+            df = weekly_plot(df)
+            
+            
+    
 
     fig, ax = plt.subplots(figsize=(15,7)) 
     df.plot(ax =ax, subplots = False,colormap = 'Dark2')
@@ -118,15 +125,26 @@ def display_forecast(conn: Connection):
     plt.legend()
     plt.autoscale()
     st.pyplot(fig)
+   
+def weekly_plot(df:DataFrame):
+    plot_type_selected = st.selectbox("Please select graph type", ['Daily Forecast', 'Cumulative Weekly Forecast', 'Average Weekly Forecast'])
+    if (plot_type_selected == 'Daily Forecast'):
+        pass 
+    if(plot_type_selected == 'Cumulative Weekly Forecast'):
+        df = df.resample('W-Mon').sum()
+    if(plot_type_selected == 'Average Weekly Forecast'):
+        df = df.resample('W-Mon').mean()
+    return df
 
+    
 def display_model_info(model_selected):
     #st.write("Creating a space to insert information or static images. Just for demo")
     details = [item for item in MODELS if item['title'] == model_selected][0]
     for key,value in details.items():
         if key.lower() not in ['t', 'folder', 'horizon', 'reservoir', 'number', 'title']:
             st.markdown('**'+str(key).capitalize() + '** : '+ str(value))
-    last_n_days = details.get('HORIZON')
-    return(last_n_days)
+    preds = details.get('HORIZON')
+    return(preds)
     
 
 
