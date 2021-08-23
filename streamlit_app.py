@@ -127,11 +127,9 @@ def display_forecast(conn: Connection):
     st.pyplot(fig)
    
 def weekly_plot(df:DataFrame):
-    plot_type_selected = st.selectbox("Please select graph type", ['Daily Forecast', 'Cumulative Weekly Forecast', 'Average Weekly Forecast'])
+    plot_type_selected = st.selectbox("Please select graph type", ['Daily Forecast','Average Weekly Forecast'])
     if (plot_type_selected == 'Daily Forecast'):
         pass 
-    if(plot_type_selected == 'Cumulative Weekly Forecast'):
-        df = df.resample('W-Mon').sum()
     if(plot_type_selected == 'Average Weekly Forecast'):
         df = df.resample('W-Mon').mean()
     return df
