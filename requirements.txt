@@ -7,3 +7,6 @@ streamlit
 requests
 bs4
 tensorflow
+pathlib
+datetime
+sqlite3
