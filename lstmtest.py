@@ -39,7 +39,7 @@ valid_st_data_load = "2020-01-01 00:00:00"
 #test_st_data_load = "2020-01-01 00:00:00"
 
 T = 30
-HORIZON = 1
+HORIZON = 30
 X_scaler = MinMaxScaler()
 train = ts_data_load.copy()[ts_data_load.index < valid_st_data_load]
 
@@ -72,14 +72,14 @@ from tensorflow.keras.layers import GRU, Dense, LSTM
 from tensorflow.keras.models import Model, Sequential
 
 LATENT_DIM = 30#(T+HORIZON)//2
-BATCH_SIZE = 32
+BATCH_SIZE = 16
 EPOCHS = (
     100
 )
 DROPOUT = 0.1
 RECURRENT_DROPOUT=0.2
 
-checkpoint_filepath = "./models/30daysto1dayw"
+checkpoint_filepath = "./models/30daysto30dayow"
 if not os.path.exists(checkpoint_filepath):
     os.makedirs(checkpoint_filepath)
     print("saving model")

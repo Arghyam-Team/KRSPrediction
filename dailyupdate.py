@@ -7,7 +7,7 @@ from setup import MODELS
 from forecasting import predict, predict_from_weather
 # weather
 def update_weather():
-    today = date.today()# - timedelta(1)
+    today = date.today() # - timedelta(27)
     end = today + timedelta(90)
     url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Karnataka/{str(today)}/{str(end)}?unitGroup=metric&key=7FZ7P4JVS4E9XSVBUXYRHQHRH&include=fcst%2Cstats%2Ccurrent"
     print(url)
@@ -80,8 +80,6 @@ def run_predictions(dt=date.today()):
             predict(m, afterdate)
 
 # TODO cron job to run daily
-#update_weather()
-#update_reservoir()#date.today() - timedelta(1))
 
 
 # TODO cron jub to run weekly or monthly or manually done
@@ -115,5 +113,11 @@ def modelInfo():
         model.summary()
 
 #old_predictions()
-run_predictions()
+
 #modelInfo()
+
+#update_weather()
+#update_reservoir()
+for i in range(27, -1, -1):
+    run_predictions(date.today() - timedelta(i))
+#    update_reservoir(date.today() - timedelta(i))
