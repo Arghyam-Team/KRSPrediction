@@ -5,9 +5,10 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from setup import MODELS
 from forecasting import predict, predict_from_weather
+import os
 # weather
 def update_weather():
-    today = date.today() # - timedelta(27)
+    today = date.today()# - timedelta(17)
     end = today + timedelta(90)
     url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Karnataka/{str(today)}/{str(end)}?unitGroup=metric&key=7FZ7P4JVS4E9XSVBUXYRHQHRH&include=fcst%2Cstats%2Ccurrent"
     print(url)
@@ -85,13 +86,7 @@ def run_predictions(dt=date.today()):
 # TODO cron jub to run weekly or monthly or manually done
 # re-train all the models on new data
 
-# end = date(2021,1,1)
-# dt = date(2020,12,17)
-# while dt < end:
-#     update_reservoir(dt)
-#     dt += timedelta(1)
-#db.appdb.update_date_format()
-#db.appdb.display_all_water_data("kabini")
+
 
 def old_predictions():
     for m in MODELS:
@@ -104,10 +99,13 @@ def old_predictions():
                 predict(m, afterdate)
                 afterdate += timedelta(m['HORIZON'])
 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
 def modelInfo():
-    from tensorflow import keras
+    global dir_path
+    from tensorflow import keras    
     for m in MODELS:
-        checkpoint_filepath = f"./models/{m['folder']}"
+        checkpoint_filepath = os.path.join(dir_path, f"models/{m['folder']}")
         model = keras.models.load_model(checkpoint_filepath)
         print(m['title'])
         model.summary()
@@ -118,6 +116,23 @@ def modelInfo():
 
 #update_weather()
 #update_reservoir()
-for i in range(27, -1, -1):
-    run_predictions(date.today() - timedelta(i))
+# end = date(2021,1,1)
+# dt = date.today() - timedelta(17)
+# while dt < date.today():
+#      update_reservoir(dt)
+#      dt += timedelta(1)
+#db.appdb.update_date_format()
+#db.appdb.display_all_water_data("kabini")
+
+
+#for i in range(17, -1, -1):
+#    run_predictions(date.today() - timedelta(i))
 #    update_reservoir(date.today() - timedelta(i))
+
+update_weather()
+update_reservoir()
+run_predictions(date.today())
+
+with open(os.path.join(dir_path, "lastupdatedon.txt"), "w") as out:
+    out.write(str(date.today()))
+

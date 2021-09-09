@@ -7,6 +7,9 @@ from setup import get_full_path
 import db
 import pandas as pd
 
+import os
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
 model = None
 model_path = None
 
@@ -46,9 +49,9 @@ X_scaler2.fit(train[[ "present_storage_tmc", "max_temp", "visibility", "humidity
 
 
 def predict(modelconfig, afterdate):
-    global model, model_path, X_scaler, y_scaler
+    global model, model_path, X_scaler, y_scaler, dir_path
     # fetch model
-    mp = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
+    mp = os.path.join(dir_path, f'models/{modelconfig["folder"]}') #get_full_path("models", modelconfig["folder"])
     if model_path!=mp:
         model_path = mp
         print("LOADING...", model_path)
@@ -101,8 +104,8 @@ def predict(modelconfig, afterdate):
     db.appdb.commit()
 
 def predict_from_weather(modelconfig, afterdate):
-    global model, model_path, X_scaler2, y_scaler
-    mp = f'./models/{modelconfig["folder"]}' #get_full_path("models", modelconfig["folder"])
+    global model, model_path, X_scaler2, y_scaler, dir_path
+    mp = os.path.join(dir_path, f'models/{modelconfig["folder"]}') #get_full_path("models", modelconfig["folder"])
     if model_path!=mp:
         model_path = mp
         print("LOADING...", model_path)
