@@ -136,3 +136,7 @@ run_predictions(date.today())
 with open(os.path.join(dir_path, "lastupdatedon.txt"), "w") as out:
     out.write(str(date.today()))
 
+
+os.chdir('/home/abhinav/KRSPrediction')
+os.system(f'git commit -a -m "updated {str(date.today())}"')
+os.system('git push')
