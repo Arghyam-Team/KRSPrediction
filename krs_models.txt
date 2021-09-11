@@ -1,0 +1,99 @@
+l GPU (device: 0, name: NVIDIA GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+30 day Prediction from 30 day Window (Vanilla LSTM)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 30)                4560      
+_________________________________________________________________
+dense (Dense)                (None, 30)                930       
+=================================================================
+Total params: 5,490
+Trainable params: 5,490
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+60 day Prediction from 60 day Window (Vanilla LSTM)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 60)                16320     
+_________________________________________________________________
+dense (Dense)                (None, 60)                3660      
+=================================================================
+Total params: 19,980
+Trainable params: 19,980
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+90 day Prediction from 90 day Window (Vanilla LSTM)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 90)                35280     
+_________________________________________________________________
+dense (Dense)                (None, 90)                8190      
+=================================================================
+Total params: 43,470
+Trainable params: 43,470
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+30 day Prediction from 180 day Window (Vanilla LSTM)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 40)                7680      
+_________________________________________________________________
+dense (Dense)                (None, 30)                1230      
+=================================================================
+Total params: 8,910
+Trainable params: 8,910
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+60 day Prediction from 180 day Window (Vanilla LSTM)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 70)                21840     
+_________________________________________________________________
+dense (Dense)                (None, 60)                4260      
+=================================================================
+Total params: 26,100
+Trainable params: 26,100
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+90 day Prediction from 180 day Window (Vanilla LSTM)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 100)               43200     
+_________________________________________________________________
+dense (Dense)                (None, 90)                9090      
+=================================================================
+Total params: 52,290
+Trainable params: 52,290
+Non-trainable params: 0
+_________________________________________________________________
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+90 day Prediction from 30 day Weather forecast
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 30)                4320      
+_________________________________________________________________
+dense (Dense)                (None, 1)                 31        
+=================================================================
+Total params: 4,351
+Trainable params: 4,351
+Non-trainable params: 0
+_________________________________________________________________
