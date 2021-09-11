@@ -10,3 +10,4 @@ tensorflow
 pathlib
 datetime
 sqlite3
+plotly

@@ -2,8 +2,10 @@
 import streamlit as st
 import sqlite3
 from sqlite3 import Connection
+import os
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
-URI_SQLITE_DB = "../data/pythonsqlite.db"
+URI_SQLITE_DB = os.path.join(dir_path, "../data/pythonsqlite.db")
 
 @st.cache(hash_funcs={Connection: id})
 def get_connection(path: str):
