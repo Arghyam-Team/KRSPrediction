@@ -19,12 +19,12 @@ from feature_analysis_final import FeatureAnalysis
 #st.set_page_config(layout='wide')
 
 def main():
-    
-    
+    logoFile = "../Images/logo.png"
+    st.sidebar.image(logoFile)
     main_menu_list = ['Home','Historic data and Predictions','How was the data calculated?']
     main_menu_selection = st.sidebar.selectbox("Select Page", main_menu_list)
+    
     if main_menu_selection == 'Home':
-        st.title("Team Arghyam",'t1')
         st.header("KRS Water level prediction")
         Home()
 
