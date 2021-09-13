@@ -7,8 +7,7 @@ from setup import MODELS
 from forecasting import predict, predict_from_weather
 import os
 # weather
-def update_weather():
-    today = date.today()# - timedelta(17)
+def update_weather(today = date.today()):
     end = today + timedelta(90)
     url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Karnataka/{str(today)}/{str(end)}?unitGroup=metric&key=7FZ7P4JVS4E9XSVBUXYRHQHRH&include=fcst%2Cstats%2Ccurrent"
     print(url)
@@ -129,12 +128,13 @@ def modelInfo():
 #    run_predictions(date.today() - timedelta(i))
 #    update_reservoir(date.today() - timedelta(i))
 
-update_weather()
-update_reservoir()
-run_predictions(date.today())
+dt = date.today()
+update_weather(dt)
+update_reservoir(dt)
+run_predictions(dt)
 
 with open(os.path.join(dir_path, "lastupdatedon.txt"), "w") as out:
-    out.write(str(date.today()))
+     out.write(str(date.today()))
 
 
 os.chdir('/home/abhinav/KRSPrediction')
