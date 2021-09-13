@@ -10,18 +10,17 @@ import streamlit as st
 import datetime 
 #from sklearn.preprocessing import MinMaxScaler
 #import seaborn as sns
-from setup import MODELS
 from connection_setup import CONN
 #from help import PredictionsHelp
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 import plotly.express as px
 import plotly.graph_objects as go
-
-
+from setup import MODELS, get_full_path
+from PIL import Image 
 class Home:
     def __init__(self):
-        self.image_file = "../Images/home-legend.png"
+        self.image_file = Image.open(get_full_path("Images", "home-legend.png"))
         self.type_select = st.sidebar.radio("Select Display",['Monthly','Weekly','Daily'])
         st.sidebar.image(self.image_file,caption = 'Legend for map',width = 200)
         self.actual = pd.read_sql("select date, storage_tmc from water where reservoir='krs'", con=CONN)
@@ -42,7 +41,7 @@ class Home:
 
         self.df = self.df.set_index(pd.to_datetime(self.df['date']))
 
-        file1 = open("../lastupdatedon.txt","r")
+        file1 = open(get_full_path("lastupdatedon.txt"),"r")
         self.today = file1.read()
         self.td = datetime.fromisoformat(self.today)
         

@@ -9,17 +9,33 @@ import matplotlib.pyplot as plt
 import datetime 
 from sklearn.preprocessing import MinMaxScaler
 import seaborn as sns
-from setup import MODELS
+
+import sys
+import os
+  
+# getting the name of the directory
+# where the this file is present.
+current = os.path.dirname(os.path.realpath(__file__))
+  
+# Getting the parent directory name
+# where the current directory is present.
+parent = os.path.dirname(current)
+  
+# adding the parent directory to 
+# the sys.path.
+sys.path.append(parent)
+
+from setup import MODELS, get_full_path
 import toc
 from home import Home
 from predictions import Predictions
 from feature_analysis_final import FeatureAnalysis
-
+from PIL import Image
 
 #st.set_page_config(layout='wide')
 
 def main():
-    logoFile = "../Images/logo.png"
+    logoFile = Image.open(get_full_path("Images", "logo.png"))
     st.sidebar.image(logoFile)
     main_menu_list = ['Home','Historic data and Predictions','How was the data calculated?']
     main_menu_selection = st.sidebar.selectbox("Select Page", main_menu_list)
