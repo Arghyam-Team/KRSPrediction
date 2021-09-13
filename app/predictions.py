@@ -156,12 +156,19 @@ class Predictions:
         showlegend = False,
         line=dict(color='rgba(0,176,246,0.2)')))
 
-        fig.update_layout(height = 500, width = 1100,
+        fig.update_layout(autosize=True,
         margin=dict(l=20, r=20, t=20, b=20),
         paper_bgcolor="LightSteelBlue",
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=1.02,
+            xanchor="right",
+            x=1
+        )
         )
     
     
 
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, use_container_width=True)
         

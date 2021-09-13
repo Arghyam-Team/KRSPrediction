@@ -89,14 +89,14 @@ class Home:
         fig.add_trace(go.Scatter(x=self.df1[['storage_tmc_pred_pct','date']].loc[pred_mask].date, y=self.df1[['storage_tmc_pred_pct','date']].loc[pred_mask].storage_tmc_pred_pct, fill='tozeroy',mode = 'markers',line_color = 'royalblue',name = 'Predictions',showlegend = False))
 
         
-        fig.update_layout(height = 380, width = 800,
+        fig.update_layout(autosize=True,
         margin=dict(l=20, r=20, t=20, b=20),
         paper_bgcolor="LightSteelBlue",
         yaxis_title="Storage in Percentage",
         xaxis_title="Date",
         )
-        
-        st.plotly_chart(fig)
+        #https://plotly.com/python/legend/
+        st.plotly_chart(fig, use_container_width=True)
 
         
         #self.year_month = self.today - self.today.split('-')
@@ -142,14 +142,14 @@ class Home:
         fig.add_trace(go.Scatter(x=self.df2[['storage_tmc_pred_pct','date']].loc[pred_mask].date, y=self.df2[['storage_tmc_pred_pct','date']].loc[pred_mask].storage_tmc_pred_pct, fill='tozeroy',mode = 'markers',line_color = 'royalblue',name = 'Predictions',showlegend = False ))
 
         
-        fig.update_layout(height = 350, width = 800,
+        fig.update_layout(autosize=True,
         margin=dict(l=20, r=20, t=20, b=20),
         paper_bgcolor="LightSteelBlue",
         yaxis_title="Storage in Percentage",
         xaxis_title="Date",
         )
         
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, use_container_width=True)
 
     def daily(self):
         #st.dataframe(self.df2)
@@ -184,15 +184,14 @@ class Home:
         fig.add_trace(go.Scatter(x=self.df[['storage_tmc_pred_pct','date']].loc[pred_mask].date, y=self.df[['storage_tmc_pred_pct','date']].loc[pred_mask].storage_tmc_pred_pct, fill='tozeroy',mode = 'markers',line_color = 'royalblue',name = 'Predictions',showlegend = False ))
 
         
-        fig.update_layout(height = 350, width = 800,
+        fig.update_layout(autosize=True,
         margin=dict(l=20, r=20, t=20, b=20),
         paper_bgcolor="LightSteelBlue",
         yaxis_title="Storage in Percentage",
         xaxis_title="Date",
         )
         
-        st.plotly_chart(fig)
-
+        st.plotly_chart(fig, use_container_width=True)
 
 
     def display_metric(self):

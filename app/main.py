@@ -24,7 +24,7 @@ parent = os.path.dirname(current)
 # adding the parent directory to 
 # the sys.path.
 sys.path.append(parent)
-
+# https://python.plainenglish.io/three-tips-to-improve-your-streamlit-app-a4c94b4d2b30
 from setup import MODELS, get_full_path
 import toc
 from home import Home
@@ -33,8 +33,10 @@ from feature_analysis_final import FeatureAnalysis
 from PIL import Image
 
 #st.set_page_config(layout='wide')
-
 def main():
+    st.markdown(""" <style> .css-hi6a2p {
+        max-width: 100%; padding: 3rem;}""", unsafe_allow_html=True)
+
     logoFile = Image.open(get_full_path("Images", "logo.png"))
     st.sidebar.image(logoFile)
     main_menu_list = ['Home','Historic data and Predictions','How was the data calculated?']
