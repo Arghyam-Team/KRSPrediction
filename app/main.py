@@ -37,9 +37,8 @@ def main():
     st.markdown(""" <style> .css-hi6a2p {
         max-width: 100%; padding: 3rem;}""", unsafe_allow_html=True)
 
-    logoID = '1zN80_DyV8PuAI1u9xCWQ1Qhxs0dFlYo4'
-    logoUrl = ''.join((baseUrl,logoID))
-    st.sidebar.image(logoUrl)
+    logoFile = Image.open(get_full_path("Images", "logo.png"))
+    st.sidebar.image(logoFile)
     main_menu_list = ['Home','Historic data and Predictions','How was the data calculated?']
     main_menu_selection = st.sidebar.selectbox("Select Page", main_menu_list)
     
