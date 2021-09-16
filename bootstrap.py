@@ -3,7 +3,7 @@ from datetime import date
 import os
 import pandas as pd
 
-# run this initally to popylate the data. Whenever you add new files 
+# run this initally to populate the data. Whenever you add new files 
 # move old data to inserted subfolder and add new data. Then
 # run this code to insert the records.
 
