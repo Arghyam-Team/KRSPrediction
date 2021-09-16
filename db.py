@@ -70,6 +70,62 @@ class DB:
             self.conn.commit()
         return cur.lastrowid
 
+    def predict_risk(self, num_days):
+        return f"risk prediction called for {num_days} days"
+
+    def storage_stats(self, from_date, to_date):
+        return f"storage_stats called for {from_date} to {to_date}"
+
+    def compare_forecasts(self, reservoir, model1, model2, show=False):
+        sql = f"SELECT m1.date, m1.storage_tmc, m2.storage_tmc FROM water_forecast m1 INNER JOIN water_forecast m2 ON m1.date==m2.date and m1.reservoir==m2.reservoir WHERE m1.reservoir='{reservoir}' and m1.model={model1} and m2.model={model2}"
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        if show:
+            for row in rows:
+                print(row)
+
+        s = rows[0][1]-rows[0][2]
+        a = b = s
+        l = [s]
+        for row in rows[1:]:
+            x = row[1]-row[2]
+            l.append(x)
+            a = min(a, x)
+            b = max(b, x)
+            s += x
+        mean = s/len(rows)
+        v = sum([(x-mean)**2 for x in l])/len(l)
+        from math import sqrt
+        
+        print(f"mean = {mean:0.2f}, min = {a:0.2f}, max = {b:0.2f}, variance = {v:0.2f}, stdev = {sqrt(v):0.2f}")
+
+
+    # find variance between actual and forecast values for various models
+    def find_variance(self, reservoir, model, show=False):
+        sql = f"SELECT water.date, water.storage_tmc, water_forecast.storage_tmc, water_forecast.model FROM water INNER JOIN water_forecast ON water.date==water_forecast.date and water.reservoir==water_forecast.reservoir WHERE water.reservoir='{reservoir}' and water_forecast.model={model}"
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        if show:
+            for row in rows:
+                print(row)
+
+        s = rows[0][1]-rows[0][2]
+        a = b = s
+        l = [s]
+        for row in rows[1:]:
+            x = row[1]-row[2]
+            l.append(x)
+            a = min(a, x)
+            b = max(b, x)
+            s += x
+        mean = s/len(rows)
+        v = sum([(x-mean)**2 for x in l])/len(l)
+        from math import sqrt
+        
+        print(f"mean = {mean:0.2f}, min = {a:0.2f}, max = {b:0.2f}, variance = {v:0.2f}, stdev = {sqrt(v):0.2f}")
+
     def display_all_water_data(self, reservoir):
         sql = f"SELECT * FROM water WHERE reservoir='{reservoir}'"
         cur = self.conn.cursor()
@@ -77,6 +133,7 @@ class DB:
         rows = cur.fetchall()
         for row in rows:
             print(row)
+        #return rows
 
     def display_all_water_forecast_data(self, reservoir='krs'):
         sql = f"SELECT * FROM water_forecast WHERE reservoir='{reservoir}'"
@@ -85,6 +142,7 @@ class DB:
         rows = cur.fetchall()
         for row in rows:
             print(row)
+        #return rows
 
     def get_water_record(self, day, reservoir):
         sql = f"SELECT * FROM water WHERE date='{day}' and reservoir='{reservoir}'"
