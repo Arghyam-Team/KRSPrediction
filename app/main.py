@@ -43,7 +43,7 @@ def main():
     main_menu_selection = st.sidebar.selectbox("Select Page", main_menu_list)
     
     if main_menu_selection == 'Home':
-        st.header("KRS Water level prediction")
+        st.header("KRS Dam Real-Time Water Level Prediction")
         Home()
 
     if main_menu_selection == 'Historic data and Predictions':
