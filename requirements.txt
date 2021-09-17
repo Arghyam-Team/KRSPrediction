@@ -12,3 +12,4 @@ datetime
 sqlite3
 plotly
 dateutil
+statsmodels
