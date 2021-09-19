@@ -1,0 +1,177 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: features
+  examples: |
+    - what are the features in this project
+    - features in the project
+    - explain the features in this project
+    - what is the main feature in this project
+
+- intent: model
+  examples: |
+    - how did you trained the model
+    - what model was used
+    - how was it built
+    - how model was built
+    - how did they developed the model
+
+- intent: ask_storage
+  examples: |
+    - what will be the storage on 13th of september
+    - storage in the tank
+    - tank storage on 24th november
+    - 15th september tank storage
+    - how is the trend for next [90 days](date)
+    - trend on next [30 days](date)
+    - next day trend
+    - storage trend for next upcoming days
+    - storage trend for the next
+    - how is the storage trend for [60 days](date)
+    - storage trend for next [1 month](date)
+    - [2 months](date) trend for storage
+    - [tomorrow](date) water storage
+    - [today](date) storage is?
+    - [todays](date) storage please
+
+- intent: ask_weather
+  examples: |
+    - how was weather on 13th september
+    - weather on that day
+    - weather today
+    - weather after [tomorrow](date)
+    - weather
+    - weather prediction please
+    - prediction of weather
+    - weather for next [2 months](date)
+    - next [month](date) weather
+    - weather [today](date)
+    - weather after [2 months](date)
+    - weather please
+    - need weather for next [month](date)
+    - how is the weather trend for next [90 days](date)
+    - weather trend on next [30 days](date)
+    - next day trend
+    - weather trend for next upcoming days
+    - weather trend for the next
+    - how is the weather trend for [60 days](date)
+    - weather trend for next [1 month](date)
+    - [2 months](date) trend for weather
+    - [tomorrow](date) weather storage
+    - [today](date) weather is?
+    - [todays](date) weather please
+
+
+- intent: contact
+  examples: |
+    - how to contact
+    - contact details
+    - details of contact
+    - contact details of the responsible person
+    - person responsible for this project
+    - how to contact you
+
+- intent: meaning_of_arrghyam
+  examples: |
+    - meaning of arghyam
+    - arghyam meaning
+    - meaning of your team
+    - team meaning
+    - explain about your team
+    - team name meaning
+    - arghyam meaning
+    - explain your team name
+
+# - intent: forecase_used
+#   examples: |
+    

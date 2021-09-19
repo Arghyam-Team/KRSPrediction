@@ -14,6 +14,8 @@ from setup import MODELS
 from connection_setup import CONN
 from help import PredictionsHelp
 import plotly.graph_objects as go
+from PIL import Image 
+from setup import get_full_path
 #import plotly.express as px
 
 class Predictions:
@@ -27,6 +29,8 @@ class Predictions:
         self.model = [item['number'] for item in MODELS if item['title'] == self.model_selected][0]
         self.validationLoss = [item['validation loss'] for item in MODELS if item['title'] == self.model_selected][0]
         self.df = pd.DataFrame()
+
+
 
     def input_model_and_date(self):
         self.pred = self.pred[self.pred['model']==self.model]
@@ -68,7 +72,7 @@ class Predictions:
 
 
     def weekly_plot(self):
-        plot_type_selected = st.sidebar.selectbox("Please select graph type", ['Daily Forecast','Average Weekly Forecast'],help = self.help.predictionSelectGraphType)
+        plot_type_selected = st.sidebar.selectbox("Please select graph type", ['Average Weekly Forecast', 'Daily Forecast'],help = self.help.predictionSelectGraphType)
         if (plot_type_selected == 'Daily Forecast'):
             pass 
         if(plot_type_selected == 'Average Weekly Forecast'):
@@ -158,7 +162,7 @@ class Predictions:
 
         fig.update_layout(autosize=True,
         margin=dict(l=20, r=20, t=20, b=20),
-        paper_bgcolor="LightSteelBlue",
+        #paper_bgcolor="LightSteelBlue",
         legend=dict(
             orientation="h",
             yanchor="bottom",
@@ -168,7 +172,37 @@ class Predictions:
         )
         )
     
+
+        summary_expander = st.expander("Expand to see training details")
+        with summary_expander:
+
+            model = [item for item in MODELS if item['title'] == self.model_selected][0]
+            
+            st.markdown(f"""
+### MODEL: {model['title']}
+* Training Window Size: {model["T"]}
+* Prediction Window Size: {model["HORIZON"]}
+* Training Features: {model["features"]}
+* Model Summary: {model["model summary"]}
+* Training Loss: {model["training loss"]}
+* Validation Loss: {model["validation loss"]}
+* Number of Paramaters: {model["parameters"]}
+* LOSS Metric: MSE
+
+### Train - Validation - Test split
+            """)
+
+            im3 = Image.open(get_full_path("Images", "tvtsplit.png"))
+            st.image(im3, caption = 'Train/Validation/Test split for model training', width=600)
+
+            st.markdown("### Model Architecture")
+            im2 = Image.open(get_full_path("Images", "model.jpg"))
+            st.image(im2, caption = 'LSTM Model Architecture', width=600)
     
 
         st.plotly_chart(fig, use_container_width=True)
+
+        
+        
+
         

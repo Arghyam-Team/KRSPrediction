@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import datetime 
 from sklearn.preprocessing import MinMaxScaler
 import seaborn as sns
+from streamlit.components.v1 import html as sthtml
 
 import sys
 import os
@@ -34,27 +35,44 @@ from PIL import Image
 
 #st.set_page_config(layout='wide')
 def main():
-    st.markdown(""" <style> .css-hi6a2p {
-        max-width: 100%; padding: 3rem;}""", unsafe_allow_html=True)
+    st.markdown(""" 
+<style> 
+    .css-hi6a2p {max-width: 100%; padding: 3rem;}
+    .main iframe {position: fixed; bottom: 40px; left:20px; z-index:100000; pointer-events: all;}
+</style>""", unsafe_allow_html=True)
 
     logoFile = Image.open(get_full_path("Images", "logo.png"))
     st.sidebar.image(logoFile)
-    main_menu_list = ['Home','Historic data and Predictions','How was the data calculated?']
+    main_menu_list = ['Home','Historic data and Predictions','Feature Analysis']
     main_menu_selection = st.sidebar.selectbox("Select Page", main_menu_list)
     
     if main_menu_selection == 'Home':
         st.header("KRS Dam Real-Time Water Level Prediction")
         Home()
 
+        st.markdown("""
+        ### KRS Dam's connection to Bangalore
+        **Bangalore**, located in the southeastern part of Karnataka, is the sixth largest city of India and one of the fastest growing
+        cities of Asia, with a total population of close to 10 million. *Encroachment* and *unplanned urbanization* over the past 4 decades 
+        has cost the city heavily in terms of its water bodies. Today the number of water bodies in the city is just over 20% of 
+        what once existed. Bengaluru has two main sources of water:  The River Kaveri (Cauvery) and Groundwater. 
+        Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. From here, the BWSSB (Bangalore Water Supply
+         and Sewerage Board) pumps water and transports it to over 660,355 BWSSB 
+         connections in Bengaluru
+        """)
+
     if main_menu_selection == 'Historic data and Predictions':
         st.title('Predictions','predictions')
         predictions = Predictions()
         predictions.display_forecast_plotly()
     if main_menu_selection == 'Feature Analysis':
-        st.title('Feature Analysis', 'featureAnalysis')
         fa = FeatureAnalysis()
-        fa.inflow_time()
+        fa.execute()
     #st.write(" [Scroll to top](#t1)")
+
+    # Add chatbot
+    html_file = open(get_full_path("ChatbotWidget-main", "index.html") , 'r', encoding = 'utf-8').read()
+    sthtml(html_file, height = 550, width = 370)
 
 
 if __name__ == "__main__":

@@ -105,7 +105,7 @@ class Home:
         xaxis_title="Date",
         )
         #https://plotly.com/python/legend/
-        summary_expander = st.expander("Expand for more info")
+        summary_expander = st.expander("Expand to see HILIGHTS")
         with summary_expander:
             self.summary()
         st.plotly_chart(fig, use_container_width=True)
@@ -239,7 +239,7 @@ class Home:
     def summary(self):
         #st.write("Current year month",self.current_year_month)
         current_month = self.today.split('-')[1]
-        st.subheader("Summary for  " + self.lookup(current_month))
+        st.subheader("Hilights for  " + self.lookup(current_month))
         req = self.df.loc[self.df.index.month == self.td.month]
         #st.dataframe(req)
         self.mean_for_month_usually = req.storage_tmc_pct.mean()
