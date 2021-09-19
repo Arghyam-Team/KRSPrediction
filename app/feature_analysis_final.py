@@ -89,6 +89,8 @@ class FeatureAnalysis():
         st.markdown("### Correlation between different Dam features")
         st.plotly_chart(fig, use_container_width=True)
 
+        st.markdown("* Realtime dam data source: [IMS](http://122.15.179.102/ARS/home/reservoir)")
+
         
 
     def show_weather(self):
@@ -188,6 +190,9 @@ class FeatureAnalysis():
             st.text(f"{select}")
         st.plotly_chart(fig, use_container_width=True)
 
+        st.markdown("* Weather data source: [Visual Crossing](https://www.visualcrossing.com/weather-data)")
+        st.markdown("* Realtime dam data source: [IMS](http://122.15.179.102/ARS/home/reservoir)")
+
         
 
     
@@ -257,6 +262,8 @@ class FeatureAnalysis():
         if not show_yearly or (show_yearly and (year==2018 or year==2019)):
           st.write("Notice the peaks in 2018/19 indicating very high values due to flooding.")
         st.plotly_chart(fig, use_container_width=True)
+
+        st.markdown("* Realtime dam data source: [IMS](http://122.15.179.102/ARS/home/reservoir)")
 
     def select_inputs(self):
         
