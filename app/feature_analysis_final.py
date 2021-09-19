@@ -30,7 +30,6 @@ class FeatureAnalysis():
 
         return df
     def __init__(self):
-        print("init called")
         self.krs = self.get_dam_data('krs')
 
 

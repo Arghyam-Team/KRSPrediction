@@ -38,8 +38,9 @@ def main():
     st.markdown(""" 
 <style> 
     .css-hi6a2p {max-width: 100%; padding: 3rem;}
-    .main iframe {position: fixed; bottom: 40px; left:20px; z-index:100000; pointer-events: all;}
-</style>""", unsafe_allow_html=True)
+    .main iframe {position: fixed; bottom: 10px; right:10px; z-index:100000;}
+</style>
+""", unsafe_allow_html=True)
 
     logoFile = Image.open(get_full_path("Images", "logo.png"))
     st.sidebar.image(logoFile)
