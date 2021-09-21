@@ -51,17 +51,6 @@ def main():
         st.header("KRS Dam Real-Time Water Level Prediction")
         Home()
 
-        st.markdown("""
-        ### KRS Dam's connection to Bangalore
-        **Bangalore**, located in the southeastern part of Karnataka, is the sixth largest city of India and one of the fastest growing
-        cities of Asia, with a total population of close to 10 million. *Encroachment* and *unplanned urbanization* over the past 4 decades 
-        has cost the city heavily in terms of its water bodies. Today the number of water bodies in the city is just over 20% of 
-        what once existed. Bengaluru has two main sources of water:  The River Kaveri (Cauvery) and Groundwater. 
-        Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. From here, the BWSSB (Bangalore Water Supply
-         and Sewerage Board) pumps water and transports it to over 660,355 BWSSB 
-         connections in Bengaluru
-        """)
-
     if main_menu_selection == 'Historic data and Predictions':
         st.title('Predictions','predictions')
         predictions = Predictions()

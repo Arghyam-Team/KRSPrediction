@@ -66,6 +66,26 @@ class Home:
         col1.write("Last updated on " + self.today)
         col2.write(self.advise)
 
+        st.markdown("""
+        ### KRS Dam's connection to Bangalore
+        **Bangalore**, located in the southeastern part of Karnataka, is the sixth largest city of India and one of the fastest growing
+        cities of Asia, with a total population of close to 10 million. *Encroachment* and *unplanned urbanization* over the past 4 decades 
+        has cost the city heavily in terms of its water bodies. Today the number of water bodies in the city is just over 20% of 
+        what once existed. Bengaluru has two main sources of water:  The River Kaveri (Cauvery) and Groundwater. 
+        Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. From here, the BWSSB (Bangalore Water Supply
+         and Sewerage Board) pumps water and transports it to over 660,355 BWSSB 
+         connections in Bengaluru
+        """)
+
+        st.markdown("""
+### KRS DAM Details
+* **Catchment**: The dam has a total catchment area of 10880.63 sq km consisting of 3229.58 sq km intercepted by reservoirs on major rivers of Harangi (419.58 sq km) and Hemavathy (2810 sq km) reservoirs and 7651.05 sq km independent.
+* **Yields**: The maximum and minimum annual virgin yields at Krishnarajasagara Dam site from derived run off data for the years 1901 to 1980 area 34870.5MCM (1232.17 TMC) and 13183MCM (465.83 TMC) respectively. The 75% dependable yield at this site is worked out to be 21057MCM (743.64 TMC). Average annual yield is 24071.17MCM (850.59 TMC).
+* **Storage**: The reservoir formed by the dam has a gross storage capacity of 1400 MCM(49.452 TMC) and live storage capacity of 1276 MCM(45.051 TMC)
+* **Water Spread**: The reservoir water spread submerges an area of 49.90 sq. miles displacing a population of about 25 villages.
+"""
+        )
+
     def monthly(self):
         self.df1 = self.df.resample('M').mean()
         self.time_paramter1 = 'this month (Mean)'
