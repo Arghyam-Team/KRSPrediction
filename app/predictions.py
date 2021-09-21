@@ -186,6 +186,8 @@ class Predictions:
 * Model Summary: {model["model summary"]}
 * Training Loss: {model["training loss"]}
 * Validation Loss: {model["validation loss"]}
+* **R2**- Coefficient of Determination: **{round(model["R2"], 2)}**
+* **RMSE** - Root Mean Square Error: **{round(model["RMSE"], 2)}**
 * Number of Paramaters: {model["parameters"]}
 * LOSS Metric: MSE
 

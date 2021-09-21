@@ -321,6 +321,19 @@ class DB:
         cur.execute(sql)
         self.conn.commit()
 
+    def get_R2_RMSE_scores(self, model):
+        end = self.realdate(date(2020, 12, 31))
+        sql = f"SELECT f.date, f.reservoir, f.storage_tmc, w.storage_tmc FROM water_forecast f INNER JOIN water w on f.realdate=w.realdate and f.reservoir=w.reservoir WHERE f.model={model} and f.realdate<={end}  order by f.realdate"
+        cur = self.conn.cursor()
+        cur.execute(sql)
+        rows = cur.fetchall()
+        ss_reg = sum([(x[3]-x[2])**2 for x in rows])
+        mu = sum([x[3] for x in rows])/len(rows)
+        ss_tot = sum([(x[3]-mu)**2 for x in rows])
+        return 1 - ss_reg/ss_tot, (ss_reg/len(rows))**0.5
+
+        
+
     def delete_all_forecast(self):
         """
         Delete all rows in the weather table

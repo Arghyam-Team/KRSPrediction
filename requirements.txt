@@ -9,9 +9,8 @@ bs4
 tensorflow
 pathlib
 datetime
-sqlite3
 plotly
-dateutil
+python-dateutil
 statsmodels
 tensorflow
 keras
