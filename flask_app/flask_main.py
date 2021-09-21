@@ -18,4 +18,4 @@ def sendFile2(folder: Text, sub_folder: Text, file_name: Text, sub_file_name):
     except:
         return ""
 if __name__ == '__main__':
-    app.run(debug = False)
+    app.run(debug = False, host="0.0.0.0")

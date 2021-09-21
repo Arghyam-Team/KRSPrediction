@@ -204,6 +204,16 @@ class Predictions:
 
         st.plotly_chart(fig, use_container_width=True)
 
+        summary_expander2 = st.expander("Expand to see training details")
+        with summary_expander2:
+            st.markdown("### Level of Uncertainty")
+            st.text("Uncertainty can be represented by a Gaussian with the below mentioned means and deviations for the various trained models. The best model is highlighted.")
+            im3 = Image.open(get_full_path("Images", "confidence.jpg"))
+            st.image(im3, caption = 'Uncertainty represented as standard deviations of error in TMC for various models', width=400)
+
+            
+
+
         
         
 

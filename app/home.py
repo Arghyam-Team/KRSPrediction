@@ -64,7 +64,7 @@ class Home:
         col1, col2 = st.columns([1,2])
         self.risk_advisory()
         col1.write("Last updated on " + self.today)
-        col2.write(self.advise)
+        col2.write('&starf; '+self.advise)
 
         st.markdown("""
         ### KRS Dam's connection to Bangalore
