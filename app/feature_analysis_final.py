@@ -202,10 +202,13 @@ class FeatureAnalysis():
         show_yearly = False
         year = 0
         st.title('KRS Dam Data')
-        st.markdown("""Landusage over past decades have shown a major shift from agrarian to urban and industrial. 
-        The waterbodies have also shrunk ove time. With the overall water use across consumers remaining stationary there are
-        only seasonal variations. The recommended release cycle have also remained the same. 
-        There is also a strong correlation between inflow and outflow, which also correlate to the overall Karnataka weather.
+        st.markdown("""
+Landusage over past decades have shown a major shift from agrarian to urban and industrial. 
+The waterbodies have also shrunk ove time. With the overall water use across consumers remaining stationary there are
+only seasonal variations. The recommended release cycle have also remained the same. 
+There is also a strong correlation between inflow and outflow, which also correlate to the overall Karnataka weather. 
+
+*Since we are not studying groundwater, soil information and evapo-transpiration etc. are ruled out from this analysis.*
         """)
 
         summary_expander = st.expander("Expand to see relevant data")
@@ -249,7 +252,7 @@ class FeatureAnalysis():
 
         st.markdown("### Inflow in TMC over the last decade")
         if not show_yearly or (show_yearly and (year==2018 or year==2019)):
-            st.text("Notice the peaks in 2018/19 indicating very high values due to flooding.")
+            st.write("Notice the peaks in 2018/19 indicating very high values due to flooding.")
         st.plotly_chart(fig, use_container_width=True)
 
         fig = go.Figure()

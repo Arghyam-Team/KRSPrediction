@@ -67,14 +67,15 @@ class Home:
         col2.write('&starf; '+self.advise)
 
         st.markdown("""
-        ### KRS Dam's connection to Bangalore
-        **Bangalore**, located in the southeastern part of Karnataka, is the sixth largest city of India and one of the fastest growing
-        cities of Asia, with a total population of close to 10 million. *Encroachment* and *unplanned urbanization* over the past 4 decades 
-        has cost the city heavily in terms of its water bodies. Today the number of water bodies in the city is just over 20% of 
-        what once existed. Bengaluru has two main sources of water:  The River Kaveri (Cauvery) and Groundwater. 
-        Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. From here, the BWSSB (Bangalore Water Supply
-         and Sewerage Board) pumps water and transports it to over 660,355 BWSSB 
-         connections in Bengaluru
+### KRS Dam's connection to Bangalore
+**Bangalore**, located in the southeastern part of Karnataka, is the sixth largest city of India and one of the fastest growing
+cities of Asia, with a total population of close to 10 million. *Encroachment* and *unplanned urbanization* over the past 4 decades 
+has cost the city heavily in terms of its water bodies. Today the number of water bodies in the city is just over 20% of 
+what once existed. Bengaluru has two main sources of water:  The River Kaveri (Cauvery) and Groundwater. 
+Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. From here, the BWSSB (Bangalore Water Supply
+   and Sewerage Board) pumps water and transports it to over 660,355 BWSSB connections in Bengaluru
+
+**NOTE**: This project is to mainly study KRS Dam storage levels and not the groundwater.
         """)
 
         st.markdown("""
