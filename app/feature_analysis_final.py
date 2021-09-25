@@ -148,47 +148,86 @@ class FeatureAnalysis():
         st.markdown("### Correlation between various Weather metrics")
         st.plotly_chart(fig, use_container_width=True)
 
-        select = st.sidebar.selectbox('Weather Features', ['All', 'Maximum Temperature', 'Wind', 'Visibility', 'Cloud Cover', 'Humidity', 'Precipitation'], key=2)
-        m = {
+        select_weather = st.sidebar.multiselect('Weather Features', ['All Weather Parameters', 'Maximum Temperature', 'Wind', 'Visibility', 'Cloud Cover', 'Humidity', 'Precipitation'], key=2, default = 'All Weather Parameters')
+        select_dam = st.sidebar.multiselect('KRS Dam Features', ['All Dam Parameters', 'Inflow', 'Outflow', 'Storage'], key=3,default = 'Storage')
+        m1 = {
             'Maximum Temperature': ['max_temp', 'firebrick'], 
             'Wind': ['wind', 'green'], 
             'Visibility': ['visibility', 'brown'], 
             'Cloud Cover': ['cloudcover', 'blue'], 
             'Humidity': ['humidity', 'darkblue'], 
             'Precipitation': ['precip', 'darkgreen']}
-        
-        fig = go.Figure()
-        for key in m:
-            if select=='All' or select==key:
-                    fig.add_trace(go.Scatter(x = df.index,y = df[m[key][0]],
-                    name=key,
-                    mode='lines',
-                    line=dict(color=m[key][1])))
-
-        if select!='All':
-            st.text(f"{select}")
-        st.plotly_chart(fig, use_container_width=True)
-
-
-        m = {
+        m2 = {
             'Inflow': ['inflow_cusecs', 'green'], 
             'Outflow': ['outflow_cusecs', 'firebrick'], 
             'Storage': ['storage_tmc', 'blue']
             }
+        if st.sidebar.checkbox("Compare weather and dam data in same plot"):
+            st.markdown("#### Dam and Weather Parameter display")
+            select = select_weather + select_dam
+            m = m1 | m2
+            fig = go.Figure()
+            if (len(select) != 0):
+                fig = make_subplots(rows = len(select))
+            else:
+                fig = make_subplots(rows = 1)
+            
+            for i,param in enumerate(select):
+                for key in m:
+                    if param=='All Weather Parameters' or param=='All Dam Parameters' or param == key:
+                        fig.add_trace(go.Scatter(x = df.index,y = df[m[key][0]],
+                        name=key,
+                        mode='lines',
+                        line=dict(color=m[key][1])),row = i+1,col = 1)
 
-        select = st.sidebar.selectbox('KRS Dam Features', ['All', 'Inflow', 'Outflow', 'Storage'], key=3)
+            st.plotly_chart(fig, use_container_width=True)
+            fig.update_layout(autosize=True,
+        margin=dict(l=20, r=20, t=20, b=20),
+        paper_bgcolor="LightSteelBlue",
+        yaxis_title="Storage in Percentage",
+        xaxis_title="Date",
+        )
 
-        fig = go.Figure()
-        for key in m:
-            if select=='All' or select==key:
-                    fig.add_trace(go.Scatter(x = df.index,y = df[m[key][0]],
-                    name=key,
-                    mode='lines',
-                    line=dict(color=m[key][1])))
+        else:
+          
+            st.markdown("#### Weather Parameter display")
+            fig = go.Figure()
+            if (len(select_weather) != 0):
+                fig = make_subplots(rows = len(select_weather))
+            else:
+                fig = make_subplots(rows = 1)
+            
+            for i,param in enumerate(select_weather):
+                for key in m1:
+                    if param=='All Weather Parameters'  or param == key:
+                        fig.add_trace(go.Scatter(x = df.index,y = df[m1[key][0]],
+                            name=key,
+                            mode='lines',
+                            line=dict(color=m1[key][1])),row = i+1,col = 1)
 
-        if select!='All':
-            st.text(f"{select}")
-        st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, use_container_width=True)
+
+
+      
+
+        
+            st.markdown("#### Dam Parameter display")
+            fig = go.Figure()
+            if (len(select_dam) != 0):
+                fig = make_subplots(rows = len(select_dam))
+            else:
+                fig = make_subplots(rows = 1)
+            for i,param in enumerate(select_dam):
+                for key in m2:
+                    if  param=='All Dam Parameters' or param == key:
+                        fig.add_trace(go.Scatter(x = df.index,y = df[m2[key][0]],
+                        name=key,
+                        mode='lines',
+                        line=dict(color=m2[key][1])),row = i+1,col = 1)
+
+  
+        
+            st.plotly_chart(fig, use_container_width=True)
 
         st.markdown("* Weather data source: [Visual Crossing](https://www.visualcrossing.com/weather-data)")
         st.markdown("* Realtime dam data source: [IMS](http://122.15.179.102/ARS/home/reservoir)")

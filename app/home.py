@@ -126,7 +126,7 @@ Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. Fro
         xaxis_title="Date",
         )
         #https://plotly.com/python/legend/
-        summary_expander = st.expander("Expand to see HILIGHTS")
+        summary_expander = st.expander("Expand to see HIGHLIGHTS")
         with summary_expander:
             self.summary()
         st.plotly_chart(fig, use_container_width=True)
@@ -236,13 +236,13 @@ Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. Fro
         try:
             self.today_metric = self.metric_dataframe.storage_tmc.values[0]
             self.changeSinceLastValue = self.since_last_dataframe.storage_tmc.values[0]
-            self.visibility = self.metric_dataframe.visibility.values[0]
+            self.precipitation = self.metric_dataframe.precip.values[0]
             self.max_temperature = self.metric_dataframe.max_temp.values[0]
             self.wind = self.metric_dataframe.wind.values[0]
         except:
             self.today_metric = self.metric_dataframe.storage_tmc
             self.changeSinceLastValue = self.since_last_dataframe.storage_tmc
-            self.visibility = self.metric_dataframe.visibility
+            self.precipitation = self.metric_dataframe.precip
             self.max_temperature = self.metric_dataframe.max_temp
             self.wind = self.metric_dataframe.wind
         
@@ -250,26 +250,28 @@ Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. Fro
         #st.dataframe(self.since_last_dataframe)
         #st.write("Change since last",self.time_paramter,self.df.)
         self.label = "Storage " + self.time_paramter1
-        col1,col2,col3,col4 = st.columns([6,2,4,2])
+        col1,col2,col3,col4 = st.columns([7,3,5,3])
         col1.metric(label=self.label, value=str(round(self.today_display,1))+'%',delta = str(round((self.today_metric-self.changeSinceLastValue)/50*100,1))+'%'+' Expected Change since '+ self.time_paramter2)
-        col2.metric(label = 'Visibility (Kms)', value = round(self.visibility,1))
+        col2.metric(label = 'Precipitation (in %)', value = round(self.precipitation,1))
         col3.metric(label = "Maximum Temperature (Celsius)", value = round(self.max_temperature,1))
-        col4.metric(label = "Wind", value = round(self.wind,1))
+        col4.metric(label = "Wind (in km/hr)", value = round(self.wind,1))
 
 
     def summary(self):
         #st.write("Current year month",self.current_year_month)
         current_month = self.today.split('-')[1]
-        st.subheader("Hilights for  " + self.lookup(current_month))
+        st.subheader("Highlights for  " + self.lookup(current_month))
         req = self.df.loc[self.df.index.month == self.td.month]
         #st.dataframe(req)
         self.mean_for_month_usually = req.storage_tmc_pct.mean()
-        usual = self.mean_for_month_usually
-
-        if usual - self.today_metric > 0:
-            compare_to_usual = "less"
+        usual = round(self.mean_for_month_usually)
+        #st.write(usual, self.today_metric, usual - self.today_metric/50*100)
+        if usual - self.today_metric/50*100  > 2:
+            compare_to_usual = "less than"
+        elif usual - self.today_metric/50*100 < -2:
+            compare_to_usual = "more than"
         else:
-            compare_to_usual = "more"
+            compare_to_usual = "same as"
         """
         X= np.asarray(self.df1[['storage_tmc_pct','date']].loc[self.actual_mask_month].date)
         Y= np.asarray(self.df1[['storage_tmc_pct','date']].loc[self.actual_mask_month].storage_tmc_pct)
@@ -295,8 +297,10 @@ Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. Fro
 
         if past_2_months_type > 0:
             past_2_months_trend= "increasing"
-        else:
+        elif past_2_months_type < 0:
             past_2_months_trend = "decreasing"
+        else:
+            past_2_months_trend = "constant"
 
         #print(results)
         #st.plotly_chart(fig)
@@ -315,7 +319,7 @@ Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. Fro
         extras1 = [ "start_month_storage", 'pct  in' , "start_month",  "to ", "current_month_storage", "pct in", "current month"]
         summary_point_2 = [ "- TEMPERATURE AND STORAGE FORECAST : With recent trend of" , temperature_type,"temperatures and", rainfall_type, "rainfall water level is expected to observe" , next_2_months_trend," trend for the next few months."]
         extras2 = ["next_2_months_storage", "in", "next_2_months_month"]
-        summary_point_3 = ["- HISTORIC TRENDS FOR THE MONTH : The mean storage levels for this month are", compare_to_usual, "than the historic level of ", str(round(usual,1)) , '%']
+        summary_point_3 = ["- HISTORIC TRENDS FOR THE MONTH : The mean storage levels for this month are", compare_to_usual, " the historic level of ", str(round(usual,1)) , '%']
         
         st.write(" ".join(summary_point_1))
         st.write(" ".join(summary_point_2))
