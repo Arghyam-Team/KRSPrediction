@@ -105,7 +105,7 @@ class FeatureAnalysis():
         All these regions are topographically at a higher elevation. Bangalore and further east regions are at lower topography. 
         While Bangalore rains may reduce outflow from KRS it has no impact on the inflow. 
         
-        Analysis show that each location had some correlation with the reservoir however the average Karnataka 
+        Analysis shows that each location had some correlation with the reservoi, however the average Karnataka 
         weather had more of a relationship. The relationships bolster as we look at **cumulative** weather. 
         """)
 
@@ -115,7 +115,7 @@ class FeatureAnalysis():
             im2 = Image.open(get_full_path("Images", "wind_inflow.png"))
             st.image([im1, im2],caption = ['Correlation between cumulative cloud cover and inflow', 'Correlation between cumulative wind and inflow'], width=400)
             st.text("* X-axis is number of days and y-axis is the correlation")
-            st.markdown("Our **model choice of LSTM** was a reflection of this fact since LSTM can decide on forgetting ann remembering relevant features and even chose to cumulate them as needed.")
+            st.markdown("Our **model choice of LSTM** was a reflection of this fact since LSTM can decide on forgetting and remembering relevant features and even chose to cumulate them as needed.")
 
             ima = Image.open(get_full_path("Images", "map.jpg"))
             st.image(ima, caption="Cauvery Basin", width=400)
@@ -243,9 +243,9 @@ class FeatureAnalysis():
         st.title('KRS Dam Data')
         st.markdown("""
 Landusage over past decades have shown a major shift from agrarian to urban and industrial. 
-The waterbodies have also shrunk ove time. With the overall water use across consumers remaining stationary there are
+The waterbodies have also shrunken over time. With the overall water use across consumers remaining stationary there are
 only seasonal variations. The recommended release cycle have also remained the same. 
-There is also a strong correlation between inflow and outflow, which also correlate to the overall Karnataka weather. 
+There is also a strong correlation between inflow and outflow, which also correlates to the overall Karnataka weather. 
 
 *Since we are not studying groundwater, soil information and evapo-transpiration etc. are ruled out from this analysis.*
         """)
