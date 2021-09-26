@@ -234,14 +234,14 @@ Water from the Cauvery is collected in the Krishna Raja Sagar Dam in Mysore. Fro
         #st.dataframe(self.metric_dataframe)
         #st.write("Storage TMC",self.metric_dataframe.storage_tmc)
         try:
-            self.today_metric = self.metric_dataframe.storage_tmc.values[0]
-            self.changeSinceLastValue = self.since_last_dataframe.storage_tmc.values[0]
+            self.today_metric = self.metric_dataframe.storage_tmc_pred.values[0]
+            self.changeSinceLastValue = self.since_last_dataframe.storage_tmc_pred.values[0]
             self.precipitation = self.metric_dataframe.precip.values[0]
             self.max_temperature = self.metric_dataframe.max_temp.values[0]
             self.wind = self.metric_dataframe.wind.values[0]
         except:
-            self.today_metric = self.metric_dataframe.storage_tmc
-            self.changeSinceLastValue = self.since_last_dataframe.storage_tmc
+            self.today_metric = self.metric_dataframe.storage_tmc_pred
+            self.changeSinceLastValue = self.since_last_dataframe.storage_tmc_pred
             self.precipitation = self.metric_dataframe.precip
             self.max_temperature = self.metric_dataframe.max_temp
             self.wind = self.metric_dataframe.wind
