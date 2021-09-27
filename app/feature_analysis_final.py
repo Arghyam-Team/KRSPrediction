@@ -154,9 +154,9 @@ class FeatureAnalysis():
         select_weather = st.sidebar.multiselect('Weather Features', ['All Weather Parameters', 'Maximum Temperature', 'Wind', 'Visibility', 'Cloud Cover', 'Humidity', 'Precipitation'], key=2, default = 'All Weather Parameters')
         select_dam = st.sidebar.multiselect('KRS Dam Features', ['All Dam Parameters', 'Inflow', 'Outflow', 'Storage'], key=3,default = 'Storage')
         m1 = {
-            'Maximum Temperature': ['max_temp', 'firebrick'], 
-            'Wind': ['wind', 'green'], 
-            'Visibility': ['visibility', 'brown'], 
+            'Maximum Temperature': ['max_temp', 'red'], 
+            'Wind': ['wind', 'lightgreen'], 
+            'Visibility': ['visibility', 'pink'], 
             'Cloud Cover': ['cloudcover', 'blue'], 
             'Humidity': ['humidity', 'lightblue'], 
             'Precipitation': ['precip', 'darkgreen']}
@@ -168,7 +168,7 @@ class FeatureAnalysis():
         if st.sidebar.checkbox("Compare weather and dam data in same plot"):
             st.markdown("#### Dam and Weather Parameter display")
             select = select_weather + select_dam
-            m = m1.update(m2) #m1 | m2
+            m = {**m1, **m2}#m1 | m2
             fig = go.Figure()
             if (len(select) != 0):
                 fig = make_subplots(rows = len(select))
