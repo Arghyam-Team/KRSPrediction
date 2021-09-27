@@ -158,17 +158,17 @@ class FeatureAnalysis():
             'Wind': ['wind', 'green'], 
             'Visibility': ['visibility', 'brown'], 
             'Cloud Cover': ['cloudcover', 'blue'], 
-            'Humidity': ['humidity', 'darkblue'], 
+            'Humidity': ['humidity', 'lightblue'], 
             'Precipitation': ['precip', 'darkgreen']}
         m2 = {
             'Inflow': ['inflow_cusecs', 'green'], 
             'Outflow': ['outflow_cusecs', 'firebrick'], 
-            'Storage': ['storage_tmc', 'blue']
+            'Storage': ['storage_tmc', 'darkblue']
             }
         if st.sidebar.checkbox("Compare weather and dam data in same plot"):
             st.markdown("#### Dam and Weather Parameter display")
             select = select_weather + select_dam
-            m = m1 | m2
+            m = m1.update(m2) #m1 | m2
             fig = go.Figure()
             if (len(select) != 0):
                 fig = make_subplots(rows = len(select))
