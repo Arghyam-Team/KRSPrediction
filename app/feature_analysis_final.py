@@ -41,7 +41,7 @@ class FeatureAnalysis():
 
 
     def execute(self):
-        select = st.sidebar.selectbox('Related Data', ['KRS Dam data', 'Karnataka Weather', 'KRS vs Kabini, Harangi, Hemavathy'], key=1)
+        select = st.sidebar.selectbox('Related Data', ['KRS Dam data', 'Karnataka Weather', 'KRS vs Kabini, Harangi, Hemavathi'], key=1)
     
         if select == 'KRS Dam data':
             self.show_dam_data()
@@ -105,7 +105,7 @@ class FeatureAnalysis():
         All these regions are topographically at a higher elevation. Bangalore and further east regions are at lower topography. 
         While Bangalore rains may reduce outflow from KRS it has no impact on the inflow. 
         
-        Analysis show that each location had some correlation with the reservoir however the average Karnataka 
+        Analysis shows that each location had some correlation with the reservoi, however the average Karnataka 
         weather had more of a relationship. The relationships bolster as we look at **cumulative** weather. 
         """)
 
@@ -115,10 +115,13 @@ class FeatureAnalysis():
             im2 = Image.open(get_full_path("Images", "wind_inflow.png"))
             st.image([im1, im2],caption = ['Correlation between cumulative cloud cover and inflow', 'Correlation between cumulative wind and inflow'], width=400)
             st.text("* X-axis is number of days and y-axis is the correlation")
-            st.markdown("Our **model choice of LSTM** was a reflection of this fact since LSTM can decide on forgetting ann remembering relevant features and even chose to cumulate them as needed.")
+            st.markdown("Our **model choice of LSTM** was a reflection of this fact since LSTM can decide on forgetting and remembering relevant features and even chose to cumulate them as needed.")
 
-            ima = Image.open(get_full_path("Images", "map.jpg"))
-            st.image(ima, caption="Cauvery Basin", width=400)
+            ima1 = Image.open(get_full_path("Images", "map.jpg"))
+            st.image(ima1, caption="Cauvery Basin", width=400)
+
+            ima2 = Image.open(get_full_path("Images", "map2.jpg"))
+            st.image(ima2, caption="Locations considered during analysis")
             
             im3 = Image.open(get_full_path("Images", "cityvskarnataka.png"))
             st.image(im3, caption = 'correlation between overall karnataka and various cities weather with KRS dam features', use_column_width  = True)
@@ -148,47 +151,86 @@ class FeatureAnalysis():
         st.markdown("### Correlation between various Weather metrics")
         st.plotly_chart(fig, use_container_width=True)
 
-        select = st.sidebar.selectbox('Weather Features', ['All', 'Maximum Temperature', 'Wind', 'Visibility', 'Cloud Cover', 'Humidity', 'Precipitation'], key=2)
-        m = {
+        select_weather = st.sidebar.multiselect('Weather Features', ['All Weather Parameters', 'Maximum Temperature', 'Wind', 'Visibility', 'Cloud Cover', 'Humidity', 'Precipitation'], key=2, default = 'All Weather Parameters')
+        select_dam = st.sidebar.multiselect('KRS Dam Features', ['All Dam Parameters', 'Inflow', 'Outflow', 'Storage'], key=3,default = 'Storage')
+        m1 = {
             'Maximum Temperature': ['max_temp', 'firebrick'], 
             'Wind': ['wind', 'green'], 
             'Visibility': ['visibility', 'brown'], 
             'Cloud Cover': ['cloudcover', 'blue'], 
             'Humidity': ['humidity', 'darkblue'], 
             'Precipitation': ['precip', 'darkgreen']}
-        
-        fig = go.Figure()
-        for key in m:
-            if select=='All' or select==key:
-                    fig.add_trace(go.Scatter(x = df.index,y = df[m[key][0]],
-                    name=key,
-                    mode='lines',
-                    line=dict(color=m[key][1])))
-
-        if select!='All':
-            st.text(f"{select}")
-        st.plotly_chart(fig, use_container_width=True)
-
-
-        m = {
+        m2 = {
             'Inflow': ['inflow_cusecs', 'green'], 
             'Outflow': ['outflow_cusecs', 'firebrick'], 
             'Storage': ['storage_tmc', 'blue']
             }
+        if st.sidebar.checkbox("Compare weather and dam data in same plot"):
+            st.markdown("#### Dam and Weather Parameter display")
+            select = select_weather + select_dam
+            m = m1 | m2
+            fig = go.Figure()
+            if (len(select) != 0):
+                fig = make_subplots(rows = len(select))
+            else:
+                fig = make_subplots(rows = 1)
+            
+            for i,param in enumerate(select):
+                for key in m:
+                    if param=='All Weather Parameters' or param=='All Dam Parameters' or param == key:
+                        fig.add_trace(go.Scatter(x = df.index,y = df[m[key][0]],
+                        name=key,
+                        mode='lines',
+                        line=dict(color=m[key][1])),row = i+1,col = 1)
 
-        select = st.sidebar.selectbox('KRS Dam Features', ['All', 'Inflow', 'Outflow', 'Storage'], key=3)
+            st.plotly_chart(fig, use_container_width=True)
+            fig.update_layout(autosize=True,
+        margin=dict(l=20, r=20, t=20, b=20),
+        paper_bgcolor="LightSteelBlue",
+        yaxis_title="Storage in Percentage",
+        xaxis_title="Date",
+        )
 
-        fig = go.Figure()
-        for key in m:
-            if select=='All' or select==key:
-                    fig.add_trace(go.Scatter(x = df.index,y = df[m[key][0]],
-                    name=key,
-                    mode='lines',
-                    line=dict(color=m[key][1])))
+        else:
+          
+            st.markdown("#### Weather Parameter display")
+            fig = go.Figure()
+            if (len(select_weather) != 0):
+                fig = make_subplots(rows = len(select_weather))
+            else:
+                fig = make_subplots(rows = 1)
+            
+            for i,param in enumerate(select_weather):
+                for key in m1:
+                    if param=='All Weather Parameters'  or param == key:
+                        fig.add_trace(go.Scatter(x = df.index,y = df[m1[key][0]],
+                            name=key,
+                            mode='lines',
+                            line=dict(color=m1[key][1])),row = i+1,col = 1)
 
-        if select!='All':
-            st.text(f"{select}")
-        st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, use_container_width=True)
+
+
+      
+
+        
+            st.markdown("#### Dam Parameter display")
+            fig = go.Figure()
+            if (len(select_dam) != 0):
+                fig = make_subplots(rows = len(select_dam))
+            else:
+                fig = make_subplots(rows = 1)
+            for i,param in enumerate(select_dam):
+                for key in m2:
+                    if  param=='All Dam Parameters' or param == key:
+                        fig.add_trace(go.Scatter(x = df.index,y = df[m2[key][0]],
+                        name=key,
+                        mode='lines',
+                        line=dict(color=m2[key][1])),row = i+1,col = 1)
+
+  
+        
+            st.plotly_chart(fig, use_container_width=True)
 
         st.markdown("* Weather data source: [Visual Crossing](https://www.visualcrossing.com/weather-data)")
         st.markdown("* Realtime dam data source: [IMS](http://122.15.179.102/ARS/home/reservoir)")
@@ -204,9 +246,9 @@ class FeatureAnalysis():
         st.title('KRS Dam Data')
         st.markdown("""
 Landusage over past decades have shown a major shift from agrarian to urban and industrial. 
-The waterbodies have also shrunk ove time. With the overall water use across consumers remaining stationary there are
+The waterbodies have also shrunken over time. With the overall water use across consumers remaining stationary there are
 only seasonal variations. The recommended release cycle have also remained the same. 
-There is also a strong correlation between inflow and outflow, which also correlate to the overall Karnataka weather. 
+There is also a strong correlation between inflow and outflow, which also correlates to the overall Karnataka weather. 
 
 *Since we are not studying groundwater, soil information and evapo-transpiration etc. are ruled out from this analysis.*
         """)

@@ -13,7 +13,7 @@ from streamlit.components.v1 import html as sthtml
 
 import sys
 import os
-  
+st.set_page_config(layout='wide', page_title = 'Arghyam')
 # getting the name of the directory
 # where the this file is present.
 current = os.path.dirname(os.path.realpath(__file__))
@@ -44,7 +44,7 @@ def main():
 
     logoFile = Image.open(get_full_path("Images", "logo.png"))
     st.sidebar.image(logoFile)
-    main_menu_list = ['Home','Historic data and Predictions','Feature Analysis']
+    main_menu_list = ['Home','Historic data and Predictions','Exploring Weather and Dam data']
     main_menu_selection = st.sidebar.selectbox("Select Page", main_menu_list)
     
     if main_menu_selection == 'Home':
@@ -55,7 +55,7 @@ def main():
         st.title('Predictions','predictions')
         predictions = Predictions()
         predictions.display_forecast_plotly()
-    if main_menu_selection == 'Feature Analysis':
+    if main_menu_selection == 'Exploring Weather and Dam data':
         fa = FeatureAnalysis()
         fa.execute()
     #st.write(" [Scroll to top](#t1)")
