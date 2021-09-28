@@ -128,7 +128,7 @@ def modelInfo():
 #    run_predictions(date.today() - timedelta(i))
 #    update_reservoir(date.today() - timedelta(i))
 
-dt = date.today()
+dt = date.today() - timedelta(1)
 update_weather(dt)
 update_reservoir(dt)
 run_predictions(dt)
