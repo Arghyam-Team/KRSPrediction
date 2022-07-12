@@ -14,6 +14,9 @@ The [prediction dashboard](http://65.2.75.233:8501/) is deployed in a free tier 
 - Proposed water availability prediction model for 1 - 3 months (30 days to 90 days) using deep learning from weather and reservior data.
 - Complex models introduced overfitting as training data is limited. Simpler models resulted good accuracy.
 - Weather data alone is also sufficient to predict the water availability.
+- Seasonal variation study can be carried out using same approach of above study.  
+- Software can be used for model development for water quality analysis.
+- Water quality of different location for different season can be studied.
 
 ### Installation
 
